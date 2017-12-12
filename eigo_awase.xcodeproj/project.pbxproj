@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		837097391FDFEC1E004EC266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837097381FDFEC1E004EC266 /* AppDelegate.swift */; };
+		8370973B1FDFEC1E004EC266 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8370973A1FDFEC1E004EC266 /* ViewController.swift */; };
+		8370973E1FDFEC1E004EC266 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8370973C1FDFEC1E004EC266 /* Main.storyboard */; };
+		837097401FDFEC1E004EC266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8370973F1FDFEC1E004EC266 /* Assets.xcassets */; };
+		837097431FDFEC1E004EC266 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837097411FDFEC1E004EC266 /* LaunchScreen.storyboard */; };
+		8370974E1FDFEC1E004EC266 /* eigo_awaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8370974D1FDFEC1E004EC266 /* eigo_awaseTests.swift */; };
+		837097591FDFEC1E004EC266 /* eigo_awaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837097581FDFEC1E004EC266 /* eigo_awaseUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8370974A1FDFEC1E004EC266 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8370972D1FDFEC1E004EC266 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 837097341FDFEC1E004EC266;
+			remoteInfo = eigo_awase;
+		};
+		837097551FDFEC1E004EC266 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8370972D1FDFEC1E004EC266 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 837097341FDFEC1E004EC266;
+			remoteInfo = eigo_awase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		837097351FDFEC1E004EC266 /* eigo_awase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eigo_awase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		837097381FDFEC1E004EC266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8370973A1FDFEC1E004EC266 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8370973D1FDFEC1E004EC266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8370973F1FDFEC1E004EC266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		837097421FDFEC1E004EC266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		837097441FDFEC1E004EC266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		837097491FDFEC1E004EC266 /* eigo_awaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eigo_awaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8370974D1FDFEC1E004EC266 /* eigo_awaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eigo_awaseTests.swift; sourceTree = "<group>"; };
+		8370974F1FDFEC1E004EC266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		837097541FDFEC1E004EC266 /* eigo_awaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eigo_awaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		837097581FDFEC1E004EC266 /* eigo_awaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eigo_awaseUITests.swift; sourceTree = "<group>"; };
+		8370975A1FDFEC1E004EC266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		837097321FDFEC1E004EC266 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837097461FDFEC1E004EC266 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837097511FDFEC1E004EC266 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8370972C1FDFEC1E004EC266 = {
+			isa = PBXGroup;
+			children = (
+				837097371FDFEC1E004EC266 /* eigo_awase */,
+				8370974C1FDFEC1E004EC266 /* eigo_awaseTests */,
+				837097571FDFEC1E004EC266 /* eigo_awaseUITests */,
+				837097361FDFEC1E004EC266 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		837097361FDFEC1E004EC266 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				837097351FDFEC1E004EC266 /* eigo_awase.app */,
+				837097491FDFEC1E004EC266 /* eigo_awaseTests.xctest */,
+				837097541FDFEC1E004EC266 /* eigo_awaseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		837097371FDFEC1E004EC266 /* eigo_awase */ = {
+			isa = PBXGroup;
+			children = (
+				837097381FDFEC1E004EC266 /* AppDelegate.swift */,
+				8370973A1FDFEC1E004EC266 /* ViewController.swift */,
+				8370973C1FDFEC1E004EC266 /* Main.storyboard */,
+				8370973F1FDFEC1E004EC266 /* Assets.xcassets */,
+				837097411FDFEC1E004EC266 /* LaunchScreen.storyboard */,
+				837097441FDFEC1E004EC266 /* Info.plist */,
+			);
+			path = eigo_awase;
+			sourceTree = "<group>";
+		};
+		8370974C1FDFEC1E004EC266 /* eigo_awaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				8370974D1FDFEC1E004EC266 /* eigo_awaseTests.swift */,
+				8370974F1FDFEC1E004EC266 /* Info.plist */,
+			);
+			path = eigo_awaseTests;
+			sourceTree = "<group>";
+		};
+		837097571FDFEC1E004EC266 /* eigo_awaseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				837097581FDFEC1E004EC266 /* eigo_awaseUITests.swift */,
+				8370975A1FDFEC1E004EC266 /* Info.plist */,
+			);
+			path = eigo_awaseUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		837097341FDFEC1E004EC266 /* eigo_awase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8370975D1FDFEC1F004EC266 /* Build configuration list for PBXNativeTarget "eigo_awase" */;
+			buildPhases = (
+				837097311FDFEC1E004EC266 /* Sources */,
+				837097321FDFEC1E004EC266 /* Frameworks */,
+				837097331FDFEC1E004EC266 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eigo_awase;
+			productName = eigo_awase;
+			productReference = 837097351FDFEC1E004EC266 /* eigo_awase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		837097481FDFEC1E004EC266 /* eigo_awaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 837097601FDFEC1F004EC266 /* Build configuration list for PBXNativeTarget "eigo_awaseTests" */;
+			buildPhases = (
+				837097451FDFEC1E004EC266 /* Sources */,
+				837097461FDFEC1E004EC266 /* Frameworks */,
+				837097471FDFEC1E004EC266 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8370974B1FDFEC1E004EC266 /* PBXTargetDependency */,
+			);
+			name = eigo_awaseTests;
+			productName = eigo_awaseTests;
+			productReference = 837097491FDFEC1E004EC266 /* eigo_awaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		837097531FDFEC1E004EC266 /* eigo_awaseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 837097631FDFEC1F004EC266 /* Build configuration list for PBXNativeTarget "eigo_awaseUITests" */;
+			buildPhases = (
+				837097501FDFEC1E004EC266 /* Sources */,
+				837097511FDFEC1E004EC266 /* Frameworks */,
+				837097521FDFEC1E004EC266 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				837097561FDFEC1E004EC266 /* PBXTargetDependency */,
+			);
+			name = eigo_awaseUITests;
+			productName = eigo_awaseUITests;
+			productReference = 837097541FDFEC1E004EC266 /* eigo_awaseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8370972D1FDFEC1E004EC266 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "english-society";
+				TargetAttributes = {
+					837097341FDFEC1E004EC266 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					837097481FDFEC1E004EC266 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 837097341FDFEC1E004EC266;
+					};
+					837097531FDFEC1E004EC266 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 837097341FDFEC1E004EC266;
+					};
+				};
+			};
+			buildConfigurationList = 837097301FDFEC1E004EC266 /* Build configuration list for PBXProject "eigo_awase" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8370972C1FDFEC1E004EC266;
+			productRefGroup = 837097361FDFEC1E004EC266 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				837097341FDFEC1E004EC266 /* eigo_awase */,
+				837097481FDFEC1E004EC266 /* eigo_awaseTests */,
+				837097531FDFEC1E004EC266 /* eigo_awaseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		837097331FDFEC1E004EC266 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				837097431FDFEC1E004EC266 /* LaunchScreen.storyboard in Resources */,
+				837097401FDFEC1E004EC266 /* Assets.xcassets in Resources */,
+				8370973E1FDFEC1E004EC266 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837097471FDFEC1E004EC266 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837097521FDFEC1E004EC266 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		837097311FDFEC1E004EC266 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8370973B1FDFEC1E004EC266 /* ViewController.swift in Sources */,
+				837097391FDFEC1E004EC266 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837097451FDFEC1E004EC266 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8370974E1FDFEC1E004EC266 /* eigo_awaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837097501FDFEC1E004EC266 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				837097591FDFEC1E004EC266 /* eigo_awaseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8370974B1FDFEC1E004EC266 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 837097341FDFEC1E004EC266 /* eigo_awase */;
+			targetProxy = 8370974A1FDFEC1E004EC266 /* PBXContainerItemProxy */;
+		};
+		837097561FDFEC1E004EC266 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 837097341FDFEC1E004EC266 /* eigo_awase */;
+			targetProxy = 837097551FDFEC1E004EC266 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8370973C1FDFEC1E004EC266 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8370973D1FDFEC1E004EC266 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		837097411FDFEC1E004EC266 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				837097421FDFEC1E004EC266 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8370975B1FDFEC1F004EC266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8370975C1FDFEC1F004EC266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8370975E1FDFEC1F004EC266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53JT26R44G;
+				INFOPLIST_FILE = eigo_awase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.english-society.eigo-awase";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8370975F1FDFEC1F004EC266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53JT26R44G;
+				INFOPLIST_FILE = eigo_awase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.english-society.eigo-awase";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		837097611FDFEC1F004EC266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53JT26R44G;
+				INFOPLIST_FILE = eigo_awaseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.english-society.eigo-awaseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eigo_awase.app/eigo_awase";
+			};
+			name = Debug;
+		};
+		837097621FDFEC1F004EC266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53JT26R44G;
+				INFOPLIST_FILE = eigo_awaseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.english-society.eigo-awaseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eigo_awase.app/eigo_awase";
+			};
+			name = Release;
+		};
+		837097641FDFEC1F004EC266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53JT26R44G;
+				INFOPLIST_FILE = eigo_awaseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.english-society.eigo-awaseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = eigo_awase;
+			};
+			name = Debug;
+		};
+		837097651FDFEC1F004EC266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53JT26R44G;
+				INFOPLIST_FILE = eigo_awaseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.english-society.eigo-awaseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = eigo_awase;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		837097301FDFEC1E004EC266 /* Build configuration list for PBXProject "eigo_awase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8370975B1FDFEC1F004EC266 /* Debug */,
+				8370975C1FDFEC1F004EC266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8370975D1FDFEC1F004EC266 /* Build configuration list for PBXNativeTarget "eigo_awase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8370975E1FDFEC1F004EC266 /* Debug */,
+				8370975F1FDFEC1F004EC266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		837097601FDFEC1F004EC266 /* Build configuration list for PBXNativeTarget "eigo_awaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				837097611FDFEC1F004EC266 /* Debug */,
+				837097621FDFEC1F004EC266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		837097631FDFEC1F004EC266 /* Build configuration list for PBXNativeTarget "eigo_awaseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				837097641FDFEC1F004EC266 /* Debug */,
+				837097651FDFEC1F004EC266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8370972D1FDFEC1E004EC266 /* Project object */;
+}

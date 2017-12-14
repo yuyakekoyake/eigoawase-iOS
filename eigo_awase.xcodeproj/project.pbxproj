@@ -7,6 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8364F32F1FE0163100388509 /* saru_original_透過.png in Resources */ = {isa = PBXBuildFile; fileRef = 8364F32E1FE0163100388509 /* saru_original_透過.png */; };
+		8364F3331FE018F400388509 /* buttonBack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3321FE018F400388509 /* buttonBack.jpg */; };
+		8364F3351FE01FD000388509 /* ロゴ_背景透明.png in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3341FE01FCF00388509 /* ロゴ_背景透明.png */; };
+		8364F3371FE01FEF00388509 /* FirstSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8364F3361FE01FEE00388509 /* FirstSplashViewController.swift */; };
+		8364F3391FE0201900388509 /* washi2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3381FE0201900388509 /* washi2.jpg */; };
+		8364F33B1FE0432E00388509 /* apple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8364F33A1FE0432E00388509 /* apple.jpg */; };
+		8364F33D1FE0447100388509 /* peach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8364F33C1FE0447100388509 /* peach.jpg */; };
+		8364F33F1FE0448F00388509 /* orange.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8364F33E1FE0448F00388509 /* orange.jpg */; };
+		8364F3411FE044A000388509 /* cherry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3401FE0449F00388509 /* cherry.jpg */; };
+		8364F3431FE044AE00388509 /* grape.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3421FE044AE00388509 /* grape.jpg */; };
+		8364F3451FE044BF00388509 /* banana.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3441FE044BF00388509 /* banana.jpg */; };
+		8364F3471FE044D000388509 /* lemon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3461FE044D000388509 /* lemon.jpg */; };
+		8364F3491FE044E000388509 /* melon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3481FE044E000388509 /* melon.jpg */; };
+		8364F35B1FE2C9F400388509 /* motorcycle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F34B1FE2C9F200388509 /* motorcycle.mp3 */; };
+		8364F35C1FE2C9F400388509 /* banana.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F34C1FE2C9F300388509 /* banana.mp3 */; };
+		8364F35D1FE2C9F400388509 /* grape.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F34D1FE2C9F300388509 /* grape.mp3 */; };
+		8364F35E1FE2C9F400388509 /* train.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F34E1FE2C9F300388509 /* train.mp3 */; };
+		8364F35F1FE2C9F400388509 /* orange.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F34F1FE2C9F300388509 /* orange.mp3 */; };
+		8364F3601FE2C9F400388509 /* bicycle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3501FE2C9F300388509 /* bicycle.mp3 */; };
+		8364F3611FE2C9F400388509 /* fire truck.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3511FE2C9F300388509 /* fire truck.mp3 */; };
+		8364F3621FE2C9F400388509 /* apple.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3521FE2C9F300388509 /* apple.mp3 */; };
+		8364F3631FE2C9F400388509 /* car.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3531FE2C9F300388509 /* car.mp3 */; };
+		8364F3641FE2C9F400388509 /* melon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3541FE2C9F300388509 /* melon.mp3 */; };
+		8364F3651FE2C9F400388509 /* airplane.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3551FE2C9F300388509 /* airplane.mp3 */; };
+		8364F3661FE2C9F400388509 /* lemon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3561FE2C9F300388509 /* lemon.mp3 */; };
+		8364F3671FE2C9F400388509 /* bus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3571FE2C9F400388509 /* bus.mp3 */; };
+		8364F3681FE2C9F400388509 /* peach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3581FE2C9F400388509 /* peach.mp3 */; };
+		8364F3691FE2C9F400388509 /* cherry.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3591FE2C9F400388509 /* cherry.mp3 */; };
+		8364F36A1FE2C9F400388509 /* ship.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F35A1FE2C9F400388509 /* ship.mp3 */; };
 		837097391FDFEC1E004EC266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837097381FDFEC1E004EC266 /* AppDelegate.swift */; };
 		8370973B1FDFEC1E004EC266 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8370973A1FDFEC1E004EC266 /* ViewController.swift */; };
 		8370973E1FDFEC1E004EC266 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8370973C1FDFEC1E004EC266 /* Main.storyboard */; };
@@ -14,6 +43,7 @@
 		837097431FDFEC1E004EC266 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837097411FDFEC1E004EC266 /* LaunchScreen.storyboard */; };
 		8370974E1FDFEC1E004EC266 /* eigo_awaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8370974D1FDFEC1E004EC266 /* eigo_awaseTests.swift */; };
 		837097591FDFEC1E004EC266 /* eigo_awaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837097581FDFEC1E004EC266 /* eigo_awaseUITests.swift */; };
+		837097671FDFEC66004EC266 /* CardControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837097661FDFEC66004EC266 /* CardControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +64,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8364F32E1FE0163100388509 /* saru_original_透過.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "saru_original_透過.png"; sourceTree = "<group>"; };
+		8364F3321FE018F400388509 /* buttonBack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = buttonBack.jpg; sourceTree = "<group>"; };
+		8364F3341FE01FCF00388509 /* ロゴ_背景透明.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ロゴ_背景透明.png"; sourceTree = "<group>"; };
+		8364F3361FE01FEE00388509 /* FirstSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstSplashViewController.swift; sourceTree = "<group>"; };
+		8364F3381FE0201900388509 /* washi2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = washi2.jpg; sourceTree = "<group>"; };
+		8364F33A1FE0432E00388509 /* apple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = apple.jpg; sourceTree = "<group>"; };
+		8364F33C1FE0447100388509 /* peach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = peach.jpg; sourceTree = "<group>"; };
+		8364F33E1FE0448F00388509 /* orange.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = orange.jpg; sourceTree = "<group>"; };
+		8364F3401FE0449F00388509 /* cherry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cherry.jpg; sourceTree = "<group>"; };
+		8364F3421FE044AE00388509 /* grape.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grape.jpg; sourceTree = "<group>"; };
+		8364F3441FE044BF00388509 /* banana.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = banana.jpg; sourceTree = "<group>"; };
+		8364F3461FE044D000388509 /* lemon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lemon.jpg; sourceTree = "<group>"; };
+		8364F3481FE044E000388509 /* melon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = melon.jpg; sourceTree = "<group>"; };
+		8364F34B1FE2C9F200388509 /* motorcycle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = motorcycle.mp3; sourceTree = "<group>"; };
+		8364F34C1FE2C9F300388509 /* banana.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = banana.mp3; sourceTree = "<group>"; };
+		8364F34D1FE2C9F300388509 /* grape.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = grape.mp3; sourceTree = "<group>"; };
+		8364F34E1FE2C9F300388509 /* train.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = train.mp3; sourceTree = "<group>"; };
+		8364F34F1FE2C9F300388509 /* orange.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = orange.mp3; sourceTree = "<group>"; };
+		8364F3501FE2C9F300388509 /* bicycle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bicycle.mp3; sourceTree = "<group>"; };
+		8364F3511FE2C9F300388509 /* fire truck.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "fire truck.mp3"; sourceTree = "<group>"; };
+		8364F3521FE2C9F300388509 /* apple.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = apple.mp3; sourceTree = "<group>"; };
+		8364F3531FE2C9F300388509 /* car.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = car.mp3; sourceTree = "<group>"; };
+		8364F3541FE2C9F300388509 /* melon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = melon.mp3; sourceTree = "<group>"; };
+		8364F3551FE2C9F300388509 /* airplane.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = airplane.mp3; sourceTree = "<group>"; };
+		8364F3561FE2C9F300388509 /* lemon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lemon.mp3; sourceTree = "<group>"; };
+		8364F3571FE2C9F400388509 /* bus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bus.mp3; sourceTree = "<group>"; };
+		8364F3581FE2C9F400388509 /* peach.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = peach.mp3; sourceTree = "<group>"; };
+		8364F3591FE2C9F400388509 /* cherry.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cherry.mp3; sourceTree = "<group>"; };
+		8364F35A1FE2C9F400388509 /* ship.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ship.mp3; sourceTree = "<group>"; };
 		837097351FDFEC1E004EC266 /* eigo_awase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eigo_awase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		837097381FDFEC1E004EC266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8370973A1FDFEC1E004EC266 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +106,7 @@
 		837097541FDFEC1E004EC266 /* eigo_awaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eigo_awaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		837097581FDFEC1E004EC266 /* eigo_awaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eigo_awaseUITests.swift; sourceTree = "<group>"; };
 		8370975A1FDFEC1E004EC266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		837097661FDFEC66004EC266 /* CardControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +134,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8364F32D1FE0162600388509 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				8364F33A1FE0432E00388509 /* apple.jpg */,
+				8364F33C1FE0447100388509 /* peach.jpg */,
+				8364F33E1FE0448F00388509 /* orange.jpg */,
+				8364F3401FE0449F00388509 /* cherry.jpg */,
+				8364F3421FE044AE00388509 /* grape.jpg */,
+				8364F3441FE044BF00388509 /* banana.jpg */,
+				8364F3461FE044D000388509 /* lemon.jpg */,
+				8364F3481FE044E000388509 /* melon.jpg */,
+				8364F3381FE0201900388509 /* washi2.jpg */,
+				8364F3341FE01FCF00388509 /* ロゴ_背景透明.png */,
+				8364F3321FE018F400388509 /* buttonBack.jpg */,
+				8364F32E1FE0163100388509 /* saru_original_透過.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		8364F34A1FE2C9D400388509 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				8364F3551FE2C9F300388509 /* airplane.mp3 */,
+				8364F3521FE2C9F300388509 /* apple.mp3 */,
+				8364F34C1FE2C9F300388509 /* banana.mp3 */,
+				8364F3501FE2C9F300388509 /* bicycle.mp3 */,
+				8364F3571FE2C9F400388509 /* bus.mp3 */,
+				8364F3531FE2C9F300388509 /* car.mp3 */,
+				8364F3591FE2C9F400388509 /* cherry.mp3 */,
+				8364F3511FE2C9F300388509 /* fire truck.mp3 */,
+				8364F34D1FE2C9F300388509 /* grape.mp3 */,
+				8364F3561FE2C9F300388509 /* lemon.mp3 */,
+				8364F3541FE2C9F300388509 /* melon.mp3 */,
+				8364F34B1FE2C9F200388509 /* motorcycle.mp3 */,
+				8364F34F1FE2C9F300388509 /* orange.mp3 */,
+				8364F3581FE2C9F400388509 /* peach.mp3 */,
+				8364F35A1FE2C9F400388509 /* ship.mp3 */,
+				8364F34E1FE2C9F300388509 /* train.mp3 */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
 		8370972C1FDFEC1E004EC266 = {
 			isa = PBXGroup;
 			children = (
@@ -98,11 +200,15 @@
 			isa = PBXGroup;
 			children = (
 				837097381FDFEC1E004EC266 /* AppDelegate.swift */,
+				8364F3361FE01FEE00388509 /* FirstSplashViewController.swift */,
+				837097661FDFEC66004EC266 /* CardControl.swift */,
 				8370973A1FDFEC1E004EC266 /* ViewController.swift */,
 				8370973C1FDFEC1E004EC266 /* Main.storyboard */,
 				8370973F1FDFEC1E004EC266 /* Assets.xcassets */,
 				837097411FDFEC1E004EC266 /* LaunchScreen.storyboard */,
 				837097441FDFEC1E004EC266 /* Info.plist */,
+				8364F34A1FE2C9D400388509 /* sounds */,
+				8364F32D1FE0162600388509 /* images */,
 			);
 			path = eigo_awase;
 			sourceTree = "<group>";
@@ -232,8 +338,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8364F3681FE2C9F400388509 /* peach.mp3 in Resources */,
 				837097431FDFEC1E004EC266 /* LaunchScreen.storyboard in Resources */,
 				837097401FDFEC1E004EC266 /* Assets.xcassets in Resources */,
+				8364F3601FE2C9F400388509 /* bicycle.mp3 in Resources */,
+				8364F3631FE2C9F400388509 /* car.mp3 in Resources */,
+				8364F33B1FE0432E00388509 /* apple.jpg in Resources */,
+				8364F35E1FE2C9F400388509 /* train.mp3 in Resources */,
+				8364F3611FE2C9F400388509 /* fire truck.mp3 in Resources */,
+				8364F3671FE2C9F400388509 /* bus.mp3 in Resources */,
+				8364F3691FE2C9F400388509 /* cherry.mp3 in Resources */,
+				8364F3431FE044AE00388509 /* grape.jpg in Resources */,
+				8364F3411FE044A000388509 /* cherry.jpg in Resources */,
+				8364F33F1FE0448F00388509 /* orange.jpg in Resources */,
+				8364F3331FE018F400388509 /* buttonBack.jpg in Resources */,
+				8364F3661FE2C9F400388509 /* lemon.mp3 in Resources */,
+				8364F35F1FE2C9F400388509 /* orange.mp3 in Resources */,
+				8364F3391FE0201900388509 /* washi2.jpg in Resources */,
+				8364F33D1FE0447100388509 /* peach.jpg in Resources */,
+				8364F3641FE2C9F400388509 /* melon.mp3 in Resources */,
+				8364F3491FE044E000388509 /* melon.jpg in Resources */,
+				8364F3451FE044BF00388509 /* banana.jpg in Resources */,
+				8364F35C1FE2C9F400388509 /* banana.mp3 in Resources */,
+				8364F35D1FE2C9F400388509 /* grape.mp3 in Resources */,
+				8364F3621FE2C9F400388509 /* apple.mp3 in Resources */,
+				8364F3651FE2C9F400388509 /* airplane.mp3 in Resources */,
+				8364F36A1FE2C9F400388509 /* ship.mp3 in Resources */,
+				8364F3351FE01FD000388509 /* ロゴ_背景透明.png in Resources */,
+				8364F3471FE044D000388509 /* lemon.jpg in Resources */,
+				8364F35B1FE2C9F400388509 /* motorcycle.mp3 in Resources */,
+				8364F32F1FE0163100388509 /* saru_original_透過.png in Resources */,
 				8370973E1FDFEC1E004EC266 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,7 +393,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8364F3371FE01FEF00388509 /* FirstSplashViewController.swift in Sources */,
 				8370973B1FDFEC1E004EC266 /* ViewController.swift in Sources */,
+				837097671FDFEC66004EC266 /* CardControl.swift in Sources */,
 				837097391FDFEC1E004EC266 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,7 +568,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.english-society.eigo-awase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -447,7 +583,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.english-society.eigo-awase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

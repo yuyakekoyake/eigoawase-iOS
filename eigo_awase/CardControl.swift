@@ -55,7 +55,7 @@ class CardControl: UIView {
         
         self.number = number
         let buttonImage = UIImage(named:"saru_original_透過.png")
-        let buttonImageSelect = UIImage(named:"buttonBack.jpg")
+        var buttonImageSelect = UIImage(named:"buttonBack.jpg")
         //buttonCard.setTitle("⭐︎", for: .normal)
          buttonCard.setBackgroundImage(buttonImage, for: .normal)
         
@@ -79,21 +79,21 @@ class CardControl: UIView {
         case 7:
             cardstr = "melon"
         case 8:
-            cardstr = "りんご"
+            buttonImageSelect = UIImage(named:"apple.jpg")
         case 9:
-            cardstr = "オレンジ"
+            buttonImageSelect = UIImage(named:"orange.jpg")
         case 10:
-            cardstr = "さくらんぼ"
+            buttonImageSelect = UIImage(named:"cherry.jpg")
         case 11:
-            cardstr = "ばなな"
+            buttonImageSelect = UIImage(named:"banana.jpg")
         case 12:
-            cardstr = "ぶどう"
+            buttonImageSelect = UIImage(named:"grape.jpg")
         case 13:
-            cardstr = "れもん"
+            buttonImageSelect = UIImage(named:"lemon.jpg")
         case 14:
-            cardstr = "もも"
+            buttonImageSelect = UIImage(named:"peach.jpg")
         case 15:
-            cardstr = "めろん"
+            buttonImageSelect = UIImage(named:"melon.jpg")
         default:
             cardstr = "test"
         }

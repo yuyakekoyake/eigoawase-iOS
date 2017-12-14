@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qWr-3x-fF5">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -23,7 +23,45 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+            <point key="canvasLocation" x="679" y="136"/>
+        </scene>
+        <!--First Splash View Controller-->
+        <scene sceneID="IIV-dk-Fll">
+            <objects>
+                <viewController id="qWr-3x-fF5" customClass="FirstSplashViewController" customModule="TOEIC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1sK-Yu-ITf"/>
+                        <viewControllerLayoutGuide type="bottom" id="gQX-vI-Vki"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GyD-QJ-EiS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ロゴ_背景透明.png" translatesAutoresizingMaskIntoConstraints="NO" id="tMZ-dc-jkE">
+                                <rect key="frame" x="56.5" y="295.5" width="262" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="262" id="0TP-rA-sMP"/>
+                                    <constraint firstAttribute="height" constant="46" id="xDe-1x-qHm"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94520831110000003" green="0.95292580130000004" blue="0.9529486895" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="tMZ-dc-jkE" firstAttribute="centerX" secondItem="GyD-QJ-EiS" secondAttribute="centerX" id="FwK-7M-GbV"/>
+                            <constraint firstItem="tMZ-dc-jkE" firstAttribute="centerY" secondItem="GyD-QJ-EiS" secondAttribute="centerY" constant="-15" id="v23-wX-KW2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YQX-zK-vx0"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="ToMain" id="hFb-Gw-1Lp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QIT-57-9Za" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-436" y="135"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ロゴ_背景透明.png" width="433" height="76"/>
+    </resources>
 </document>

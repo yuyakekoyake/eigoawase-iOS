@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5851B46F140D5801DF9A14E8 /* Pods_eigo_awase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3660CEA3302F671BF4A3393A /* Pods_eigo_awase.framework */; };
+		6D9580FA00D5861ECE764599 /* Pods_eigo_awaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D70770D88E56C2B8564A5274 /* Pods_eigo_awaseTests.framework */; };
 		8364F32F1FE0163100388509 /* saru_original_透過.png in Resources */ = {isa = PBXBuildFile; fileRef = 8364F32E1FE0163100388509 /* saru_original_透過.png */; };
 		8364F3331FE018F400388509 /* buttonBack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3321FE018F400388509 /* buttonBack.jpg */; };
 		8364F3351FE01FD000388509 /* ロゴ_背景透明.png in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3341FE01FCF00388509 /* ロゴ_背景透明.png */; };
@@ -36,6 +38,8 @@
 		8364F3681FE2C9F400388509 /* peach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3581FE2C9F400388509 /* peach.mp3 */; };
 		8364F3691FE2C9F400388509 /* cherry.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3591FE2C9F400388509 /* cherry.mp3 */; };
 		8364F36A1FE2C9F400388509 /* ship.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F35A1FE2C9F400388509 /* ship.mp3 */; };
+		8364F3AC1FE5740100388509 /* クイズ・正解.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3AB1FE5740100388509 /* クイズ・正解.mp3 */; };
+		8364F3AE1FE574B800388509 /* blip03.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3AD1FE574B800388509 /* blip03.mp3 */; };
 		837097391FDFEC1E004EC266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837097381FDFEC1E004EC266 /* AppDelegate.swift */; };
 		8370973B1FDFEC1E004EC266 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8370973A1FDFEC1E004EC266 /* ViewController.swift */; };
 		8370973E1FDFEC1E004EC266 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8370973C1FDFEC1E004EC266 /* Main.storyboard */; };
@@ -44,6 +48,22 @@
 		8370974E1FDFEC1E004EC266 /* eigo_awaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8370974D1FDFEC1E004EC266 /* eigo_awaseTests.swift */; };
 		837097591FDFEC1E004EC266 /* eigo_awaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837097581FDFEC1E004EC266 /* eigo_awaseUITests.swift */; };
 		837097671FDFEC66004EC266 /* CardControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837097661FDFEC66004EC266 /* CardControl.swift */; };
+		83EE5F741FFFCDEA009E3521 /* x_pop.json in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F731FFFCDEA009E3521 /* x_pop.json */; };
+		83EE5F781FFFCF11009E3521 /* trophy.json in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F751FFFCF10009E3521 /* trophy.json */; };
+		83EE5F791FFFCF11009E3521 /* like.json in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F761FFFCF11009E3521 /* like.json */; };
+		83EE5F7A1FFFCF11009E3521 /* quick_hart_select.json in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F771FFFCF11009E3521 /* quick_hart_select.json */; };
+		83EE5F7C1FFFD6B0009E3521 /* Watermelon.json in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F7B1FFFD6B0009E3521 /* Watermelon.json */; };
+		83EE5F821FFFDA04009E3521 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE5F811FFFDA04009E3521 /* HomeViewController.swift */; };
+		83EE5F84200120C2009E3521 /* 空.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F83200120C2009E3521 /* 空.png */; };
+		83EE5F8920012D2D009E3521 /* hiragana_01_a.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F8520012D2C009E3521 /* hiragana_01_a.png */; };
+		83EE5F8A20012D2D009E3521 /* hiragana_04_e.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F8620012D2C009E3521 /* hiragana_04_e.png */; };
+		83EE5F8B20012D2D009E3521 /* hiragana_20_go.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F8720012D2C009E3521 /* hiragana_20_go.png */; };
+		83EE5F8C20012D2D009E3521 /* hiragana_02_i.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F8820012D2C009E3521 /* hiragana_02_i.png */; };
+		83EE5F8F20012D37009E3521 /* hiragana_24_se.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F8D20012D37009E3521 /* hiragana_24_se.png */; };
+		83EE5F9020012D37009E3521 /* hiragana_74_wa.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F8E20012D37009E3521 /* hiragana_74_wa.png */; };
+		83EE5F92200344AF009E3521 /* retrogamecenter2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F91200344AF009E3521 /* retrogamecenter2.mp3 */; };
+		83EE5F9420034C6A009E3521 /* save-02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F9320034C6A009E3521 /* save-02.wav */; };
+		91EA98DA2D13B22E58E941B8 /* Pods_eigo_awaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E98BC8E84B3C6C9BAB67C40D /* Pods_eigo_awaseUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +84,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3660CEA3302F671BF4A3393A /* Pods_eigo_awase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eigo_awase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CC2B6F0F05E6BAE36E1C391 /* Pods-eigo_awase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eigo_awase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eigo_awase/Pods-eigo_awase.debug.xcconfig"; sourceTree = "<group>"; };
+		5F83F0C08D447F8A4E520215 /* Pods-eigo_awaseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eigo_awaseUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eigo_awaseUITests/Pods-eigo_awaseUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		607269BC5CABD8A108FC7E9B /* Pods-eigo_awaseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eigo_awaseUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-eigo_awaseUITests/Pods-eigo_awaseUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7BB3E5C990A69BF37D8E303F /* Pods-eigo_awaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eigo_awaseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eigo_awaseTests/Pods-eigo_awaseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8364F32E1FE0163100388509 /* saru_original_透過.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "saru_original_透過.png"; sourceTree = "<group>"; };
 		8364F3321FE018F400388509 /* buttonBack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = buttonBack.jpg; sourceTree = "<group>"; };
 		8364F3341FE01FCF00388509 /* ロゴ_背景透明.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ロゴ_背景透明.png"; sourceTree = "<group>"; };
@@ -93,6 +118,8 @@
 		8364F3581FE2C9F400388509 /* peach.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = peach.mp3; sourceTree = "<group>"; };
 		8364F3591FE2C9F400388509 /* cherry.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cherry.mp3; sourceTree = "<group>"; };
 		8364F35A1FE2C9F400388509 /* ship.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ship.mp3; sourceTree = "<group>"; };
+		8364F3AB1FE5740100388509 /* クイズ・正解.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "クイズ・正解.mp3"; sourceTree = "<group>"; };
+		8364F3AD1FE574B800388509 /* blip03.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = blip03.mp3; sourceTree = "<group>"; };
 		837097351FDFEC1E004EC266 /* eigo_awase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eigo_awase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		837097381FDFEC1E004EC266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8370973A1FDFEC1E004EC266 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +134,25 @@
 		837097581FDFEC1E004EC266 /* eigo_awaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eigo_awaseUITests.swift; sourceTree = "<group>"; };
 		8370975A1FDFEC1E004EC266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		837097661FDFEC66004EC266 /* CardControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardControl.swift; sourceTree = "<group>"; };
+		83EE5F731FFFCDEA009E3521 /* x_pop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = x_pop.json; sourceTree = "<group>"; };
+		83EE5F751FFFCF10009E3521 /* trophy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trophy.json; sourceTree = "<group>"; };
+		83EE5F761FFFCF11009E3521 /* like.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = like.json; sourceTree = "<group>"; };
+		83EE5F771FFFCF11009E3521 /* quick_hart_select.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = quick_hart_select.json; sourceTree = "<group>"; };
+		83EE5F7B1FFFD6B0009E3521 /* Watermelon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Watermelon.json; sourceTree = "<group>"; };
+		83EE5F811FFFDA04009E3521 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		83EE5F83200120C2009E3521 /* 空.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "空.png"; sourceTree = "<group>"; };
+		83EE5F8520012D2C009E3521 /* hiragana_01_a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hiragana_01_a.png; sourceTree = "<group>"; };
+		83EE5F8620012D2C009E3521 /* hiragana_04_e.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hiragana_04_e.png; sourceTree = "<group>"; };
+		83EE5F8720012D2C009E3521 /* hiragana_20_go.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hiragana_20_go.png; sourceTree = "<group>"; };
+		83EE5F8820012D2C009E3521 /* hiragana_02_i.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hiragana_02_i.png; sourceTree = "<group>"; };
+		83EE5F8D20012D37009E3521 /* hiragana_24_se.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hiragana_24_se.png; sourceTree = "<group>"; };
+		83EE5F8E20012D37009E3521 /* hiragana_74_wa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hiragana_74_wa.png; sourceTree = "<group>"; };
+		83EE5F91200344AF009E3521 /* retrogamecenter2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = retrogamecenter2.mp3; sourceTree = "<group>"; };
+		83EE5F9320034C6A009E3521 /* save-02.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "save-02.wav"; sourceTree = "<group>"; };
+		937C43CB585A321AA8D40C05 /* Pods-eigo_awase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eigo_awase.release.xcconfig"; path = "Pods/Target Support Files/Pods-eigo_awase/Pods-eigo_awase.release.xcconfig"; sourceTree = "<group>"; };
+		BEB160E3C5BDA110E1070F4F /* Pods-eigo_awaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eigo_awaseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-eigo_awaseTests/Pods-eigo_awaseTests.release.xcconfig"; sourceTree = "<group>"; };
+		D70770D88E56C2B8564A5274 /* Pods_eigo_awaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eigo_awaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E98BC8E84B3C6C9BAB67C40D /* Pods_eigo_awaseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eigo_awaseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5851B46F140D5801DF9A14E8 /* Pods_eigo_awase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D9580FA00D5861ECE764599 /* Pods_eigo_awaseTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +176,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91EA98DA2D13B22E58E941B8 /* Pods_eigo_awaseUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +186,13 @@
 		8364F32D1FE0162600388509 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				83EE5F8D20012D37009E3521 /* hiragana_24_se.png */,
+				83EE5F8E20012D37009E3521 /* hiragana_74_wa.png */,
+				83EE5F8520012D2C009E3521 /* hiragana_01_a.png */,
+				83EE5F8820012D2C009E3521 /* hiragana_02_i.png */,
+				83EE5F8620012D2C009E3521 /* hiragana_04_e.png */,
+				83EE5F8720012D2C009E3521 /* hiragana_20_go.png */,
+				83EE5F83200120C2009E3521 /* 空.png */,
 				8364F33A1FE0432E00388509 /* apple.jpg */,
 				8364F33C1FE0447100388509 /* peach.jpg */,
 				8364F33E1FE0448F00388509 /* orange.jpg */,
@@ -172,6 +228,8 @@
 				8364F3581FE2C9F400388509 /* peach.mp3 */,
 				8364F35A1FE2C9F400388509 /* ship.mp3 */,
 				8364F34E1FE2C9F300388509 /* train.mp3 */,
+				8364F3AB1FE5740100388509 /* クイズ・正解.mp3 */,
+				8364F3AD1FE574B800388509 /* blip03.mp3 */,
 			);
 			path = sounds;
 			sourceTree = "<group>";
@@ -183,6 +241,8 @@
 				8370974C1FDFEC1E004EC266 /* eigo_awaseTests */,
 				837097571FDFEC1E004EC266 /* eigo_awaseUITests */,
 				837097361FDFEC1E004EC266 /* Products */,
+				A21D314655ADC01D8BE6E8FE /* Pods */,
+				BD034F51E350467D9F9F0EDD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -202,11 +262,13 @@
 				837097381FDFEC1E004EC266 /* AppDelegate.swift */,
 				8364F3361FE01FEE00388509 /* FirstSplashViewController.swift */,
 				837097661FDFEC66004EC266 /* CardControl.swift */,
+				83EE5F811FFFDA04009E3521 /* HomeViewController.swift */,
 				8370973A1FDFEC1E004EC266 /* ViewController.swift */,
 				8370973C1FDFEC1E004EC266 /* Main.storyboard */,
 				8370973F1FDFEC1E004EC266 /* Assets.xcassets */,
 				837097411FDFEC1E004EC266 /* LaunchScreen.storyboard */,
 				837097441FDFEC1E004EC266 /* Info.plist */,
+				83EE5F721FFFCDC5009E3521 /* JSON */,
 				8364F34A1FE2C9D400388509 /* sounds */,
 				8364F32D1FE0162600388509 /* images */,
 			);
@@ -231,6 +293,43 @@
 			path = eigo_awaseUITests;
 			sourceTree = "<group>";
 		};
+		83EE5F721FFFCDC5009E3521 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				83EE5F9320034C6A009E3521 /* save-02.wav */,
+				83EE5F91200344AF009E3521 /* retrogamecenter2.mp3 */,
+				83EE5F7B1FFFD6B0009E3521 /* Watermelon.json */,
+				83EE5F731FFFCDEA009E3521 /* x_pop.json */,
+				83EE5F761FFFCF11009E3521 /* like.json */,
+				83EE5F771FFFCF11009E3521 /* quick_hart_select.json */,
+				83EE5F751FFFCF10009E3521 /* trophy.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		A21D314655ADC01D8BE6E8FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4CC2B6F0F05E6BAE36E1C391 /* Pods-eigo_awase.debug.xcconfig */,
+				937C43CB585A321AA8D40C05 /* Pods-eigo_awase.release.xcconfig */,
+				7BB3E5C990A69BF37D8E303F /* Pods-eigo_awaseTests.debug.xcconfig */,
+				BEB160E3C5BDA110E1070F4F /* Pods-eigo_awaseTests.release.xcconfig */,
+				5F83F0C08D447F8A4E520215 /* Pods-eigo_awaseUITests.debug.xcconfig */,
+				607269BC5CABD8A108FC7E9B /* Pods-eigo_awaseUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BD034F51E350467D9F9F0EDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3660CEA3302F671BF4A3393A /* Pods_eigo_awase.framework */,
+				D70770D88E56C2B8564A5274 /* Pods_eigo_awaseTests.framework */,
+				E98BC8E84B3C6C9BAB67C40D /* Pods_eigo_awaseUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -238,9 +337,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8370975D1FDFEC1F004EC266 /* Build configuration list for PBXNativeTarget "eigo_awase" */;
 			buildPhases = (
+				006E28A86EE148050A18A98E /* [CP] Check Pods Manifest.lock */,
 				837097311FDFEC1E004EC266 /* Sources */,
 				837097321FDFEC1E004EC266 /* Frameworks */,
 				837097331FDFEC1E004EC266 /* Resources */,
+				65C6D2272456EC1E0FC254D8 /* [CP] Embed Pods Frameworks */,
+				AB3933B3C572FF34E9BF67E0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -255,9 +357,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 837097601FDFEC1F004EC266 /* Build configuration list for PBXNativeTarget "eigo_awaseTests" */;
 			buildPhases = (
+				9A9872186A8B8A1E10FA62C9 /* [CP] Check Pods Manifest.lock */,
 				837097451FDFEC1E004EC266 /* Sources */,
 				837097461FDFEC1E004EC266 /* Frameworks */,
 				837097471FDFEC1E004EC266 /* Resources */,
+				7F904921B157EC35B43D4589 /* [CP] Embed Pods Frameworks */,
+				BFE52BB95A6AFA6565341A90 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -273,9 +378,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 837097631FDFEC1F004EC266 /* Build configuration list for PBXNativeTarget "eigo_awaseUITests" */;
 			buildPhases = (
+				AA5E87EBBB78A70CA12700D4 /* [CP] Check Pods Manifest.lock */,
 				837097501FDFEC1E004EC266 /* Sources */,
 				837097511FDFEC1E004EC266 /* Frameworks */,
 				837097521FDFEC1E004EC266 /* Resources */,
+				7BA6004283C2D6912FAF62DB /* [CP] Embed Pods Frameworks */,
+				3A319F6C1FA2B02DB0394AA2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -340,31 +448,47 @@
 			files = (
 				8364F3681FE2C9F400388509 /* peach.mp3 in Resources */,
 				837097431FDFEC1E004EC266 /* LaunchScreen.storyboard in Resources */,
+				83EE5F8A20012D2D009E3521 /* hiragana_04_e.png in Resources */,
+				83EE5F791FFFCF11009E3521 /* like.json in Resources */,
+				83EE5F84200120C2009E3521 /* 空.png in Resources */,
 				837097401FDFEC1E004EC266 /* Assets.xcassets in Resources */,
+				83EE5F7A1FFFCF11009E3521 /* quick_hart_select.json in Resources */,
 				8364F3601FE2C9F400388509 /* bicycle.mp3 in Resources */,
+				83EE5F8920012D2D009E3521 /* hiragana_01_a.png in Resources */,
 				8364F3631FE2C9F400388509 /* car.mp3 in Resources */,
 				8364F33B1FE0432E00388509 /* apple.jpg in Resources */,
 				8364F35E1FE2C9F400388509 /* train.mp3 in Resources */,
+				83EE5F7C1FFFD6B0009E3521 /* Watermelon.json in Resources */,
 				8364F3611FE2C9F400388509 /* fire truck.mp3 in Resources */,
+				83EE5F8C20012D2D009E3521 /* hiragana_02_i.png in Resources */,
 				8364F3671FE2C9F400388509 /* bus.mp3 in Resources */,
 				8364F3691FE2C9F400388509 /* cherry.mp3 in Resources */,
+				83EE5F741FFFCDEA009E3521 /* x_pop.json in Resources */,
+				83EE5F9020012D37009E3521 /* hiragana_74_wa.png in Resources */,
 				8364F3431FE044AE00388509 /* grape.jpg in Resources */,
 				8364F3411FE044A000388509 /* cherry.jpg in Resources */,
 				8364F33F1FE0448F00388509 /* orange.jpg in Resources */,
 				8364F3331FE018F400388509 /* buttonBack.jpg in Resources */,
 				8364F3661FE2C9F400388509 /* lemon.mp3 in Resources */,
+				8364F3AC1FE5740100388509 /* クイズ・正解.mp3 in Resources */,
+				8364F3AE1FE574B800388509 /* blip03.mp3 in Resources */,
 				8364F35F1FE2C9F400388509 /* orange.mp3 in Resources */,
 				8364F3391FE0201900388509 /* washi2.jpg in Resources */,
 				8364F33D1FE0447100388509 /* peach.jpg in Resources */,
 				8364F3641FE2C9F400388509 /* melon.mp3 in Resources */,
 				8364F3491FE044E000388509 /* melon.jpg in Resources */,
 				8364F3451FE044BF00388509 /* banana.jpg in Resources */,
+				83EE5F781FFFCF11009E3521 /* trophy.json in Resources */,
+				83EE5F8F20012D37009E3521 /* hiragana_24_se.png in Resources */,
 				8364F35C1FE2C9F400388509 /* banana.mp3 in Resources */,
+				83EE5F8B20012D2D009E3521 /* hiragana_20_go.png in Resources */,
 				8364F35D1FE2C9F400388509 /* grape.mp3 in Resources */,
 				8364F3621FE2C9F400388509 /* apple.mp3 in Resources */,
 				8364F3651FE2C9F400388509 /* airplane.mp3 in Resources */,
+				83EE5F92200344AF009E3521 /* retrogamecenter2.mp3 in Resources */,
 				8364F36A1FE2C9F400388509 /* ship.mp3 in Resources */,
 				8364F3351FE01FD000388509 /* ロゴ_背景透明.png in Resources */,
+				83EE5F9420034C6A009E3521 /* save-02.wav in Resources */,
 				8364F3471FE044D000388509 /* lemon.jpg in Resources */,
 				8364F35B1FE2C9F400388509 /* motorcycle.mp3 in Resources */,
 				8364F32F1FE0163100388509 /* saru_original_透過.png in Resources */,
@@ -388,11 +512,166 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		006E28A86EE148050A18A98E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eigo_awase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A319F6C1FA2B02DB0394AA2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eigo_awaseUITests/Pods-eigo_awaseUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65C6D2272456EC1E0FC254D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-eigo_awase/Pods-eigo_awase-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JDGamesLoading/JDGamesLoading.framework",
+				"${BUILT_PRODUCTS_DIR}/Spring/Spring.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JDGamesLoading.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spring.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eigo_awase/Pods-eigo_awase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BA6004283C2D6912FAF62DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eigo_awaseUITests/Pods-eigo_awaseUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F904921B157EC35B43D4589 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eigo_awaseTests/Pods-eigo_awaseTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A9872186A8B8A1E10FA62C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eigo_awaseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA5E87EBBB78A70CA12700D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eigo_awaseUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB3933B3C572FF34E9BF67E0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eigo_awase/Pods-eigo_awase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFE52BB95A6AFA6565341A90 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eigo_awaseTests/Pods-eigo_awaseTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		837097311FDFEC1E004EC266 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83EE5F821FFFDA04009E3521 /* HomeViewController.swift in Sources */,
 				8364F3371FE01FEF00388509 /* FirstSplashViewController.swift in Sources */,
 				8370973B1FDFEC1E004EC266 /* ViewController.swift in Sources */,
 				837097671FDFEC66004EC266 /* CardControl.swift in Sources */,
@@ -560,6 +839,7 @@
 		};
 		8370975E1FDFEC1F004EC266 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CC2B6F0F05E6BAE36E1C391 /* Pods-eigo_awase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -568,13 +848,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.english-society.eigo-awase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		8370975F1FDFEC1F004EC266 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 937C43CB585A321AA8D40C05 /* Pods-eigo_awase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -583,13 +864,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.english-society.eigo-awase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		837097611FDFEC1F004EC266 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BB3E5C990A69BF37D8E303F /* Pods-eigo_awaseTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -607,6 +889,7 @@
 		};
 		837097621FDFEC1F004EC266 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEB160E3C5BDA110E1070F4F /* Pods-eigo_awaseTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -624,6 +907,7 @@
 		};
 		837097641FDFEC1F004EC266 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F83F0C08D447F8A4E520215 /* Pods-eigo_awaseUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -640,6 +924,7 @@
 		};
 		837097651FDFEC1F004EC266 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 607269BC5CABD8A108FC7E9B /* Pods-eigo_awaseUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

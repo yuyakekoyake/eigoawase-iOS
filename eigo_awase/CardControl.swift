@@ -45,6 +45,7 @@ class CardControl: UIView {
         buttonCard.setTitle("?", for: .normal)
         buttonCard.layer.cornerRadius = 10
         buttonCard.backgroundColor = UIColor(red: 197/255, green: 239/255, blue: 247/255, alpha: 1.0)//UIColor(red: 0.2, green: 0.6, blue: 0.6, alpha: 0.7)
+    //ここをSwift4へ
         buttonCard.addTarget(self, action: #selector(CardControl.ButtonTapped(sender:)),for: .touchUpInside)
     
         addSubview(buttonCard)
@@ -118,7 +119,7 @@ class CardControl: UIView {
     }
     
     // MARK: ボタンのタッチイベント
-    func ButtonTapped(sender: UIButton) {
+    @objc func ButtonTapped(sender: UIButton) {
         delegate?.OnCardTapped(sender: self)
     }
     

@@ -9,6 +9,7 @@
 import UIKit
 import Lottie
 import Spring
+import AVFoundation
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var TitleE: SpringImageView!
@@ -18,8 +19,17 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var TitleWa: SpringImageView!
     @IBOutlet weak var TitleSe: SpringImageView!
     
+    var timer:Timer?
+    
+    var StartEffect:AVAudioPlayer!
+    var Bgm:AVAudioPlayer!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    //BGMスタート
+        BgmSound()
 //        let bg = UIImageView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height))
 //        bg.image = UIImage(named: "SkyBg")
 //        bg.layer.zPosition = -1
@@ -27,7 +37,7 @@ class HomeViewController: UIViewController {
         // アニメーションのviewを生成
         let animationView = LOTAnimationView(name: "Watermelon.json")
         // ViewControllerに配置
-        animationView.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height)
+        animationView.frame = CGRect(x: 0, y: 0, width: view.bounds.width/2, height: view.bounds.height/2)
         //animationView.center = self.view.center
         animationView.loopAnimation = true
         animationView.contentMode = .scaleAspectFit
@@ -39,9 +49,16 @@ class HomeViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             self.TitleAnimation()
         }
+        startTimer()
     }
+    
+    @IBAction func FruitsBtn(_ sender: Any) {
+        StartSound()
+        Bgm.stop()
+    }
+    
 
-    func  TitleAnimation(){
+    @objc func  TitleAnimation(){
         TitleE.animation = "swing"
         TitleE.duration = 1.0
         TitleE.animate()
@@ -61,10 +78,39 @@ class HomeViewController: UIViewController {
         TitleWa.duration = 1.0
         TitleWa.delay = 4.0
         TitleWa.animate()
-        TitleSe.animation = "swing"
+        TitleSe.animation = "wobble"
         TitleSe.duration = 1.0
         TitleSe.delay = 5.0
+        TitleSe.force = 1.0
         TitleSe.animate()
+        
+    }
+    
+    func startTimer(){
+        if timer == nil {
+    // 5毎にTemporalEventを呼び出す
+            timer = Timer.scheduledTimer(timeInterval: 12.0, target: self, selector:#selector(TitleAnimation), userInfo: nil,repeats: true)
+        }
+    }
+    
+    func BgmSound () {
+        let path = Bundle.main.bundleURL.appendingPathComponent("retrogamecenter2.mp3")
+        do{
+            try Bgm = AVAudioPlayer(contentsOf: path)
+            Bgm.numberOfLoops = -1
+            Bgm.play()
+        }catch{
+            print("エラーです")
+        }
+    }
+    func StartSound () {
+        let path = Bundle.main.bundleURL.appendingPathComponent("save-02.wav")
+        do{
+            try StartEffect = AVAudioPlayer(contentsOf: path)
+            StartEffect.play()
+        }catch{
+            print("エラーです")
+        }
     }
     
     override func didReceiveMemoryWarning() {

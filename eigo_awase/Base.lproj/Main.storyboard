@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qWr-3x-fF5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qWr-3x-fF5">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,12 +23,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="679" y="136"/>
+            <point key="canvasLocation" x="1090" y="134"/>
         </scene>
         <!--First Splash View Controller-->
         <scene sceneID="IIV-dk-Fll">
             <objects>
-                <viewController id="qWr-3x-fF5" customClass="FirstSplashViewController" customModule="TOEIC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qWr-3x-fF5" customClass="FirstSplashViewController" customModule="eigo_awase" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1sK-Yu-ITf"/>
                         <viewControllerLayoutGuide type="bottom" id="gQX-vI-Vki"/>
@@ -54,14 +54,79 @@
                     </view>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="ToMain" id="hFb-Gw-1Lp"/>
+                        <segue destination="Uy6-KF-OfM" kind="presentation" identifier="ToHome" id="APl-pb-AzG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QIT-57-9Za" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-436" y="135"/>
+            <point key="canvasLocation" x="-436" y="134.48275862068968"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="o5Q-w0-VXZ">
+            <objects>
+                <viewController id="Uy6-KF-OfM" customClass="HomeViewController" customModule="eigo_awase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qkg-Wm-sWY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SkyBg" translatesAutoresizingMaskIntoConstraints="NO" id="SxI-d6-wQ2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hiragana_04_e.png" translatesAutoresizingMaskIntoConstraints="NO" id="Eec-Oo-sA2" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="10" y="28" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hiragana_02_i.png" translatesAutoresizingMaskIntoConstraints="NO" id="ptD-Zt-0c1" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="79" y="28" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hiragana_20_go.png" translatesAutoresizingMaskIntoConstraints="NO" id="P1I-Iy-fEw" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="167" y="28" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hiragana_01_a.png" translatesAutoresizingMaskIntoConstraints="NO" id="TC7-mQ-Vh6" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="116" y="96" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hiragana_24_se.png" translatesAutoresizingMaskIntoConstraints="NO" id="kik-5c-pqb" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="279" y="101" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hiragana_74_wa.png" translatesAutoresizingMaskIntoConstraints="NO" id="Y2i-09-ozl" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="198" y="96" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="k5J-vL-bz7" firstAttribute="trailing" secondItem="SxI-d6-wQ2" secondAttribute="trailing" id="6oq-91-XsR"/>
+                            <constraint firstItem="SxI-d6-wQ2" firstAttribute="top" secondItem="Qkg-Wm-sWY" secondAttribute="top" id="JeO-oe-AHX"/>
+                            <constraint firstItem="SxI-d6-wQ2" firstAttribute="leading" secondItem="k5J-vL-bz7" secondAttribute="leading" id="UCY-wV-8Wo"/>
+                            <constraint firstItem="k5J-vL-bz7" firstAttribute="bottom" secondItem="SxI-d6-wQ2" secondAttribute="bottom" id="cek-bk-iAN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="k5J-vL-bz7"/>
+                    </view>
+                    <connections>
+                        <outlet property="TitleA" destination="TC7-mQ-Vh6" id="v10-Yb-zqM"/>
+                        <outlet property="TitleE" destination="Eec-Oo-sA2" id="ZOZ-32-Lp4"/>
+                        <outlet property="TitleGo" destination="P1I-Iy-fEw" id="bkq-dx-shE"/>
+                        <outlet property="TitleI" destination="ptD-Zt-0c1" id="2ni-ah-gkR"/>
+                        <outlet property="TitleSe" destination="kik-5c-pqb" id="Q1l-34-Gg1"/>
+                        <outlet property="TitleWa" destination="Y2i-09-ozl" id="eFS-5y-mjf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u9S-8o-xg1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="344.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
     <resources>
+        <image name="SkyBg" width="375" height="667"/>
+        <image name="hiragana_01_a.png" width="207" height="194"/>
+        <image name="hiragana_02_i.png" width="207" height="194"/>
+        <image name="hiragana_04_e.png" width="207" height="194"/>
+        <image name="hiragana_20_go.png" width="207" height="194"/>
+        <image name="hiragana_24_se.png" width="207" height="194"/>
+        <image name="hiragana_74_wa.png" width="207" height="194"/>
         <image name="ロゴ_背景透明.png" width="433" height="76"/>
     </resources>
 </document>

@@ -6,22 +6,29 @@
 //
 
 import UIKit
+import Lottie
 
 class FirstSplashViewController: UIViewController {
 
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    
-   
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "washi2.jpg")!)
+        // アニメーションのviewを生成
+        let animationView = LOTAnimationView(name: "Watermelon.json")
+        
+        // ViewControllerに配置
+        self.view.addSubview(animationView)
+        
+        // アニメーションを開始
+        animationView.play()
 
-
-         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
             
-                self.performSegue(withIdentifier: "ToMain", sender: nil)
+                self.performSegue(withIdentifier: "ToHome", sender: nil)
     
             
         }

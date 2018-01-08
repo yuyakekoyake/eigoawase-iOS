@@ -24,10 +24,10 @@ class CardControl: UIView {
         didSet {
             buttonCard.isSelected = isOpen
             if isOpen {
-                buttonCard.backgroundColor = UIColor(red: 0.2, green: 0.8, blue: 0.8, alpha: 0.9)
+                buttonCard.backgroundColor = UIColor(red: 197/255, green: 239/255, blue: 247/255, alpha: 1.0)//UIColor(red: 0.2, green: 0.8, blue: 0.8, alpha: 0.9)
             }
             else {
-                buttonCard.backgroundColor = UIColor(red: 0.2, green: 0.6, blue: 0.6, alpha: 0.7)
+                buttonCard.backgroundColor = UIColor(red: 197/255, green: 239/255, blue: 247/255, alpha: 1.0)//UIColor(red: 0.2, green: 0.6, blue: 0.6, alpha: 0.7)
             }
         }
     }
@@ -44,7 +44,7 @@ class CardControl: UIView {
         
         buttonCard.setTitle("?", for: .normal)
         buttonCard.layer.cornerRadius = 10
-        buttonCard.backgroundColor = UIColor(red: 0.2, green: 0.6, blue: 0.6, alpha: 0.7)
+        buttonCard.backgroundColor = UIColor(red: 197/255, green: 239/255, blue: 247/255, alpha: 1.0)//UIColor(red: 0.2, green: 0.6, blue: 0.6, alpha: 0.7)
         buttonCard.addTarget(self, action: #selector(CardControl.ButtonTapped(sender:)),for: .touchUpInside)
     
         addSubview(buttonCard)
@@ -54,7 +54,7 @@ class CardControl: UIView {
         super.init(frame: frame)
         
         self.number = number
-        let buttonImage = UIImage(named:"saru_original_透過.png")
+        let buttonImage = UIImage(named:"ABC")
         var buttonImageSelect = UIImage(named:"buttonBack.jpg")
         //buttonCard.setTitle("⭐︎", for: .normal)
          buttonCard.setBackgroundImage(buttonImage, for: .normal)
@@ -101,7 +101,7 @@ class CardControl: UIView {
         buttonCard.setBackgroundImage(buttonImageSelect, for: .selected)
         buttonCard.setTitle(cardstr, for: .selected)
         buttonCard.layer.cornerRadius = 10
-        buttonCard.backgroundColor = UIColor(red: 0.2, green: 0.6, blue: 0.6, alpha: 0.7)
+        buttonCard.backgroundColor = UIColor(red: 197/255, green: 239/255, blue: 247/255, alpha: 1.0)//(red: 0.2, green: 0.6, blue: 0.6, alpha: 0.7)
         buttonCard.addTarget(self, action: #selector(CardControl.ButtonTapped(sender:)),for: .touchUpInside)
         
         addSubview(buttonCard)
@@ -139,7 +139,7 @@ class CardControl: UIView {
     
     func DisableCard() {
         buttonCard.removeTarget(self, action: #selector(CardControl.ButtonTapped(sender:)),for: .touchUpInside)
-        buttonCard.backgroundColor = UIColor(red: 0.2, green: 0.6, blue: 0.6, alpha: 0.3)
+        buttonCard.backgroundColor = UIColor(red: 197/255, green: 239/255, blue: 247/255, alpha: 1.0)//UIColor(red: 0.2, green: 0.6, blue: 0.6, alpha: 0.3)
     }
 }
 

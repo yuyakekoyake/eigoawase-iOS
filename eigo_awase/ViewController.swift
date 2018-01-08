@@ -8,17 +8,25 @@
 
 import UIKit
 import AVFoundation
+import Lottie
 
 class ViewController: UIViewController, CardControlDelegate {
 
-    var Sound:AVAudioPlayer!
+    var OpSound:AVAudioPlayer!
     var path = Bundle.main.bundleURL.appendingPathComponent("")
+    var CrSound:AVAudioPlayer!
+    var path2 = Bundle.main.bundleURL.appendingPathComponent("クイズ・正解.mp3")
+    var WrSound:AVAudioPlayer!
+    var path3 = Bundle.main.bundleURL.appendingPathComponent("blip03.mp3")
     
     var cards = [CardControl]()
     var cardSelected: CardControl?
     var canOpen = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
         
         var numArray = [Int]()
@@ -169,9 +177,24 @@ class ViewController: UIViewController, CardControlDelegate {
                 default:
                     print("Asrnum1エラー")
                 }
-                Opensound ()
+                //Opensound ()
                 if AsrNum1 == AsrNum{
                     print("成功！")
+                    CorrectSound()
+                    // アニメーションのviewを生成
+                    let animationView = LOTAnimationView(name: "quick_hart_select.json")
+                    // ViewControllerに配置
+                    animationView.frame = CGRect(x: 0, y: -120, width: view.bounds.width, height: view.bounds.height)
+                    //animationView.center = self.view.center
+                    animationView.loopAnimation = false
+                    animationView.contentMode = .scaleAspectFit
+                    self.view.addSubview(animationView)
+                    // アニメーションを開始
+                    animationView.play { finished in
+                        if finished {
+                            animationView.removeFromSuperview()
+                        }
+                    }
                     cardSelected?.DisableCard()
                     sender.DisableCard()
                     cardSelected = nil
@@ -184,6 +207,21 @@ class ViewController: UIViewController, CardControlDelegate {
                 }
                 else {
                     print("失敗．．")
+                    WrongSound()
+                    // アニメーションのviewを生成
+                    let animationView = LOTAnimationView(name: "x_pop.json")
+                    // ViewControllerに配置
+                    animationView.frame = CGRect(x: 0, y: -120, width: view.bounds.width, height: view.bounds.height)
+                    //animationView.center = self.view.center
+                    animationView.loopAnimation = false
+                    animationView.contentMode = .scaleAspectFit
+                    self.view.addSubview(animationView)
+                    // アニメーションを開始
+                    animationView.play { finished in
+                        if finished {
+                            animationView.removeFromSuperview()
+                        }
+                    }
                     self.canOpen = false
                     DispatchQueue.global(qos: .userInitiated).async {
                         sleep(1)
@@ -200,12 +238,33 @@ class ViewController: UIViewController, CardControlDelegate {
     }
     //opensound
     func Opensound () {
-        
         do{
-            try Sound = AVAudioPlayer(contentsOf: path)
-            Sound.play()
+            try OpSound = AVAudioPlayer(contentsOf: path)
+            print("鳴りました")
+            OpSound.play()
         }catch{
             print("エラーです")
         }
     }
+    //correctsound
+    func CorrectSound () {
+        do{
+            try CrSound = AVAudioPlayer(contentsOf: path2)
+            print("鳴りました")
+            CrSound.play()
+        }catch{
+            print("エラーです")
+        }
+    }
+    //wrongsound
+    func WrongSound () {
+        do{
+            try WrSound = AVAudioPlayer(contentsOf: path3)
+            print("鳴りました")
+            WrSound.play()
+        }catch{
+            print("エラーです")
+        }
+    }
+    
 }

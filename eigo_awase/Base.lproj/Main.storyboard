@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HiraginoKakuGothic.ttc">
+            <string>HiraginoSans-W6</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -72,42 +77,61 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SkyBg" translatesAutoresizingMaskIntoConstraints="NO" id="SxI-d6-wQ2">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hiragana_04_e.png" translatesAutoresizingMaskIntoConstraints="NO" id="Eec-Oo-sA2" customClass="SpringImageView" customModule="Spring">
-                                <rect key="frame" x="10" y="28" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hiragana_02_i.png" translatesAutoresizingMaskIntoConstraints="NO" id="ptD-Zt-0c1" customClass="SpringImageView" customModule="Spring">
-                                <rect key="frame" x="79" y="28" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hiragana_20_go.png" translatesAutoresizingMaskIntoConstraints="NO" id="P1I-Iy-fEw" customClass="SpringImageView" customModule="Spring">
-                                <rect key="frame" x="167" y="28" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hiragana_01_a.png" translatesAutoresizingMaskIntoConstraints="NO" id="TC7-mQ-Vh6" customClass="SpringImageView" customModule="Spring">
-                                <rect key="frame" x="116" y="96" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hiragana_24_se.png" translatesAutoresizingMaskIntoConstraints="NO" id="kik-5c-pqb" customClass="SpringImageView" customModule="Spring">
-                                <rect key="frame" x="279" y="101" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hiragana_74_wa.png" translatesAutoresizingMaskIntoConstraints="NO" id="Y2i-09-ozl" customClass="SpringImageView" customModule="Spring">
-                                <rect key="frame" x="198" y="96" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fE9-Hf-C1o">
-                                <rect key="frame" x="98" y="444" width="149" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73a-C8-umq">
+                                <rect key="frame" x="102" y="437" width="170" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="30"/>
+                                <state key="normal" title="のりもの">
+                                    <color key="titleColor" red="0.92062717009999995" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEo-5u-b6p">
+                                <rect key="frame" x="102" y="509" width="170" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="30"/>
+                                <state key="normal" title="どうぶつ">
+                                    <color key="titleColor" red="0.92062717009999995" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fE9-Hf-C1o">
+                                <rect key="frame" x="102" y="366" width="170" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="30"/>
                                 <state key="normal" title="くだもの">
-                                    <color key="titleColor" red="0.50196078430000002" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.92062717009999995" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="FruitsBtn:" destination="Uy6-KF-OfM" eventType="touchUpInside" id="ICR-p3-MO0"/>
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="iUW-aV-tWE"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hiragana_04_e.png" translatesAutoresizingMaskIntoConstraints="NO" id="Eec-Oo-sA2" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="13" y="49" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hiragana_02_i.png" translatesAutoresizingMaskIntoConstraints="NO" id="ptD-Zt-0c1" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="82" y="49" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hiragana_20_go.png" translatesAutoresizingMaskIntoConstraints="NO" id="P1I-Iy-fEw" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="170" y="49" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hiragana_01_a.png" translatesAutoresizingMaskIntoConstraints="NO" id="TC7-mQ-Vh6" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="119" y="117" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hiragana_24_se.png" translatesAutoresizingMaskIntoConstraints="NO" id="kik-5c-pqb" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="282" y="122" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hiragana_74_wa.png" translatesAutoresizingMaskIntoConstraints="NO" id="Y2i-09-ozl" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="201" y="117" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="k5J-vL-bz7" firstAttribute="trailing" secondItem="SxI-d6-wQ2" secondAttribute="trailing" id="6oq-91-XsR"/>

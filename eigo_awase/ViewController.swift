@@ -18,6 +18,7 @@ class ViewController: UIViewController, CardControlDelegate {
     var path2 = Bundle.main.bundleURL.appendingPathComponent("クイズ・正解.mp3")
     var WrSound:AVAudioPlayer!
     var path3 = Bundle.main.bundleURL.appendingPathComponent("blip03.mp3")
+    var Bgm:AVAudioPlayer!
     
     var cards = [CardControl]()
     var cardSelected: CardControl?
@@ -26,8 +27,8 @@ class ViewController: UIViewController, CardControlDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        // Do any additional setup after loading the view, typically from a nib.
+    //Bgm
+        BgmSound()
         
         var numArray = [Int]()
         for i in 0..<16 {
@@ -181,20 +182,7 @@ class ViewController: UIViewController, CardControlDelegate {
                 if AsrNum1 == AsrNum{
                     print("成功！")
                     CorrectSound()
-                    // アニメーションのviewを生成
-                    let animationView = LOTAnimationView(name: "quick_hart_select.json")
-                    // ViewControllerに配置
-                    animationView.frame = CGRect(x: 0, y: -120, width: view.bounds.width, height: view.bounds.height)
-                    //animationView.center = self.view.center
-                    animationView.loopAnimation = false
-                    animationView.contentMode = .scaleAspectFit
-                    self.view.addSubview(animationView)
-                    // アニメーションを開始
-                    animationView.play { finished in
-                        if finished {
-                            animationView.removeFromSuperview()
-                        }
-                    }
+                    CorrectAnimation()
                     cardSelected?.DisableCard()
                     sender.DisableCard()
                     cardSelected = nil
@@ -208,20 +196,7 @@ class ViewController: UIViewController, CardControlDelegate {
                 else {
                     print("失敗．．")
                     WrongSound()
-                    // アニメーションのviewを生成
-                    let animationView = LOTAnimationView(name: "x_pop.json")
-                    // ViewControllerに配置
-                    animationView.frame = CGRect(x: 0, y: -120, width: view.bounds.width, height: view.bounds.height)
-                    //animationView.center = self.view.center
-                    animationView.loopAnimation = false
-                    animationView.contentMode = .scaleAspectFit
-                    self.view.addSubview(animationView)
-                    // アニメーションを開始
-                    animationView.play { finished in
-                        if finished {
-                            animationView.removeFromSuperview()
-                        }
-                    }
+                    WrongAnimation()
                     self.canOpen = false
                     DispatchQueue.global(qos: .userInitiated).async {
                         sleep(1)
@@ -241,6 +216,7 @@ class ViewController: UIViewController, CardControlDelegate {
         do{
             try OpSound = AVAudioPlayer(contentsOf: path)
             print("鳴りました")
+            OpSound.volume = 5.0
             OpSound.play()
         }catch{
             print("エラーです")
@@ -251,6 +227,7 @@ class ViewController: UIViewController, CardControlDelegate {
         do{
             try CrSound = AVAudioPlayer(contentsOf: path2)
             print("鳴りました")
+            CrSound.volume = 2.0
             CrSound.play()
         }catch{
             print("エラーです")
@@ -261,9 +238,55 @@ class ViewController: UIViewController, CardControlDelegate {
         do{
             try WrSound = AVAudioPlayer(contentsOf: path3)
             print("鳴りました")
+            WrSound.volume = 3.0
             WrSound.play()
         }catch{
             print("エラーです")
+        }
+    }
+    //Bgm
+    func BgmSound () {
+        let path = Bundle.main.bundleURL.appendingPathComponent("tw080.mp3")
+        do{
+            try Bgm = AVAudioPlayer(contentsOf: path)
+            Bgm.numberOfLoops = -1
+            Bgm.volume = 0.2
+            Bgm.play()
+        }catch{
+            print("エラーです")
+        }
+    }
+    //Animation
+    func CorrectAnimation () {
+        // アニメーションのviewを生成
+        let animationView = LOTAnimationView(name: "quick_hart_select.json")
+        // ViewControllerに配置
+        animationView.frame = CGRect(x: 0, y: -120, width: view.bounds.width, height: view.bounds.height)
+        //animationView.center = self.view.center
+        animationView.loopAnimation = false
+        animationView.contentMode = .scaleAspectFit
+        self.view.addSubview(animationView)
+        // アニメーションを開始
+        animationView.play { finished in
+            if finished {
+                animationView.removeFromSuperview()
+            }
+        }
+    }
+    func WrongAnimation () {
+        // アニメーションのviewを生成
+        let animationView = LOTAnimationView(name: "x_pop.json")
+        // ViewControllerに配置
+        animationView.frame = CGRect(x: 0, y: -120, width: view.bounds.width, height: view.bounds.height)
+        animationView.loopAnimation = false
+        animationView.contentMode = .scaleAspectFit
+        animationView.animationSpeed = 2.0
+        self.view.addSubview(animationView)
+        // アニメーションを開始
+        animationView.play { finished in
+            if finished {
+                animationView.removeFromSuperview()
+            }
         }
     }
     

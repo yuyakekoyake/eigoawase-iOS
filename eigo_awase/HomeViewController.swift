@@ -30,21 +30,43 @@ class HomeViewController: UIViewController {
         
     //BGMスタート
         BgmSound()
-//        let bg = UIImageView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height))
-//        bg.image = UIImage(named: "SkyBg")
-//        bg.layer.zPosition = -1
-//        self.view.addSubview(bg)
-        // アニメーションのviewを生成
-        let animationView = LOTAnimationView(name: "Watermelon.json")
-        // ViewControllerに配置
-        animationView.frame = CGRect(x: 0, y: 0, width: view.bounds.width/2, height: view.bounds.height/2)
-        //animationView.center = self.view.center
-        animationView.loopAnimation = true
-        animationView.contentMode = .scaleAspectFit
-        self.view.addSubview(animationView)
+
+    // アニメーションのviewを生成
+        let MelonAni = LOTAnimationView(name: "Watermelon.json")
+        let HeliAni = LOTAnimationView(name: "helicopter.json")
+        let CloudAni = LOTAnimationView(name: "cloud.json")
+        let StarAni = LOTAnimationView(name: "star.json")
+        let FlightAni = LOTAnimationView(name: "flight_icon_interaction.json")
+        //配置とサイズ
+        MelonAni.frame = CGRect(x: 0, y: 0, width: view.bounds.width/2.5, height: view.bounds.height/2)
+        HeliAni.frame = CGRect(x: view.bounds.width-120, y: 0, width: view.bounds.width/2.8, height: view.bounds.height/5)
+        CloudAni.frame = CGRect(x: view.bounds.width-100, y: 170, width: view.bounds.width/4, height: view.bounds.height/7)
+        StarAni.frame = CGRect(x: view.bounds.width-100, y: view.bounds.height-100, width: view.bounds.width/4, height: view.bounds.height/7)
+        FlightAni.frame = CGRect(x: 0, y: view.bounds.height-60, width: view.bounds.width, height: view.bounds.height/20)
+        MelonAni.contentMode = .scaleAspectFit
+        HeliAni.contentMode = .scaleAspectFit
+        CloudAni.contentMode = .scaleAspectFit
+        StarAni.contentMode = .scaleAspectFit
+        FlightAni.contentMode = .scaleAspectFill
+        //動作
+        MelonAni.loopAnimation = true
+        HeliAni.loopAnimation = true
+        CloudAni.loopAnimation = true
+        StarAni.loopAnimation = true
+        FlightAni.loopAnimation = true
+        FlightAni.animationSpeed = 0.7
+        //Add view
+        self.view.addSubview(MelonAni)
+        self.view.addSubview(HeliAni)
+        self.view.addSubview(CloudAni)
+        self.view.addSubview(StarAni)
+        self.view.addSubview(FlightAni)
         // アニメーションを開始
-        animationView.play()
-        // Do any additional setup after loading the view.
+        MelonAni.play()
+        HeliAni.play()
+        CloudAni.play()
+        StarAni.play()
+        FlightAni.play()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             self.TitleAnimation()

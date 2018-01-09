@@ -63,6 +63,11 @@
 		83EE5F9020012D37009E3521 /* hiragana_74_wa.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F8E20012D37009E3521 /* hiragana_74_wa.png */; };
 		83EE5F92200344AF009E3521 /* retrogamecenter2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F91200344AF009E3521 /* retrogamecenter2.mp3 */; };
 		83EE5F9420034C6A009E3521 /* save-02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F9320034C6A009E3521 /* save-02.wav */; };
+		83EE5F9820035782009E3521 /* flight_icon_interaction.json in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F9720035782009E3521 /* flight_icon_interaction.json */; };
+		83EE5F9E200361D8009E3521 /* cloud.json in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F9D200361D8009E3521 /* cloud.json */; };
+		83EE5FA02003665D009E3521 /* star.json in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F9F2003665C009E3521 /* star.json */; };
+		83EE5FA22003697A009E3521 /* helicopter.json in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5FA12003697A009E3521 /* helicopter.json */; };
+		83EE5FA420037E4D009E3521 /* tw080.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5FA320037E4D009E3521 /* tw080.mp3 */; };
 		91EA98DA2D13B22E58E941B8 /* Pods_eigo_awaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E98BC8E84B3C6C9BAB67C40D /* Pods_eigo_awaseUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -149,6 +154,11 @@
 		83EE5F8E20012D37009E3521 /* hiragana_74_wa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hiragana_74_wa.png; sourceTree = "<group>"; };
 		83EE5F91200344AF009E3521 /* retrogamecenter2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = retrogamecenter2.mp3; sourceTree = "<group>"; };
 		83EE5F9320034C6A009E3521 /* save-02.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "save-02.wav"; sourceTree = "<group>"; };
+		83EE5F9720035782009E3521 /* flight_icon_interaction.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = flight_icon_interaction.json; sourceTree = "<group>"; };
+		83EE5F9D200361D8009E3521 /* cloud.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cloud.json; sourceTree = "<group>"; };
+		83EE5F9F2003665C009E3521 /* star.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = star.json; sourceTree = "<group>"; };
+		83EE5FA12003697A009E3521 /* helicopter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = helicopter.json; path = "../../../../JSONファイル/helicopter.json"; sourceTree = "<group>"; };
+		83EE5FA320037E4D009E3521 /* tw080.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tw080.mp3; sourceTree = "<group>"; };
 		937C43CB585A321AA8D40C05 /* Pods-eigo_awase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eigo_awase.release.xcconfig"; path = "Pods/Target Support Files/Pods-eigo_awase/Pods-eigo_awase.release.xcconfig"; sourceTree = "<group>"; };
 		BEB160E3C5BDA110E1070F4F /* Pods-eigo_awaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eigo_awaseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-eigo_awaseTests/Pods-eigo_awaseTests.release.xcconfig"; sourceTree = "<group>"; };
 		D70770D88E56C2B8564A5274 /* Pods_eigo_awaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eigo_awaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,6 +222,8 @@
 		8364F34A1FE2C9D400388509 /* sounds */ = {
 			isa = PBXGroup;
 			children = (
+				83EE5F91200344AF009E3521 /* retrogamecenter2.mp3 */,
+				83EE5F9320034C6A009E3521 /* save-02.wav */,
 				8364F3551FE2C9F300388509 /* airplane.mp3 */,
 				8364F3521FE2C9F300388509 /* apple.mp3 */,
 				8364F34C1FE2C9F300388509 /* banana.mp3 */,
@@ -296,8 +308,11 @@
 		83EE5F721FFFCDC5009E3521 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				83EE5F9320034C6A009E3521 /* save-02.wav */,
-				83EE5F91200344AF009E3521 /* retrogamecenter2.mp3 */,
+				83EE5FA320037E4D009E3521 /* tw080.mp3 */,
+				83EE5FA12003697A009E3521 /* helicopter.json */,
+				83EE5F9F2003665C009E3521 /* star.json */,
+				83EE5F9D200361D8009E3521 /* cloud.json */,
+				83EE5F9720035782009E3521 /* flight_icon_interaction.json */,
 				83EE5F7B1FFFD6B0009E3521 /* Watermelon.json */,
 				83EE5F731FFFCDEA009E3521 /* x_pop.json */,
 				83EE5F761FFFCF11009E3521 /* like.json */,
@@ -453,12 +468,14 @@
 				83EE5F84200120C2009E3521 /* 空.png in Resources */,
 				837097401FDFEC1E004EC266 /* Assets.xcassets in Resources */,
 				83EE5F7A1FFFCF11009E3521 /* quick_hart_select.json in Resources */,
+				83EE5F9E200361D8009E3521 /* cloud.json in Resources */,
 				8364F3601FE2C9F400388509 /* bicycle.mp3 in Resources */,
 				83EE5F8920012D2D009E3521 /* hiragana_01_a.png in Resources */,
 				8364F3631FE2C9F400388509 /* car.mp3 in Resources */,
 				8364F33B1FE0432E00388509 /* apple.jpg in Resources */,
 				8364F35E1FE2C9F400388509 /* train.mp3 in Resources */,
 				83EE5F7C1FFFD6B0009E3521 /* Watermelon.json in Resources */,
+				83EE5FA420037E4D009E3521 /* tw080.mp3 in Resources */,
 				8364F3611FE2C9F400388509 /* fire truck.mp3 in Resources */,
 				83EE5F8C20012D2D009E3521 /* hiragana_02_i.png in Resources */,
 				8364F3671FE2C9F400388509 /* bus.mp3 in Resources */,
@@ -474,6 +491,8 @@
 				8364F3AE1FE574B800388509 /* blip03.mp3 in Resources */,
 				8364F35F1FE2C9F400388509 /* orange.mp3 in Resources */,
 				8364F3391FE0201900388509 /* washi2.jpg in Resources */,
+				83EE5F9820035782009E3521 /* flight_icon_interaction.json in Resources */,
+				83EE5FA02003665D009E3521 /* star.json in Resources */,
 				8364F33D1FE0447100388509 /* peach.jpg in Resources */,
 				8364F3641FE2C9F400388509 /* melon.mp3 in Resources */,
 				8364F3491FE044E000388509 /* melon.jpg in Resources */,
@@ -492,6 +511,7 @@
 				8364F3471FE044D000388509 /* lemon.jpg in Resources */,
 				8364F35B1FE2C9F400388509 /* motorcycle.mp3 in Resources */,
 				8364F32F1FE0163100388509 /* saru_original_透過.png in Resources */,
+				83EE5FA22003697A009E3521 /* helicopter.json in Resources */,
 				8370973E1FDFEC1E004EC266 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

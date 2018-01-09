@@ -22,9 +22,12 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.7914239764213562" green="0.90824055671691895" blue="0.99217194318771362" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="Uy6-KF-OfM" kind="presentation" identifier="ToHome" id="Uyj-BS-X4H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -166,6 +169,7 @@
         <image name="ロゴ_背景透明.png" width="433" height="76"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Uyj-BS-X4H"/>
         <segue reference="iUW-aV-tWE"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -178,7 +178,43 @@ class ViewController: UIViewController, CardControlDelegate {
                 default:
                     print("Asrnum1エラー")
                 }
-                //Opensound ()
+                switch number {
+                case 0:
+                    path = Bundle.main.bundleURL.appendingPathComponent("apple.mp3")
+                case 1:
+                    path = Bundle.main.bundleURL.appendingPathComponent("orange.mp3")
+                case 2:
+                    path = Bundle.main.bundleURL.appendingPathComponent("cherry.mp3")
+                case 3:
+                    path = Bundle.main.bundleURL.appendingPathComponent("banana.mp3")
+                case 4:
+                    path = Bundle.main.bundleURL.appendingPathComponent("grape.mp3")
+                case 5:
+                    path = Bundle.main.bundleURL.appendingPathComponent("lemon.mp3")
+                case 6:
+                    path = Bundle.main.bundleURL.appendingPathComponent("peach.mp3")
+                case 7:
+                    path = Bundle.main.bundleURL.appendingPathComponent("melon.mp3")
+                case 8:
+                    path = Bundle.main.bundleURL.appendingPathComponent("")
+                case 9:
+                    path = Bundle.main.bundleURL.appendingPathComponent("")
+                case 10:
+                    path = Bundle.main.bundleURL.appendingPathComponent("")
+                case 11:
+                    path = Bundle.main.bundleURL.appendingPathComponent("")
+                case 12:
+                    path = Bundle.main.bundleURL.appendingPathComponent("")
+                case 13:
+                    path = Bundle.main.bundleURL.appendingPathComponent("")
+                case 14:
+                    path = Bundle.main.bundleURL.appendingPathComponent("")
+                case 15:
+                    path = Bundle.main.bundleURL.appendingPathComponent("")
+                default:
+                    print("Asrnum1エラー")
+                }
+                Opensound ()
                 if AsrNum1 == AsrNum{
                     print("成功！")
                     CorrectSound()
@@ -192,6 +228,12 @@ class ViewController: UIViewController, CardControlDelegate {
                         }
                     }
                     print("ALL CLEAR!!")
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                        self.AllClearAnimation()
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                            self.performSegue(withIdentifier: "ToHome", sender: nil)
+                        }
+                    }
                 }
                 else {
                     print("失敗．．")
@@ -288,6 +330,19 @@ class ViewController: UIViewController, CardControlDelegate {
                 animationView.removeFromSuperview()
             }
         }
+    }
+    
+    func AllClearAnimation () {
+        // アニメーションのviewを生成
+        let animationView = LOTAnimationView(name: "trophy.json")
+        // ViewControllerに配置
+        animationView.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height)
+        animationView.loopAnimation = false
+        animationView.contentMode = .scaleAspectFit
+        animationView.animationSpeed = 0.7
+        self.view.addSubview(animationView)
+        // アニメーションを開始
+        animationView.play()
     }
     
 }

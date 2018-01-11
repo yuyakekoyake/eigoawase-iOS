@@ -24,11 +24,29 @@ class ViewController: UIViewController, CardControlDelegate {
     var cardSelected: CardControl?
     var canOpen = true
     
+    @IBOutlet weak var CountLabel: UILabel!
+    @IBOutlet weak var FinishBtn: UIButton!
+    @IBOutlet weak var WordLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
     //Bgm
         BgmSound()
+        
+    //countlabel
+//        CountLabel.layer.shadowOpacity = 2.0
+//        CountLabel.layer.shadowOffset = CGSize(width: 2,height: 2)
+//        CountLabel.layer.cornerRadius = 5
+//        CountLabel.layer.masksToBounds = true
+    
+    //FinishBtn
+        self.view.bringSubview(toFront: FinishBtn)
+    //WordLabel
+        WordLabel.layer.cornerRadius = 5
+        WordLabel.layer.shadowOpacity = 2.0
+        WordLabel.layer.shadowOffset = CGSize(width: 2,height: 2)
+        WordLabel.layer.masksToBounds = true
         
         var numArray = [Int]()
         for i in 0..<16 {
@@ -39,7 +57,7 @@ class ViewController: UIViewController, CardControlDelegate {
         
         for i in 0..<16 {
             let idx = Int(arc4random_uniform(UInt32(numArray.count)))
-            let card = CardControl(number: numArray[idx], frame: CGRect(x: 30 + (CardControl.sizeCard + 10) * (i % 4), y: 30 + (CardControl.sizeCard + 10) * (i / 4), width: CardControl.sizeCard, height: CardControl.sizeCard))
+            let card = CardControl(number: numArray[idx], frame: CGRect(x: 30 + (CardControl.sizeCard + 10) * (i % 4), y: 100 + (CardControl.sizeCard + 10) * (i / 4), width: CardControl.sizeCard, height: CardControl.sizeCard))
             card.delegate = self
             view.addSubview(card)
             cards.append(card)
@@ -230,8 +248,9 @@ class ViewController: UIViewController, CardControlDelegate {
                     print("ALL CLEAR!!")
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                         self.AllClearAnimation()
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
                             self.performSegue(withIdentifier: "ToHome", sender: nil)
+    
                         }
                     }
                 }
@@ -343,6 +362,11 @@ class ViewController: UIViewController, CardControlDelegate {
         self.view.addSubview(animationView)
         // アニメーションを開始
         animationView.play()
+    }
+    //画面から非表示になる瞬間
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        Bgm.stop()
     }
     
 }

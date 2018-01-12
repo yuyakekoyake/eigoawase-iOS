@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 import Lottie
+import GoogleMobileAds
 
 class ViewController: UIViewController, CardControlDelegate {
 
@@ -24,22 +25,33 @@ class ViewController: UIViewController, CardControlDelegate {
     var cardSelected: CardControl?
     var canOpen = true
     
+    var MondaiCount = 8
+    
     @IBOutlet weak var CountLabel: UILabel!
     @IBOutlet weak var FinishBtn: UIButton!
     @IBOutlet weak var WordLabel: UILabel!
     
+    @IBOutlet weak var bannerView: GADBannerView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
     //Bgm
         BgmSound()
         
+    //banner adMob
+        print("Google Mobile Ads SDK version: " + GADRequest.sdkVersion())
+        //testID"ca-app-pub-3940256099942544/2934735716"
+        //本番ID"ca-app-pub-2571146153853390/5479238805"
+        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+        
     //countlabel
 //        CountLabel.layer.shadowOpacity = 2.0
 //        CountLabel.layer.shadowOffset = CGSize(width: 2,height: 2)
 //        CountLabel.layer.cornerRadius = 5
 //        CountLabel.layer.masksToBounds = true
-    
+        CountLabel.text = "のこり：\(MondaiCount)あわせ"
     //FinishBtn
         self.view.bringSubview(toFront: FinishBtn)
     //WordLabel
@@ -47,7 +59,7 @@ class ViewController: UIViewController, CardControlDelegate {
         WordLabel.layer.shadowOpacity = 2.0
         WordLabel.layer.shadowOffset = CGSize(width: 2,height: 2)
         WordLabel.layer.masksToBounds = true
-        
+    
         var numArray = [Int]()
         for i in 0..<16 {
             numArray.append(i)
@@ -236,6 +248,8 @@ class ViewController: UIViewController, CardControlDelegate {
                 if AsrNum1 == AsrNum{
                     print("成功！")
                     CorrectSound()
+                    MondaiCount -= 1
+                    CountLabel.text = "のこり：\(MondaiCount)あわせ"
                     CorrectAnimation()
                     cardSelected?.DisableCard()
                     sender.DisableCard()

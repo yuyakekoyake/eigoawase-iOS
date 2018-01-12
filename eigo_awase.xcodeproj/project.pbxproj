@@ -48,6 +48,7 @@
 		8370974E1FDFEC1E004EC266 /* eigo_awaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8370974D1FDFEC1E004EC266 /* eigo_awaseTests.swift */; };
 		837097591FDFEC1E004EC266 /* eigo_awaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837097581FDFEC1E004EC266 /* eigo_awaseUITests.swift */; };
 		837097671FDFEC66004EC266 /* CardControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837097661FDFEC66004EC266 /* CardControl.swift */; };
+		83BA61212007A0A0004417DE /* helicopter.json in Resources */ = {isa = PBXBuildFile; fileRef = 83BA61202007A0A0004417DE /* helicopter.json */; };
 		83EE5F741FFFCDEA009E3521 /* x_pop.json in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F731FFFCDEA009E3521 /* x_pop.json */; };
 		83EE5F781FFFCF11009E3521 /* trophy.json in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F751FFFCF10009E3521 /* trophy.json */; };
 		83EE5F791FFFCF11009E3521 /* like.json in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F761FFFCF11009E3521 /* like.json */; };
@@ -66,7 +67,6 @@
 		83EE5F9820035782009E3521 /* flight_icon_interaction.json in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F9720035782009E3521 /* flight_icon_interaction.json */; };
 		83EE5F9E200361D8009E3521 /* cloud.json in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F9D200361D8009E3521 /* cloud.json */; };
 		83EE5FA02003665D009E3521 /* star.json in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F9F2003665C009E3521 /* star.json */; };
-		83EE5FA22003697A009E3521 /* helicopter.json in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5FA12003697A009E3521 /* helicopter.json */; };
 		83EE5FA420037E4D009E3521 /* tw080.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5FA320037E4D009E3521 /* tw080.mp3 */; };
 		91EA98DA2D13B22E58E941B8 /* Pods_eigo_awaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E98BC8E84B3C6C9BAB67C40D /* Pods_eigo_awaseUITests.framework */; };
 /* End PBXBuildFile section */
@@ -139,6 +139,7 @@
 		837097581FDFEC1E004EC266 /* eigo_awaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eigo_awaseUITests.swift; sourceTree = "<group>"; };
 		8370975A1FDFEC1E004EC266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		837097661FDFEC66004EC266 /* CardControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardControl.swift; sourceTree = "<group>"; };
+		83BA61202007A0A0004417DE /* helicopter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = helicopter.json; sourceTree = "<group>"; };
 		83EE5F731FFFCDEA009E3521 /* x_pop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = x_pop.json; sourceTree = "<group>"; };
 		83EE5F751FFFCF10009E3521 /* trophy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trophy.json; sourceTree = "<group>"; };
 		83EE5F761FFFCF11009E3521 /* like.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = like.json; sourceTree = "<group>"; };
@@ -157,7 +158,6 @@
 		83EE5F9720035782009E3521 /* flight_icon_interaction.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = flight_icon_interaction.json; sourceTree = "<group>"; };
 		83EE5F9D200361D8009E3521 /* cloud.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cloud.json; sourceTree = "<group>"; };
 		83EE5F9F2003665C009E3521 /* star.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = star.json; sourceTree = "<group>"; };
-		83EE5FA12003697A009E3521 /* helicopter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = helicopter.json; path = "../../../../JSONファイル/helicopter.json"; sourceTree = "<group>"; };
 		83EE5FA320037E4D009E3521 /* tw080.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tw080.mp3; sourceTree = "<group>"; };
 		937C43CB585A321AA8D40C05 /* Pods-eigo_awase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eigo_awase.release.xcconfig"; path = "Pods/Target Support Files/Pods-eigo_awase/Pods-eigo_awase.release.xcconfig"; sourceTree = "<group>"; };
 		BEB160E3C5BDA110E1070F4F /* Pods-eigo_awaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eigo_awaseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-eigo_awaseTests/Pods-eigo_awaseTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -309,7 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				83EE5FA320037E4D009E3521 /* tw080.mp3 */,
-				83EE5FA12003697A009E3521 /* helicopter.json */,
+				83BA61202007A0A0004417DE /* helicopter.json */,
 				83EE5F9F2003665C009E3521 /* star.json */,
 				83EE5F9D200361D8009E3521 /* cloud.json */,
 				83EE5F9720035782009E3521 /* flight_icon_interaction.json */,
@@ -467,6 +467,7 @@
 				83EE5F791FFFCF11009E3521 /* like.json in Resources */,
 				83EE5F84200120C2009E3521 /* 空.png in Resources */,
 				837097401FDFEC1E004EC266 /* Assets.xcassets in Resources */,
+				83BA61212007A0A0004417DE /* helicopter.json in Resources */,
 				83EE5F7A1FFFCF11009E3521 /* quick_hart_select.json in Resources */,
 				83EE5F9E200361D8009E3521 /* cloud.json in Resources */,
 				8364F3601FE2C9F400388509 /* bicycle.mp3 in Resources */,
@@ -511,7 +512,6 @@
 				8364F3471FE044D000388509 /* lemon.jpg in Resources */,
 				8364F35B1FE2C9F400388509 /* motorcycle.mp3 in Resources */,
 				8364F32F1FE0163100388509 /* saru_original_透過.png in Resources */,
-				83EE5FA22003697A009E3521 /* helicopter.json in Resources */,
 				8370973E1FDFEC1E004EC266 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

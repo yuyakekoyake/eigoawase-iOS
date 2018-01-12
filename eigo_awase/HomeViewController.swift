@@ -10,6 +10,7 @@ import UIKit
 import Lottie
 import Spring
 import AVFoundation
+import GoogleMobileAds
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var TitleE: SpringImageView!
@@ -24,6 +25,19 @@ class HomeViewController: UIViewController {
     var StartEffect:AVAudioPlayer!
     var Bgm:AVAudioPlayer!
     
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
+    //interstitial広告用
+    // Interstitial AdMob ID を入れてください
+    let AdMobID = "ca-app-pub-2571146153853390/9841155648"
+    // Simulator ID
+    let SIMULSTOR_ID = kGADSimulatorID
+    // 実機テスト用 ID を入れる
+    let DEVICE_TEST_ID = "aaaaaaaaaaaaaaaaa0123456789"
+    let DeviceTest:Bool = false
+    let SimulatorTest:Bool = true
+    // delay sec
+    let delayTime = 3.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +45,31 @@ class HomeViewController: UIViewController {
     //BGMスタート
         BgmSound()
 
+        //interstitial広告
+        let interstitial = GADInterstitial(adUnitID: AdMobID)
+        //interstitial.delegate = self
+        let request = GADRequest()
+        if(DeviceTest){
+            request.testDevices = [DEVICE_TEST_ID]
+        }
+        else if SimulatorTest {
+            request.testDevices = [SIMULSTOR_ID]
+            print("AdMobシミュレーター")
+        }
+        else{
+            // AdMob
+            print("AdMob本番")
+        }
+        interstitial.load(request);
+        if appDelegate.InterstitialFlug == false {
+            appDelegate.InterstitialFlug = true
+        }else{
+            // 3秒間待たせる
+            DispatchQueue.main.asyncAfter(deadline: .now() + delayTime) {
+                self.showAdMob(interstitial: interstitial)
+            }
+        }
+        
     // アニメーションのviewを生成
         let MelonAni = LOTAnimationView(name: "Watermelon.json")
         let HeliAni = LOTAnimationView(name: "helicopter.json")
@@ -132,6 +171,14 @@ class HomeViewController: UIViewController {
             StartEffect.play()
         }catch{
             print("エラーです")
+        }
+    }
+    
+    //インタースティシャル用
+    func showAdMob(interstitial: GADInterstitial){
+        if (interstitial.isReady)
+        {
+            interstitial.present(fromRootViewController: self)
         }
     }
     

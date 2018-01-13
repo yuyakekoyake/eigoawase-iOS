@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qWr-3x-fF5">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,11 +16,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="eigo_awase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRx-NF-qHs">
-                                <rect key="frame" x="90" y="30" width="195" height="53"/>
+                                <rect key="frame" x="90" y="30" width="420" height="53"/>
                                 <color key="backgroundColor" red="0.8585694432258606" green="0.64643502235412598" blue="0.39993751049041748" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="mhn-Ld-km1"/>
@@ -73,7 +69,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3C3-Lt-tRc" customClass="GADBannerView">
-                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="550" width="600" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="6s2-wl-ncq"/>
@@ -96,8 +92,8 @@
                     <connections>
                         <outlet property="CountLabel" destination="BRx-NF-qHs" id="7Vz-sp-sfS"/>
                         <outlet property="FinishBtn" destination="RyT-9h-kek" id="R8W-CY-yfd"/>
-                        <outlet property="WordLabel" destination="DYq-0x-9Gj" id="leW-0c-du9"/>
                         <outlet property="bannerView" destination="3C3-Lt-tRc" id="W1V-bg-k1u"/>
+                        <outlet property="elapsedTime" destination="DYq-0x-9Gj" id="leW-0c-du9"/>
                         <segue destination="Uy6-KF-OfM" kind="presentation" identifier="ToHome" id="Uyj-BS-X4H"/>
                     </connections>
                 </viewController>
@@ -114,11 +110,11 @@
                         <viewControllerLayoutGuide type="bottom" id="gQX-vI-Vki"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GyD-QJ-EiS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ロゴ_背景透明.png" translatesAutoresizingMaskIntoConstraints="NO" id="tMZ-dc-jkE">
-                                <rect key="frame" x="56.5" y="295.5" width="262" height="46"/>
+                                <rect key="frame" x="169" y="262" width="262" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="262" id="0TP-rA-sMP"/>
                                     <constraint firstAttribute="height" constant="46" id="xDe-1x-qHm"/>
@@ -146,11 +142,11 @@
             <objects>
                 <viewController id="Uy6-KF-OfM" customClass="HomeViewController" customModule="eigo_awase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qkg-Wm-sWY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SkyBg" translatesAutoresizingMaskIntoConstraints="NO" id="SxI-d6-wQ2">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73a-C8-umq">
                                 <rect key="frame" x="102" y="437" width="170" height="50"/>

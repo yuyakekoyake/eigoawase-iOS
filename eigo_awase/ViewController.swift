@@ -10,6 +10,7 @@ import UIKit
 import AVFoundation
 import Lottie
 import GoogleMobileAds
+import RealmSwift
 
 class ViewController: UIViewController, CardControlDelegate {
 
@@ -27,14 +28,20 @@ class ViewController: UIViewController, CardControlDelegate {
     
     var MondaiCount = 8
     
+    //stopwatch
+    var timer: Timer = Timer()
+    var count: Int = 0
+    
     @IBOutlet weak var CountLabel: UILabel!
     @IBOutlet weak var FinishBtn: UIButton!
-    @IBOutlet weak var WordLabel: UILabel!
+    @IBOutlet weak var elapsedTime: UILabel!
     
     @IBOutlet weak var bannerView: GADBannerView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    //realmのパス
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
     //Bgm
         BgmSound()
         
@@ -54,12 +61,13 @@ class ViewController: UIViewController, CardControlDelegate {
         CountLabel.text = "のこり：\(MondaiCount)あわせ"
     //FinishBtn
         self.view.bringSubview(toFront: FinishBtn)
-    //WordLabel
-        WordLabel.layer.cornerRadius = 5
-        WordLabel.layer.shadowOpacity = 2.0
-        WordLabel.layer.shadowOffset = CGSize(width: 2,height: 2)
-        WordLabel.layer.masksToBounds = true
-    
+    //stopwatchi
+        elapsedTime.layer.cornerRadius = 5
+        elapsedTime.layer.shadowOpacity = 2.0
+        elapsedTime.layer.shadowOffset = CGSize(width: 2,height: 2)
+        elapsedTime.layer.masksToBounds = true
+    //timerStart
+        startTimer()
         var numArray = [Int]()
         for i in 0..<16 {
             numArray.append(i)
@@ -260,6 +268,8 @@ class ViewController: UIViewController, CardControlDelegate {
                         }
                     }
                     print("ALL CLEAR!!")
+                    stopTimer()
+                    SaveRanking()
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                         self.AllClearAnimation()
                         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
@@ -377,6 +387,57 @@ class ViewController: UIViewController, CardControlDelegate {
         // アニメーションを開始
         animationView.play()
     }
+    
+    func startTimer() {
+        
+        //タイマーが動いている状態で押されたら処理しない
+        if timer.isValid == true {
+            return
+        }
+        
+        //タイマーを生成
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateElapsedTime), userInfo: nil, repeats: true)
+    }
+    
+    //
+    //  Stopボタンの処理
+    //
+    func stopTimer() {
+        
+        //タイマーを停止
+        timer.invalidate()
+    }
+    
+    //
+    //  Resetボタンの処理
+    //
+    func resetTimer() {
+        timer.invalidate()
+        count = 0
+        elapsedTime.text = "00:00"
+    }
+    
+    //
+    //  一定間隔で実行される処理
+    //
+    @objc func updateElapsedTime() {
+        count += 1
+        let min: Int = count / 60
+        let sec: Int = count % 60
+        elapsedTime.text = String(format:"%02d:%02d",min, sec)
+    }
+
+    //Realmへ保存
+    func SaveRanking () {
+        let realm = try! Realm()
+        let RankigData = RankingRealm()
+        RankigData.Category = "くだもの"
+        RankigData.Time = count
+        try! realm.write {
+            realm.add(RankigData)
+        }
+    }
+    
     //画面から非表示になる瞬間
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)

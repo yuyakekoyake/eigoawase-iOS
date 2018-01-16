@@ -56,6 +56,12 @@
 		83ECAFA9200DC44600317D52 /* KodomoRounded-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83ECAFA8200DC43D00317D52 /* KodomoRounded-Light.otf */; };
 		83ECAFAA200DC44600317D52 /* KodomoRounded.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83ECAFA7200DC42D00317D52 /* KodomoRounded.otf */; };
 		83ECAFAC200DDE7A00317D52 /* famipop3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83ECAFAB200DDE7A00317D52 /* famipop3.mp3 */; };
+		83ECAFAE200DE62A00317D52 /* cloud_disconnection.json in Resources */ = {isa = PBXBuildFile; fileRef = 83ECAFAD200DE62A00317D52 /* cloud_disconnection.json */; };
+		83ECAFB0200DE6FC00317D52 /* sun_burst_weather_icon.json in Resources */ = {isa = PBXBuildFile; fileRef = 83ECAFAF200DE6FC00317D52 /* sun_burst_weather_icon.json */; };
+		83ECAFB2200DEAB200317D52 /* Whale.json in Resources */ = {isa = PBXBuildFile; fileRef = 83ECAFB1200DEAB200317D52 /* Whale.json */; };
+		83ECAFB4200DEC9000317D52 /* airplane.json in Resources */ = {isa = PBXBuildFile; fileRef = 83ECAFB3200DEC9000317D52 /* airplane.json */; };
+		83ECAFB6200DEE6800317D52 /* star2.json in Resources */ = {isa = PBXBuildFile; fileRef = 83ECAFB5200DEE6800317D52 /* star2.json */; };
+		83ECAFB8200DEF6C00317D52 /* like_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 83ECAFB7200DEF6C00317D52 /* like_animation.json */; };
 		83EE5F741FFFCDEA009E3521 /* x_pop.json in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F731FFFCDEA009E3521 /* x_pop.json */; };
 		83EE5F781FFFCF11009E3521 /* trophy.json in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F751FFFCF10009E3521 /* trophy.json */; };
 		83EE5F791FFFCF11009E3521 /* like.json in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F761FFFCF11009E3521 /* like.json */; };
@@ -154,6 +160,12 @@
 		83ECAFA7200DC42D00317D52 /* KodomoRounded.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KodomoRounded.otf; sourceTree = "<group>"; };
 		83ECAFA8200DC43D00317D52 /* KodomoRounded-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KodomoRounded-Light.otf"; sourceTree = "<group>"; };
 		83ECAFAB200DDE7A00317D52 /* famipop3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = famipop3.mp3; sourceTree = "<group>"; };
+		83ECAFAD200DE62A00317D52 /* cloud_disconnection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cloud_disconnection.json; sourceTree = "<group>"; };
+		83ECAFAF200DE6FC00317D52 /* sun_burst_weather_icon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sun_burst_weather_icon.json; sourceTree = "<group>"; };
+		83ECAFB1200DEAB200317D52 /* Whale.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Whale.json; sourceTree = "<group>"; };
+		83ECAFB3200DEC9000317D52 /* airplane.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airplane.json; sourceTree = "<group>"; };
+		83ECAFB5200DEE6800317D52 /* star2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = star2.json; path = "../../../../JSONファイル/star2.json"; sourceTree = "<group>"; };
+		83ECAFB7200DEF6C00317D52 /* like_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = like_animation.json; sourceTree = "<group>"; };
 		83EE5F731FFFCDEA009E3521 /* x_pop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = x_pop.json; sourceTree = "<group>"; };
 		83EE5F751FFFCF10009E3521 /* trophy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trophy.json; sourceTree = "<group>"; };
 		83EE5F761FFFCF11009E3521 /* like.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = like.json; sourceTree = "<group>"; };
@@ -236,6 +248,7 @@
 		8364F34A1FE2C9D400388509 /* sounds */ = {
 			isa = PBXGroup;
 			children = (
+				83EE5FA320037E4D009E3521 /* tw080.mp3 */,
 				83ECAFAB200DDE7A00317D52 /* famipop3.mp3 */,
 				83EE5F91200344AF009E3521 /* retrogamecenter2.mp3 */,
 				83EE5F9320034C6A009E3521 /* save-02.wav */,
@@ -337,7 +350,12 @@
 		83EE5F721FFFCDC5009E3521 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				83EE5FA320037E4D009E3521 /* tw080.mp3 */,
+				83ECAFB7200DEF6C00317D52 /* like_animation.json */,
+				83ECAFB5200DEE6800317D52 /* star2.json */,
+				83ECAFB3200DEC9000317D52 /* airplane.json */,
+				83ECAFB1200DEAB200317D52 /* Whale.json */,
+				83ECAFAF200DE6FC00317D52 /* sun_burst_weather_icon.json */,
+				83ECAFAD200DE62A00317D52 /* cloud_disconnection.json */,
 				83BA61202007A0A0004417DE /* helicopter.json */,
 				83EE5F9F2003665C009E3521 /* star.json */,
 				83EE5F9D200361D8009E3521 /* cloud.json */,
@@ -493,6 +511,7 @@
 				83ECAFA9200DC44600317D52 /* KodomoRounded-Light.otf in Resources */,
 				83ECAFAA200DC44600317D52 /* KodomoRounded.otf in Resources */,
 				83ECAFA6200DC34D00317D52 /* hunwariusagi.ttf in Resources */,
+				83ECAFB2200DEAB200317D52 /* Whale.json in Resources */,
 				83ECAFA4200DC27000317D52 /* KTEGAKI.ttf in Resources */,
 				8364F3681FE2C9F400388509 /* peach.mp3 in Resources */,
 				837097431FDFEC1E004EC266 /* LaunchScreen.storyboard in Resources */,
@@ -514,6 +533,7 @@
 				83EE5F8C20012D2D009E3521 /* hiragana_02_i.png in Resources */,
 				8364F3671FE2C9F400388509 /* bus.mp3 in Resources */,
 				83ECAFAC200DDE7A00317D52 /* famipop3.mp3 in Resources */,
+				83ECAFAE200DE62A00317D52 /* cloud_disconnection.json in Resources */,
 				8364F3691FE2C9F400388509 /* cherry.mp3 in Resources */,
 				83EE5F741FFFCDEA009E3521 /* x_pop.json in Resources */,
 				83EE5F9020012D37009E3521 /* hiragana_74_wa.png in Resources */,
@@ -521,12 +541,14 @@
 				8364F3411FE044A000388509 /* cherry.jpg in Resources */,
 				8364F33F1FE0448F00388509 /* orange.jpg in Resources */,
 				8364F3331FE018F400388509 /* buttonBack.jpg in Resources */,
+				83ECAFB6200DEE6800317D52 /* star2.json in Resources */,
 				8364F3661FE2C9F400388509 /* lemon.mp3 in Resources */,
 				8364F3AC1FE5740100388509 /* クイズ・正解.mp3 in Resources */,
 				8364F3AE1FE574B800388509 /* blip03.mp3 in Resources */,
 				8364F35F1FE2C9F400388509 /* orange.mp3 in Resources */,
 				8364F3391FE0201900388509 /* washi2.jpg in Resources */,
 				83EE5F9820035782009E3521 /* flight_icon_interaction.json in Resources */,
+				83ECAFB0200DE6FC00317D52 /* sun_burst_weather_icon.json in Resources */,
 				83EE5FA02003665D009E3521 /* star.json in Resources */,
 				8364F33D1FE0447100388509 /* peach.jpg in Resources */,
 				8364F3641FE2C9F400388509 /* melon.mp3 in Resources */,
@@ -537,8 +559,10 @@
 				8364F35C1FE2C9F400388509 /* banana.mp3 in Resources */,
 				83EE5F8B20012D2D009E3521 /* hiragana_20_go.png in Resources */,
 				8364F35D1FE2C9F400388509 /* grape.mp3 in Resources */,
+				83ECAFB4200DEC9000317D52 /* airplane.json in Resources */,
 				8364F3621FE2C9F400388509 /* apple.mp3 in Resources */,
 				8364F3651FE2C9F400388509 /* airplane.mp3 in Resources */,
+				83ECAFB8200DEF6C00317D52 /* like_animation.json in Resources */,
 				83EE5F92200344AF009E3521 /* retrogamecenter2.mp3 in Resources */,
 				8364F36A1FE2C9F400388509 /* ship.mp3 in Resources */,
 				8364F3351FE01FD000388509 /* ロゴ_背景透明.png in Resources */,

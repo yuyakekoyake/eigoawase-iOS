@@ -349,11 +349,12 @@ class ViewController: UIViewController, CardControlDelegate {
     //Animation
     func CorrectAnimation () {
         // アニメーションのviewを生成
-        let animationView = LOTAnimationView(name: "star.json")
+        let animationView = LOTAnimationView(name: "like_animation.json")
         // ViewControllerに配置
-        animationView.frame = CGRect(x: 0, y: -120, width: view.bounds.width, height: view.bounds.height)
+        animationView.frame = CGRect(x: 0, y: -100, width: view.bounds.width, height: view.bounds.height)
         //animationView.center = self.view.center
         animationView.loopAnimation = false
+        animationView.animationSpeed = 1.5
         animationView.contentMode = .scaleAspectFit
         self.view.addSubview(animationView)
         // アニメーションを開始

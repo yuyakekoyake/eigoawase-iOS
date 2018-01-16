@@ -71,42 +71,52 @@ class HomeViewController: UIViewController {
         }
         
     // アニメーションのviewを生成
-        let MelonAni = LOTAnimationView(name: "Watermelon.json")
-        let HeliAni = LOTAnimationView(name: "helicopter.json")
-        let CloudAni = LOTAnimationView(name: "cloud.json")
-        let StarAni = LOTAnimationView(name: "star.json")
-        let FlightAni = LOTAnimationView(name: "flight_icon_interaction.json")
-        //配置とサイズ
-        MelonAni.frame = CGRect(x: 0, y: 0, width: view.bounds.width/2.5, height: view.bounds.height/2)
-        HeliAni.frame = CGRect(x: view.bounds.width-120, y: 0, width: view.bounds.width/2.8, height: view.bounds.height/5)
-        CloudAni.frame = CGRect(x: view.bounds.width-100, y: 170, width: view.bounds.width/4, height: view.bounds.height/7)
-        StarAni.frame = CGRect(x: view.bounds.width-100, y: view.bounds.height-100, width: view.bounds.width/4, height: view.bounds.height/7)
-        FlightAni.frame = CGRect(x: 0, y: view.bounds.height-60, width: view.bounds.width, height: view.bounds.height/20)
-        MelonAni.contentMode = .scaleAspectFit
-        HeliAni.contentMode = .scaleAspectFit
-        CloudAni.contentMode = .scaleAspectFit
-        StarAni.contentMode = .scaleAspectFit
-        FlightAni.contentMode = .scaleAspectFill
-        //動作
-        MelonAni.loopAnimation = true
-        HeliAni.loopAnimation = true
-        CloudAni.loopAnimation = true
-        StarAni.loopAnimation = true
-        FlightAni.loopAnimation = true
-        FlightAni.animationSpeed = 0.7
-        //Add view
-        self.view.addSubview(MelonAni)
-        self.view.addSubview(HeliAni)
-        self.view.addSubview(CloudAni)
-        self.view.addSubview(StarAni)
-        self.view.addSubview(FlightAni)
-        // アニメーションを開始
-        MelonAni.play()
-        HeliAni.play()
-        CloudAni.play()
-        StarAni.play()
-        FlightAni.play()
+        let colud = LOTAnimationView(name: "cloud.json")
+        colud.frame = CGRect(x: 0, y: 100, width: view.bounds.width/4.0, height: view.bounds.height/5)
+        colud.contentMode = .scaleAspectFit
+        colud.loopAnimation = true
         
+        let sun = LOTAnimationView(name: "sun_burst_weather_icon.json")
+        sun.frame = CGRect(x: view.bounds.width-120, y: 20, width: view.bounds.width/3, height: view.bounds.height/6)
+        sun.contentMode = .scaleAspectFit
+        sun.loopAnimation = true
+        
+        let Airplane = LOTAnimationView(name: "airplane.json")
+        Airplane.frame = CGRect(x: view.bounds.width-120, y: 20, width: view.bounds.width/3, height: view.bounds.height/7)
+        Airplane.loopAnimation = true
+        Airplane.contentMode = .scaleAspectFit
+        Airplane.animationSpeed = 0.3
+        
+        let WatermelonAni = LOTAnimationView(name: "Watermelon.json")
+        WatermelonAni.frame = CGRect(x: 0, y: view.bounds.height-110, width: view.bounds.width/2, height: view.bounds.height/4)
+        WatermelonAni.contentMode = .scaleAspectFit
+        WatermelonAni.loopAnimation = true
+        
+        let WhaleAni = LOTAnimationView(name: "Whale.json")
+        WhaleAni.frame = CGRect(x: view.bounds.width-100, y: view.bounds.height/4, width: view.bounds.width/5, height: view.bounds.height/4)
+        WhaleAni.contentMode = .scaleAspectFill
+        WhaleAni.loopAnimation = true
+       
+        //let CloudAni = LOTAnimationView(name: "cloud.json")
+       // CloudAni.frame = CGRect(x: view.bounds.width-100, y: 170, width: view.bounds.width/4, height: view.bounds.height/7)
+       // CloudAni.contentMode = .scaleAspectFit
+        //CloudAni.loopAnimation = true
+        
+        
+        //Add view
+        self.view.addSubview(colud)
+        self.view.addSubview(sun)
+       // self.view.addSubview(CloudAni)
+        self.view.addSubview(Airplane)
+        self.view.addSubview(WatermelonAni)
+        self.view.addSubview(WhaleAni)
+        // アニメーションを開始
+        colud.play()
+        sun.play()
+       // CloudAni.play()
+        Airplane.play()
+        WatermelonAni.play()
+        WhaleAni.play()
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             self.TitleAnimation()
         }

@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qWr-3x-fF5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="HiraginoKakuGothic.ttc">
-            <string>HiraginoSans-W6</string>
+        <array key="KTEGAKI.ttf">
+            <string>KAWAIITEGAKIMOJI</string>
+        </array>
+        <array key="KodomoRounded.otf">
+            <string>KodomoRounded</string>
         </array>
     </customFonts>
     <scenes>
@@ -16,16 +24,41 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="eigo_awase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRx-NF-qHs">
-                                <rect key="frame" x="90" y="30" width="420" height="53"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SkyBg" translatesAutoresizingMaskIntoConstraints="NO" id="Cgm-rh-CMv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyT-9h-kek">
+                                <rect key="frame" x="87" y="539" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.91921168565750122" green="0.46462749105181661" blue="0.38619373416649322" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="KAWAIITEGAKIMOJI" family="KAWAIITEGAKIMOJI" pointSize="28"/>
+                                <state key="normal" title="ゲームをやめる">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Uy6-KF-OfM" kind="presentation" id="ViH-cg-7Rl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="スタート" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYq-0x-9Gj">
+                                <rect key="frame" x="72" y="467" width="231" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97647058823529409" green="0.95686274509803915" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="KAWAIITEGAKIMOJI" family="KAWAIITEGAKIMOJI" pointSize="40"/>
+                                <color key="textColor" red="0.77705987728186665" green="0.21822345673574225" blue="0.13063127891246148" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="のこり：8あわせ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRx-NF-qHs">
+                                <rect key="frame" x="90" y="30" width="195" height="53"/>
                                 <color key="backgroundColor" red="0.8585694432258606" green="0.64643502235412598" blue="0.39993751049041748" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="mhn-Ld-km1"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="23"/>
+                                <fontDescription key="fontDescription" name="KAWAIITEGAKIMOJI" family="KAWAIITEGAKIMOJI" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -46,30 +79,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYq-0x-9Gj">
-                                <rect key="frame" x="72" y="422" width="231" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.97647058823529409" green="0.95686274509803915" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <color key="textColor" red="0.77705987728186665" green="0.21822345673574225" blue="0.13063127891246148" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="shadowOffset" width="1" height="1"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyT-9h-kek">
-                                <rect key="frame" x="87" y="539" width="200" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.91921168565750122" green="0.46462749105181661" blue="0.38619373416649322" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="22"/>
-                                <state key="normal" title="ゲームをやめる">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Uy6-KF-OfM" kind="presentation" id="ViH-cg-7Rl"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3C3-Lt-tRc" customClass="GADBannerView">
-                                <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="6s2-wl-ncq"/>
@@ -80,12 +91,16 @@
                         <constraints>
                             <constraint firstItem="BRx-NF-qHs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="0Co-0L-NmE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BRx-NF-qHs" secondAttribute="trailing" constant="90" id="1gX-Cb-5FG"/>
+                            <constraint firstItem="Cgm-rh-CMv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="3gi-qa-uYY"/>
+                            <constraint firstItem="Cgm-rh-CMv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Hwh-Ge-AYn"/>
                             <constraint firstItem="BRx-NF-qHs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IJU-UV-uOm"/>
                             <constraint firstItem="3C3-Lt-tRc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uuu-vE-NFJ"/>
                             <constraint firstItem="3C3-Lt-tRc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VCj-hc-2OZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cgm-rh-CMv" secondAttribute="trailing" id="Wlc-6L-1WY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3C3-Lt-tRc" secondAttribute="trailing" id="agb-4l-bms"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3C3-Lt-tRc" secondAttribute="bottom" id="ez8-W3-MLN"/>
                             <constraint firstItem="BRx-NF-qHs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="k4u-In-QzF"/>
+                            <constraint firstItem="Cgm-rh-CMv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sma-6c-Wbd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -110,11 +125,11 @@
                         <viewControllerLayoutGuide type="bottom" id="gQX-vI-Vki"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GyD-QJ-EiS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ロゴ_背景透明.png" translatesAutoresizingMaskIntoConstraints="NO" id="tMZ-dc-jkE">
-                                <rect key="frame" x="169" y="262" width="262" height="46"/>
+                                <rect key="frame" x="56.5" y="295.5" width="262" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="262" id="0TP-rA-sMP"/>
                                     <constraint firstAttribute="height" constant="46" id="xDe-1x-qHm"/>
@@ -142,37 +157,37 @@
             <objects>
                 <viewController id="Uy6-KF-OfM" customClass="HomeViewController" customModule="eigo_awase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qkg-Wm-sWY">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SkyBg" translatesAutoresizingMaskIntoConstraints="NO" id="SxI-d6-wQ2">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73a-C8-umq">
-                                <rect key="frame" x="102" y="437" width="170" height="50"/>
+                                <rect key="frame" x="102" y="388" width="170" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="30"/>
+                                <color key="backgroundColor" red="0.97366505861282349" green="0.95620888471603394" blue="0.72544962167739868" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="30"/>
                                 <state key="normal" title="のりもの">
-                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEo-5u-b6p">
-                                <rect key="frame" x="102" y="509" width="170" height="50"/>
+                                <rect key="frame" x="102" y="455" width="170" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="30"/>
+                                <color key="backgroundColor" red="0.97366505861282349" green="0.95620888471603394" blue="0.72544962167739868" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="30"/>
                                 <state key="normal" title="どうぶつ">
-                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fE9-Hf-C1o">
-                                <rect key="frame" x="102" y="366" width="170" height="50"/>
+                                <rect key="frame" x="102" y="318" width="170" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="30"/>
+                                <color key="backgroundColor" red="0.97366505861282349" green="0.95620888471603394" blue="0.72544962167739868" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="30"/>
                                 <state key="normal" title="くだもの">
-                                    <color key="titleColor" red="0.92062717009999995" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="FruitsBtn:" destination="Uy6-KF-OfM" eventType="touchUpInside" id="ICR-p3-MO0"/>
@@ -203,6 +218,18 @@
                                 <rect key="frame" x="201" y="117" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fD-0h-eZD">
+                                <rect key="frame" x="102" y="513" width="170" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="30"/>
+                                <state key="normal" title="ランキング">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ntq-E5-tEH" kind="show" action="showDetailViewController:sender:" id="P0K-mR-Ewr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="k5J-vL-bz7" firstAttribute="trailing" secondItem="SxI-d6-wQ2" secondAttribute="trailing" id="6oq-91-XsR"/>
@@ -225,8 +252,272 @@
             </objects>
             <point key="canvasLocation" x="344.80000000000001" y="133.5832083958021"/>
         </scene>
+        <!--Ranking View Controller-->
+        <scene sceneID="JDS-SI-Get">
+            <objects>
+                <viewController id="Ntq-E5-tEH" customClass="RankingViewController" customModule="eigo_awase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dCj-pH-rDh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SkyBg" translatesAutoresizingMaskIntoConstraints="NO" id="m4q-GW-ggV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ーーーー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCy-Uq-TYW">
+                                <rect key="frame" x="174" y="157" width="82" height="22"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--:--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJK-rK-v7t">
+                                <rect key="frame" x="82" y="153" width="82" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="28"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rank1" translatesAutoresizingMaskIntoConstraints="NO" id="d6K-NL-gDX" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="10" y="143" width="60" height="42"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rank2" translatesAutoresizingMaskIntoConstraints="NO" id="93v-8X-hfn" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="10" y="215" width="60" height="41"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rank3" translatesAutoresizingMaskIntoConstraints="NO" id="6JT-6z-CLC" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="10" y="286" width="60" height="41"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rank45" translatesAutoresizingMaskIntoConstraints="NO" id="6cy-2c-eL3" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="10" y="357" width="60" height="41"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rank45" translatesAutoresizingMaskIntoConstraints="NO" id="R6y-1y-Qbi" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="10" y="428" width="60" height="41"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ランキング" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3KI-UA-1sv">
+                                <rect key="frame" x="41.5" y="60" width="292" height="58"/>
+                                <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="58"/>
+                                <color key="textColor" red="1" green="0.38695728304401344" blue="0.4153105268015389" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ーーーー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0Q-pJ-Df3">
+                                <rect key="frame" x="271" y="158" width="74.5" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="18"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ーーーー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enM-zI-DNR">
+                                <rect key="frame" x="174" y="228.5" width="82" height="22"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--:--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5Z-zM-lpQ">
+                                <rect key="frame" x="87.5" y="225.5" width="76.5" height="28"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="26"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ーーーー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiX-II-fej">
+                                <rect key="frame" x="271" y="229.5" width="74.5" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="18"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ーーーー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBm-vq-00j">
+                                <rect key="frame" x="174" y="299.5" width="82" height="22"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--:--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSp-N9-VY2">
+                                <rect key="frame" x="90.5" y="297" width="73.5" height="27"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ーーーー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KP1-ow-ufw">
+                                <rect key="frame" x="271" y="300.5" width="74.5" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="18"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ーーーー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSq-88-Xog">
+                                <rect key="frame" x="174" y="370.5" width="82" height="22"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--:--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGN-3S-o6z">
+                                <rect key="frame" x="93.5" y="368.5" width="70.5" height="26"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ーーーー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCx-pJ-zU5">
+                                <rect key="frame" x="271" y="371.5" width="74.5" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="18"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ーーーー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvW-jR-4zM">
+                                <rect key="frame" x="174" y="441.5" width="82" height="22"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--:--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEI-nl-LSd">
+                                <rect key="frame" x="93.5" y="439.5" width="70.5" height="26"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ーーーー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x03-oV-anP">
+                                <rect key="frame" x="271" y="442.5" width="74.5" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="18"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNB-S0-ir6">
+                                <rect key="frame" x="82" y="541" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.9192116857" green="0.46462749110000001" blue="0.38619373420000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="KAWAIITEGAKIMOJI" family="KAWAIITEGAKIMOJI" pointSize="28"/>
+                                <state key="normal" title="もどる">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Uy6-KF-OfM" kind="presentation" id="f1d-y4-Buu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="d6K-NL-gDX" firstAttribute="top" secondItem="3KI-UA-1sv" secondAttribute="bottom" constant="25" id="0aA-da-ewo"/>
+                            <constraint firstItem="enM-zI-DNR" firstAttribute="centerY" secondItem="s5Z-zM-lpQ" secondAttribute="centerY" id="0br-OP-YMU"/>
+                            <constraint firstItem="OzL-27-tgf" firstAttribute="bottom" secondItem="m4q-GW-ggV" secondAttribute="bottom" id="2A1-IJ-oFi"/>
+                            <constraint firstItem="KP1-ow-ufw" firstAttribute="leading" secondItem="tBm-vq-00j" secondAttribute="trailing" constant="15" id="2bD-Hj-6Op"/>
+                            <constraint firstItem="93v-8X-hfn" firstAttribute="leading" secondItem="d6K-NL-gDX" secondAttribute="leading" id="84Y-3f-59z"/>
+                            <constraint firstItem="R6y-1y-Qbi" firstAttribute="width" secondItem="d6K-NL-gDX" secondAttribute="width" id="A35-fe-NYV"/>
+                            <constraint firstItem="R6y-1y-Qbi" firstAttribute="leading" secondItem="d6K-NL-gDX" secondAttribute="leading" id="AFH-ae-O1t"/>
+                            <constraint firstItem="XSq-88-Xog" firstAttribute="centerY" secondItem="sGN-3S-o6z" secondAttribute="centerY" id="Ddb-JD-z0z"/>
+                            <constraint firstItem="hJK-rK-v7t" firstAttribute="centerY" secondItem="d6K-NL-gDX" secondAttribute="centerY" constant="4" id="ESK-yJ-TIE"/>
+                            <constraint firstItem="sGN-3S-o6z" firstAttribute="trailing" secondItem="hJK-rK-v7t" secondAttribute="trailing" id="EqM-qt-Ca9"/>
+                            <constraint firstItem="tBm-vq-00j" firstAttribute="leading" secondItem="zSp-N9-VY2" secondAttribute="trailing" constant="10" id="Izy-un-BZZ"/>
+                            <constraint firstItem="F0Q-pJ-Df3" firstAttribute="leading" secondItem="tCy-Uq-TYW" secondAttribute="trailing" constant="15" id="KDq-Qs-nw8"/>
+                            <constraint firstItem="d6K-NL-gDX" firstAttribute="height" secondItem="m4q-GW-ggV" secondAttribute="height" multiplier="0.0629" id="MyX-NG-p7r"/>
+                            <constraint firstItem="bvW-jR-4zM" firstAttribute="leading" secondItem="QEI-nl-LSd" secondAttribute="trailing" constant="10" id="OH7-7W-xfu"/>
+                            <constraint firstItem="tCy-Uq-TYW" firstAttribute="centerY" secondItem="hJK-rK-v7t" secondAttribute="centerY" id="OMj-UL-WzK"/>
+                            <constraint firstItem="tCx-pJ-zU5" firstAttribute="leading" secondItem="XSq-88-Xog" secondAttribute="trailing" constant="15" id="Pgf-nm-9Sz"/>
+                            <constraint firstItem="F0Q-pJ-Df3" firstAttribute="centerY" secondItem="tCy-Uq-TYW" secondAttribute="centerY" id="TfA-Uh-amd"/>
+                            <constraint firstItem="qiX-II-fej" firstAttribute="centerY" secondItem="enM-zI-DNR" secondAttribute="centerY" id="Twf-Wm-QYv"/>
+                            <constraint firstItem="s5Z-zM-lpQ" firstAttribute="centerY" secondItem="93v-8X-hfn" secondAttribute="centerY" constant="4" id="U1C-IP-KEE"/>
+                            <constraint firstItem="93v-8X-hfn" firstAttribute="top" secondItem="d6K-NL-gDX" secondAttribute="bottom" constant="30" id="UHR-at-6uo"/>
+                            <constraint firstItem="x03-oV-anP" firstAttribute="centerY" secondItem="QEI-nl-LSd" secondAttribute="centerY" id="Ux2-zl-Zc6"/>
+                            <constraint firstItem="R6y-1y-Qbi" firstAttribute="top" secondItem="6cy-2c-eL3" secondAttribute="bottom" constant="30" id="VJK-Km-VhB"/>
+                            <constraint firstItem="tCx-pJ-zU5" firstAttribute="centerY" secondItem="sGN-3S-o6z" secondAttribute="centerY" id="Vl5-wI-5x1"/>
+                            <constraint firstItem="sGN-3S-o6z" firstAttribute="centerY" secondItem="6cy-2c-eL3" secondAttribute="centerY" constant="4" id="YwF-I1-JZD"/>
+                            <constraint firstItem="6cy-2c-eL3" firstAttribute="width" secondItem="d6K-NL-gDX" secondAttribute="width" id="c36-YE-yEf"/>
+                            <constraint firstItem="tCy-Uq-TYW" firstAttribute="leading" secondItem="hJK-rK-v7t" secondAttribute="trailing" constant="10" id="cU4-KW-GI1"/>
+                            <constraint firstItem="zSp-N9-VY2" firstAttribute="trailing" secondItem="hJK-rK-v7t" secondAttribute="trailing" id="cXA-76-5da"/>
+                            <constraint firstItem="6JT-6z-CLC" firstAttribute="top" secondItem="93v-8X-hfn" secondAttribute="bottom" constant="30" id="e90-FI-NBR"/>
+                            <constraint firstItem="d6K-NL-gDX" firstAttribute="leading" secondItem="OzL-27-tgf" secondAttribute="leading" constant="10" id="g9e-vH-ysH"/>
+                            <constraint firstItem="93v-8X-hfn" firstAttribute="width" secondItem="d6K-NL-gDX" secondAttribute="width" id="gy4-6d-GVR"/>
+                            <constraint firstItem="m4q-GW-ggV" firstAttribute="top" secondItem="dCj-pH-rDh" secondAttribute="top" id="hMG-n8-cSK"/>
+                            <constraint firstItem="bvW-jR-4zM" firstAttribute="centerY" secondItem="QEI-nl-LSd" secondAttribute="centerY" id="hrV-eL-fjH"/>
+                            <constraint firstItem="tBm-vq-00j" firstAttribute="centerY" secondItem="zSp-N9-VY2" secondAttribute="centerY" id="ihP-x5-oQp"/>
+                            <constraint firstItem="3KI-UA-1sv" firstAttribute="top" secondItem="OzL-27-tgf" secondAttribute="top" constant="40" id="ihs-DP-t3y"/>
+                            <constraint firstItem="6cy-2c-eL3" firstAttribute="top" secondItem="6JT-6z-CLC" secondAttribute="bottom" constant="30" id="kSa-BY-StM"/>
+                            <constraint firstItem="QEI-nl-LSd" firstAttribute="centerY" secondItem="R6y-1y-Qbi" secondAttribute="centerY" constant="4" id="m65-O2-5fC"/>
+                            <constraint firstItem="zSp-N9-VY2" firstAttribute="centerY" secondItem="6JT-6z-CLC" secondAttribute="centerY" constant="4" id="mma-op-M6v"/>
+                            <constraint firstItem="QEI-nl-LSd" firstAttribute="trailing" secondItem="hJK-rK-v7t" secondAttribute="trailing" id="nBD-Tj-Eou"/>
+                            <constraint firstItem="m4q-GW-ggV" firstAttribute="leading" secondItem="dCj-pH-rDh" secondAttribute="leading" id="nIJ-gS-T8Q"/>
+                            <constraint firstItem="s5Z-zM-lpQ" firstAttribute="trailing" secondItem="hJK-rK-v7t" secondAttribute="trailing" id="nuX-96-YQF"/>
+                            <constraint firstItem="3KI-UA-1sv" firstAttribute="centerX" secondItem="dCj-pH-rDh" secondAttribute="centerX" id="ogV-XD-xoc"/>
+                            <constraint firstItem="OzL-27-tgf" firstAttribute="trailing" secondItem="m4q-GW-ggV" secondAttribute="trailing" id="q8v-az-nHz"/>
+                            <constraint firstItem="6JT-6z-CLC" firstAttribute="leading" secondItem="d6K-NL-gDX" secondAttribute="leading" id="sLI-qE-Cvz"/>
+                            <constraint firstItem="x03-oV-anP" firstAttribute="leading" secondItem="bvW-jR-4zM" secondAttribute="trailing" constant="15" id="sgE-92-eJU"/>
+                            <constraint firstItem="enM-zI-DNR" firstAttribute="leading" secondItem="s5Z-zM-lpQ" secondAttribute="trailing" constant="10" id="vYb-um-Mjn"/>
+                            <constraint firstItem="KP1-ow-ufw" firstAttribute="centerY" secondItem="tBm-vq-00j" secondAttribute="centerY" id="vqA-MD-BqM"/>
+                            <constraint firstItem="qiX-II-fej" firstAttribute="leading" secondItem="enM-zI-DNR" secondAttribute="trailing" constant="15" id="wHA-Js-yRW"/>
+                            <constraint firstItem="XSq-88-Xog" firstAttribute="leading" secondItem="sGN-3S-o6z" secondAttribute="trailing" constant="10" id="xYo-Ty-gMH"/>
+                            <constraint firstItem="hJK-rK-v7t" firstAttribute="leading" secondItem="d6K-NL-gDX" secondAttribute="trailing" constant="12" id="xdy-1J-AqW"/>
+                            <constraint firstItem="6JT-6z-CLC" firstAttribute="width" secondItem="d6K-NL-gDX" secondAttribute="width" id="zbb-Ib-myj"/>
+                            <constraint firstItem="6cy-2c-eL3" firstAttribute="leading" secondItem="d6K-NL-gDX" secondAttribute="leading" id="zc7-WQ-5VX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OzL-27-tgf"/>
+                    </view>
+                    <connections>
+                        <outlet property="Category0" destination="tCy-Uq-TYW" id="2eu-nB-CFs"/>
+                        <outlet property="Category1" destination="enM-zI-DNR" id="qxt-D3-dP9"/>
+                        <outlet property="Category2" destination="tBm-vq-00j" id="71H-ry-o1O"/>
+                        <outlet property="Category3" destination="XSq-88-Xog" id="9G1-69-M07"/>
+                        <outlet property="Category4" destination="bvW-jR-4zM" id="iwf-so-fDj"/>
+                        <outlet property="DayLavel0" destination="F0Q-pJ-Df3" id="zOw-xP-gHE"/>
+                        <outlet property="DayLavel1" destination="qiX-II-fej" id="RBs-gP-C0O"/>
+                        <outlet property="DayLavel2" destination="KP1-ow-ufw" id="LuL-jT-bPj"/>
+                        <outlet property="DayLavel3" destination="tCx-pJ-zU5" id="P5A-0h-Qay"/>
+                        <outlet property="DayLavel4" destination="x03-oV-anP" id="Hym-1u-uhP"/>
+                        <outlet property="TimeLabel0" destination="hJK-rK-v7t" id="542-8s-NT9"/>
+                        <outlet property="TimeLabel1" destination="s5Z-zM-lpQ" id="gI8-0V-nTZ"/>
+                        <outlet property="TimeLabel2" destination="zSp-N9-VY2" id="i0L-pq-tkd"/>
+                        <outlet property="TimeLabel3" destination="sGN-3S-o6z" id="Za0-Gd-oHu"/>
+                        <outlet property="TimeLabel4" destination="QEI-nl-LSd" id="B4I-J6-fyH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qc8-Dj-NYS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="344.80000000000001" y="839.73013493253382"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Rank1" width="60" height="41"/>
+        <image name="Rank2" width="60" height="41"/>
+        <image name="Rank3" width="60" height="41"/>
+        <image name="Rank45" width="60" height="41"/>
         <image name="SkyBg" width="375" height="667"/>
         <image name="hiragana_01_a.png" width="207" height="194"/>
         <image name="hiragana_02_i.png" width="207" height="194"/>
@@ -237,7 +528,8 @@
         <image name="ロゴ_背景透明.png" width="433" height="76"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Uyj-BS-X4H"/>
+        <segue reference="P0K-mR-Ewr"/>
+        <segue reference="f1d-y4-Buu"/>
         <segue reference="iUW-aV-tWE"/>
     </inferredMetricsTieBreakers>
 </document>

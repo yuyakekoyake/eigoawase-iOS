@@ -12,4 +12,5 @@ import RealmSwift
 class RankingRealm: Object {
     @objc dynamic var Category = ""
     @objc dynamic var Time = 0
+    @objc dynamic var Date: Date? = nil
 }

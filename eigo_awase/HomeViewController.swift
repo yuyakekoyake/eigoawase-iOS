@@ -43,8 +43,9 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
     //BGMスタート
+       
         BgmSound()
-
+        
         //interstitial広告
         let interstitial = GADInterstitial(adUnitID: AdMobID)
         //interstitial.delegate = self
@@ -62,7 +63,6 @@ class HomeViewController: UIViewController {
         }
         interstitial.load(request);
         if appDelegate.InterstitialFlug == false {
-            appDelegate.InterstitialFlug = true
         }else{
             // 3秒間待たせる
             DispatchQueue.main.asyncAfter(deadline: .now() + delayTime) {
@@ -114,8 +114,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func FruitsBtn(_ sender: Any) {
-        StartSound()
-        Bgm.stop()
+        
     }
     
 
@@ -164,6 +163,8 @@ class HomeViewController: UIViewController {
             print("エラーです")
         }
     }
+    
+   
     func StartSound () {
         let path = Bundle.main.bundleURL.appendingPathComponent("save-02.wav")
         do{
@@ -186,7 +187,12 @@ class HomeViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    //画面から非表示になる瞬間
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        StartSound()
+        Bgm.stop()
+    }
 
     /*
     // MARK: - Navigation

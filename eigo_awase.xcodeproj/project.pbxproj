@@ -48,7 +48,14 @@
 		8370974E1FDFEC1E004EC266 /* eigo_awaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8370974D1FDFEC1E004EC266 /* eigo_awaseTests.swift */; };
 		837097591FDFEC1E004EC266 /* eigo_awaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837097581FDFEC1E004EC266 /* eigo_awaseUITests.swift */; };
 		837097671FDFEC66004EC266 /* CardControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837097661FDFEC66004EC266 /* CardControl.swift */; };
+		83B6B24F200A60C800503639 /* RankingRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6B24E200A60C800503639 /* RankingRealm.swift */; };
 		83BA61212007A0A0004417DE /* helicopter.json in Resources */ = {isa = PBXBuildFile; fileRef = 83BA61202007A0A0004417DE /* helicopter.json */; };
+		83ECAFA1200CEF2500317D52 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ECAFA0200CEF2500317D52 /* RankingViewController.swift */; };
+		83ECAFA4200DC27000317D52 /* KTEGAKI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83ECAFA3200DC01400317D52 /* KTEGAKI.ttf */; };
+		83ECAFA6200DC34D00317D52 /* hunwariusagi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83ECAFA5200DC34800317D52 /* hunwariusagi.ttf */; };
+		83ECAFA9200DC44600317D52 /* KodomoRounded-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83ECAFA8200DC43D00317D52 /* KodomoRounded-Light.otf */; };
+		83ECAFAA200DC44600317D52 /* KodomoRounded.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83ECAFA7200DC42D00317D52 /* KodomoRounded.otf */; };
+		83ECAFAC200DDE7A00317D52 /* famipop3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83ECAFAB200DDE7A00317D52 /* famipop3.mp3 */; };
 		83EE5F741FFFCDEA009E3521 /* x_pop.json in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F731FFFCDEA009E3521 /* x_pop.json */; };
 		83EE5F781FFFCF11009E3521 /* trophy.json in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F751FFFCF10009E3521 /* trophy.json */; };
 		83EE5F791FFFCF11009E3521 /* like.json in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F761FFFCF11009E3521 /* like.json */; };
@@ -139,7 +146,14 @@
 		837097581FDFEC1E004EC266 /* eigo_awaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eigo_awaseUITests.swift; sourceTree = "<group>"; };
 		8370975A1FDFEC1E004EC266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		837097661FDFEC66004EC266 /* CardControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardControl.swift; sourceTree = "<group>"; };
+		83B6B24E200A60C800503639 /* RankingRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingRealm.swift; sourceTree = "<group>"; };
 		83BA61202007A0A0004417DE /* helicopter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = helicopter.json; sourceTree = "<group>"; };
+		83ECAFA0200CEF2500317D52 /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
+		83ECAFA3200DC01400317D52 /* KTEGAKI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KTEGAKI.ttf; sourceTree = "<group>"; };
+		83ECAFA5200DC34800317D52 /* hunwariusagi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = hunwariusagi.ttf; sourceTree = "<group>"; };
+		83ECAFA7200DC42D00317D52 /* KodomoRounded.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KodomoRounded.otf; sourceTree = "<group>"; };
+		83ECAFA8200DC43D00317D52 /* KodomoRounded-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KodomoRounded-Light.otf"; sourceTree = "<group>"; };
+		83ECAFAB200DDE7A00317D52 /* famipop3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = famipop3.mp3; sourceTree = "<group>"; };
 		83EE5F731FFFCDEA009E3521 /* x_pop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = x_pop.json; sourceTree = "<group>"; };
 		83EE5F751FFFCF10009E3521 /* trophy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trophy.json; sourceTree = "<group>"; };
 		83EE5F761FFFCF11009E3521 /* like.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = like.json; sourceTree = "<group>"; };
@@ -222,6 +236,7 @@
 		8364F34A1FE2C9D400388509 /* sounds */ = {
 			isa = PBXGroup;
 			children = (
+				83ECAFAB200DDE7A00317D52 /* famipop3.mp3 */,
 				83EE5F91200344AF009E3521 /* retrogamecenter2.mp3 */,
 				83EE5F9320034C6A009E3521 /* save-02.wav */,
 				8364F3551FE2C9F300388509 /* airplane.mp3 */,
@@ -276,10 +291,13 @@
 				837097661FDFEC66004EC266 /* CardControl.swift */,
 				83EE5F811FFFDA04009E3521 /* HomeViewController.swift */,
 				8370973A1FDFEC1E004EC266 /* ViewController.swift */,
+				83ECAFA0200CEF2500317D52 /* RankingViewController.swift */,
+				83B6B24E200A60C800503639 /* RankingRealm.swift */,
 				8370973C1FDFEC1E004EC266 /* Main.storyboard */,
 				8370973F1FDFEC1E004EC266 /* Assets.xcassets */,
 				837097411FDFEC1E004EC266 /* LaunchScreen.storyboard */,
 				837097441FDFEC1E004EC266 /* Info.plist */,
+				83ECAFA2200DBFF400317D52 /* Font */,
 				83EE5F721FFFCDC5009E3521 /* JSON */,
 				8364F34A1FE2C9D400388509 /* sounds */,
 				8364F32D1FE0162600388509 /* images */,
@@ -303,6 +321,17 @@
 				8370975A1FDFEC1E004EC266 /* Info.plist */,
 			);
 			path = eigo_awaseUITests;
+			sourceTree = "<group>";
+		};
+		83ECAFA2200DBFF400317D52 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				83ECAFA8200DC43D00317D52 /* KodomoRounded-Light.otf */,
+				83ECAFA7200DC42D00317D52 /* KodomoRounded.otf */,
+				83ECAFA5200DC34800317D52 /* hunwariusagi.ttf */,
+				83ECAFA3200DC01400317D52 /* KTEGAKI.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		83EE5F721FFFCDC5009E3521 /* JSON */ = {
@@ -461,6 +490,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83ECAFA9200DC44600317D52 /* KodomoRounded-Light.otf in Resources */,
+				83ECAFAA200DC44600317D52 /* KodomoRounded.otf in Resources */,
+				83ECAFA6200DC34D00317D52 /* hunwariusagi.ttf in Resources */,
+				83ECAFA4200DC27000317D52 /* KTEGAKI.ttf in Resources */,
 				8364F3681FE2C9F400388509 /* peach.mp3 in Resources */,
 				837097431FDFEC1E004EC266 /* LaunchScreen.storyboard in Resources */,
 				83EE5F8A20012D2D009E3521 /* hiragana_04_e.png in Resources */,
@@ -480,6 +513,7 @@
 				8364F3611FE2C9F400388509 /* fire truck.mp3 in Resources */,
 				83EE5F8C20012D2D009E3521 /* hiragana_02_i.png in Resources */,
 				8364F3671FE2C9F400388509 /* bus.mp3 in Resources */,
+				83ECAFAC200DDE7A00317D52 /* famipop3.mp3 in Resources */,
 				8364F3691FE2C9F400388509 /* cherry.mp3 in Resources */,
 				83EE5F741FFFCDEA009E3521 /* x_pop.json in Resources */,
 				83EE5F9020012D37009E3521 /* hiragana_74_wa.png in Resources */,
@@ -573,13 +607,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-eigo_awase/Pods-eigo_awase-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JDGamesLoading/JDGamesLoading.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Spring/Spring.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JDGamesLoading.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spring.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
@@ -694,7 +730,9 @@
 				83EE5F821FFFDA04009E3521 /* HomeViewController.swift in Sources */,
 				8364F3371FE01FEF00388509 /* FirstSplashViewController.swift in Sources */,
 				8370973B1FDFEC1E004EC266 /* ViewController.swift in Sources */,
+				83ECAFA1200CEF2500317D52 /* RankingViewController.swift in Sources */,
 				837097671FDFEC66004EC266 /* CardControl.swift in Sources */,
+				83B6B24F200A60C800503639 /* RankingRealm.swift in Sources */,
 				837097391FDFEC1E004EC266 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -869,7 +907,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.english-society.eigo-awase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -885,7 +923,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.english-society.eigo-awase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

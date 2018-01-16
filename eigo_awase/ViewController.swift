@@ -37,9 +37,14 @@ class ViewController: UIViewController, CardControlDelegate {
     @IBOutlet weak var elapsedTime: UILabel!
     
     @IBOutlet weak var bannerView: GADBannerView!
+    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
+    //interstisialのフラグをONへ
+        appDelegate.InterstitialFlug = true
+
     //realmのパス
         print(Realm.Configuration.defaultConfiguration.fileURL!)
     //Bgm
@@ -344,7 +349,7 @@ class ViewController: UIViewController, CardControlDelegate {
     //Animation
     func CorrectAnimation () {
         // アニメーションのviewを生成
-        let animationView = LOTAnimationView(name: "quick_hart_select.json")
+        let animationView = LOTAnimationView(name: "star.json")
         // ViewControllerに配置
         animationView.frame = CGRect(x: 0, y: -120, width: view.bounds.width, height: view.bounds.height)
         //animationView.center = self.view.center
@@ -431,8 +436,10 @@ class ViewController: UIViewController, CardControlDelegate {
     func SaveRanking () {
         let realm = try! Realm()
         let RankigData = RankingRealm()
+        let date = Date()
         RankigData.Category = "くだもの"
         RankigData.Time = count
+        RankigData.Date = date
         try! realm.write {
             realm.add(RankigData)
         }

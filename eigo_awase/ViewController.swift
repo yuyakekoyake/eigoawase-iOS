@@ -40,6 +40,8 @@ class ViewController: UIViewController, CardControlDelegate {
     @IBOutlet weak var bannerView: GADBannerView!
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -354,7 +356,7 @@ class ViewController: UIViewController, CardControlDelegate {
         let path = Bundle.main.bundleURL.appendingPathComponent("clearBGM.mp3")
         do{
             try ClearBgm = AVAudioPlayer(contentsOf: path)
-            ClearBgm.numberOfLoops = -1
+            ClearBgm.numberOfLoops = 1
             ClearBgm.volume = 3
             ClearBgm.play()
         }catch{
@@ -461,10 +463,14 @@ class ViewController: UIViewController, CardControlDelegate {
         }
     }
     
+    @IBAction func FinishBtn(_ sender: Any) {
+        Bgm.stop()
+    }
+    
+    
     //画面から非表示になる瞬間
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        ClearBgm.stop()
     }
     
 }

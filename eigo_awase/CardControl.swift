@@ -13,6 +13,11 @@ protocol CardControlDelegate: class {
 }
 
 class CardControl: UIView {
+    //mondai
+    let Fruit = ["apple","orange","cherry","banana","grape","lemon","peach","melon"]
+    let vehicle = ["airplane","bicycle","boat","bus","car","rocket","ship","train"]
+
+     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     // MARK: プロパティ
     var number:Int = 0 {
@@ -60,49 +65,58 @@ class CardControl: UIView {
         //buttonCard.setTitle("⭐︎", for: .normal)
          buttonCard.setBackgroundImage(buttonImage, for: .normal)
         
+        var cardAryStr: [String] = []
+        switch appDelegate.MondaiCategory {
+        case "fruit":
+            cardAryStr = Fruit
+        case "vehicle":
+            cardAryStr = vehicle
+        default:
+            break
+        }
         var cardstr = ""
         
         switch number {
         case 0:
-            cardstr = "apple"
+            cardstr = cardAryStr[0]
             buttonImageSelect = UIImage(named:"clear")
         case 1:
-            cardstr = "orange"
+            cardstr = cardAryStr[1]
             buttonImageSelect = UIImage(named:"clear")
         case 2:
-            cardstr = "cherry"
+            cardstr = cardAryStr[2]
             buttonImageSelect = UIImage(named:"clear")
         case 3:
-            cardstr = "banana"
+            cardstr = cardAryStr[3]
             buttonImageSelect = UIImage(named:"clear")
         case 4:
-            cardstr = "grape"
+            cardstr = cardAryStr[4]
             buttonImageSelect = UIImage(named:"clear")
         case 5:
-            cardstr = "lemon"
+            cardstr = cardAryStr[5]
             buttonImageSelect = UIImage(named:"clear")
         case 6:
-            cardstr = "peach"
+            cardstr = cardAryStr[6]
             buttonImageSelect = UIImage(named:"clear")
         case 7:
-            cardstr = "melon"
+            cardstr = cardAryStr[7]
             buttonImageSelect = UIImage(named:"clear")
         case 8:
-            buttonImageSelect = UIImage(named:"apple")
+            buttonImageSelect = UIImage(named:cardAryStr[0])
         case 9:
-            buttonImageSelect = UIImage(named:"orange")
+            buttonImageSelect = UIImage(named:cardAryStr[1])
         case 10:
-            buttonImageSelect = UIImage(named:"cherry")
+            buttonImageSelect = UIImage(named:cardAryStr[2])
         case 11:
-            buttonImageSelect = UIImage(named:"banana")
+            buttonImageSelect = UIImage(named:cardAryStr[3])
         case 12:
-            buttonImageSelect = UIImage(named:"grape")
+            buttonImageSelect = UIImage(named:cardAryStr[4])
         case 13:
-            buttonImageSelect = UIImage(named:"lemon")
+            buttonImageSelect = UIImage(named:cardAryStr[5])
         case 14:
-            buttonImageSelect = UIImage(named:"peach")
+            buttonImageSelect = UIImage(named:cardAryStr[6])
         case 15:
-            buttonImageSelect = UIImage(named:"melon")
+            buttonImageSelect = UIImage(named:cardAryStr[7])
         default:
             cardstr = "test"
         }

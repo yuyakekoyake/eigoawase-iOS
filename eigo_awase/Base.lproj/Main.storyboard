@@ -43,6 +43,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="FinishBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qsi-YD-mlf"/>
                                     <segue destination="Uy6-KF-OfM" kind="presentation" id="ViH-cg-7Rl"/>
                                 </connections>
                             </button>
@@ -231,6 +232,10 @@
                                         <size key="value" width="1" height="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="VehicleBtn:" destination="Uy6-KF-OfM" eventType="touchUpInside" id="Nby-KC-QsR"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="SLa-8u-dx5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEo-5u-b6p">
                                 <rect key="frame" x="102" y="420" width="170" height="40"/>
@@ -792,7 +797,7 @@
         <image name="ロゴ_背景透明.png" width="433" height="76"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xyk-V5-lp1"/>
+        <segue reference="Uyj-BS-X4H"/>
         <segue reference="iUW-aV-tWE"/>
     </inferredMetricsTieBreakers>
 </document>

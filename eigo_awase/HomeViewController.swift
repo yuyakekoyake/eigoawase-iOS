@@ -90,6 +90,15 @@ class HomeViewController: UIViewController, GADInterstitialDelegate {
         
     }
     
+    @IBAction func CreditBtn(_ sender: Any) {
+        StartSound()
+        Bgm.stop()
+    }
+    @IBAction func RankingBTN(_ sender: Any) {
+        StartSound()
+        Bgm.stop()
+    }
+    
     func LottieAnimation (){
         // アニメーションのviewを生成
         colud = LOTAnimationView(name: "cloud.json")

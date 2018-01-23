@@ -49,6 +49,8 @@
 		837097591FDFEC1E004EC266 /* eigo_awaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837097581FDFEC1E004EC266 /* eigo_awaseUITests.swift */; };
 		837097671FDFEC66004EC266 /* CardControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837097661FDFEC66004EC266 /* CardControl.swift */; };
 		83A39C1D20175F08003EC84D /* clearBGM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83A39C1C20175F08003EC84D /* clearBGM.mp3 */; };
+		83A39C1F20176194003EC84D /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A39C1E20176194003EC84D /* SettingViewController.swift */; };
+		83A39C2320177F74003EC84D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 83A39C2220177F73003EC84D /* Settings.bundle */; };
 		83B6B24F200A60C800503639 /* RankingRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6B24E200A60C800503639 /* RankingRealm.swift */; };
 		83BA61212007A0A0004417DE /* helicopter.json in Resources */ = {isa = PBXBuildFile; fileRef = 83BA61202007A0A0004417DE /* helicopter.json */; };
 		83ECAFA1200CEF2500317D52 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ECAFA0200CEF2500317D52 /* RankingViewController.swift */; };
@@ -154,6 +156,8 @@
 		8370975A1FDFEC1E004EC266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		837097661FDFEC66004EC266 /* CardControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardControl.swift; sourceTree = "<group>"; };
 		83A39C1C20175F08003EC84D /* clearBGM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = clearBGM.mp3; sourceTree = "<group>"; };
+		83A39C1E20176194003EC84D /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		83A39C2220177F73003EC84D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		83B6B24E200A60C800503639 /* RankingRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingRealm.swift; sourceTree = "<group>"; };
 		83BA61202007A0A0004417DE /* helicopter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = helicopter.json; sourceTree = "<group>"; };
 		83ECAFA0200CEF2500317D52 /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
@@ -309,10 +313,12 @@
 				8370973A1FDFEC1E004EC266 /* ViewController.swift */,
 				83ECAFA0200CEF2500317D52 /* RankingViewController.swift */,
 				83B6B24E200A60C800503639 /* RankingRealm.swift */,
+				83A39C1E20176194003EC84D /* SettingViewController.swift */,
 				8370973C1FDFEC1E004EC266 /* Main.storyboard */,
 				8370973F1FDFEC1E004EC266 /* Assets.xcassets */,
 				837097411FDFEC1E004EC266 /* LaunchScreen.storyboard */,
 				837097441FDFEC1E004EC266 /* Info.plist */,
+				83A39C2220177F73003EC84D /* Settings.bundle */,
 				83ECAFA2200DBFF400317D52 /* Font */,
 				83EE5F721FFFCDC5009E3521 /* JSON */,
 				8364F34A1FE2C9D400388509 /* sounds */,
@@ -513,6 +519,7 @@
 			files = (
 				83ECAFA9200DC44600317D52 /* KodomoRounded-Light.otf in Resources */,
 				83ECAFAA200DC44600317D52 /* KodomoRounded.otf in Resources */,
+				83A39C2320177F74003EC84D /* Settings.bundle in Resources */,
 				83ECAFA6200DC34D00317D52 /* hunwariusagi.ttf in Resources */,
 				83ECAFB2200DEAB200317D52 /* Whale.json in Resources */,
 				83ECAFA4200DC27000317D52 /* KTEGAKI.ttf in Resources */,
@@ -758,6 +765,7 @@
 				83EE5F821FFFDA04009E3521 /* HomeViewController.swift in Sources */,
 				8364F3371FE01FEF00388509 /* FirstSplashViewController.swift in Sources */,
 				8370973B1FDFEC1E004EC266 /* ViewController.swift in Sources */,
+				83A39C1F20176194003EC84D /* SettingViewController.swift in Sources */,
 				83ECAFA1200CEF2500317D52 /* RankingViewController.swift in Sources */,
 				837097671FDFEC66004EC266 /* CardControl.swift in Sources */,
 				83B6B24F200A60C800503639 /* RankingRealm.swift in Sources */,

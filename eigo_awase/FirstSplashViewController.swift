@@ -16,7 +16,7 @@ class FirstSplashViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "washi2.jpg")!)
+        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "washi2.jpg")!)
         // アニメーションのviewを生成
         let animationView = LOTAnimationView(name: "Watermelon.json")
         

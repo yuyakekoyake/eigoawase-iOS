@@ -12,6 +12,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="HiraginoKakuGothic.ttc">
+            <string>HiraginoSans-W3</string>
+        </array>
         <array key="KTEGAKI.ttf">
             <string>KAWAIITEGAKIMOJI</string>
         </array>
@@ -137,7 +140,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.94520831110000003" green="0.95292580130000004" blue="0.9529486895" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.72984391450881958" green="0.89630275964736938" blue="0.98825222253799438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="tMZ-dc-jkE" firstAttribute="centerX" secondItem="GyD-QJ-EiS" secondAttribute="centerX" id="FwK-7M-GbV"/>
                             <constraint firstItem="tMZ-dc-jkE" firstAttribute="centerY" secondItem="GyD-QJ-EiS" secondAttribute="centerY" constant="-15" id="v23-wX-KW2"/>
@@ -167,8 +170,8 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jS3-Kh-Kxv">
                                 <rect key="frame" x="102" y="535" width="170" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="30"/>
-                                <state key="normal" title="せってい" backgroundImage="banner04">
+                                <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="24"/>
+                                <state key="normal" title="credit" backgroundImage="banner04">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -182,6 +185,10 @@
                                         <size key="value" width="1" height="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="CreditBtn:" destination="Uy6-KF-OfM" eventType="touchUpInside" id="ET0-Jc-nyS"/>
+                                    <segue destination="dS2-GV-xiw" kind="presentation" id="TbD-Q1-Pz4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fD-0h-eZD">
                                 <rect key="frame" x="102" y="485" width="170" height="40"/>
@@ -202,6 +209,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="RankingBTN:" destination="Uy6-KF-OfM" eventType="touchUpInside" id="wu4-2a-Miy"/>
                                     <segue destination="Ntq-E5-tEH" kind="show" action="showDetailViewController:sender:" id="P0K-mR-Ewr"/>
                                 </connections>
                             </button>
@@ -378,7 +386,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ーーーー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCy-Uq-TYW">
-                                <rect key="frame" x="174" y="157.5" width="82" height="22"/>
+                                <rect key="frame" x="174" y="157" width="82" height="22"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="20"/>
                                 <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -486,7 +494,7 @@
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ーーーー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enM-zI-DNR">
-                                <rect key="frame" x="174" y="229" width="82" height="22"/>
+                                <rect key="frame" x="174" y="228.5" width="82" height="22"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="20"/>
                                 <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -495,7 +503,7 @@
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--:--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5Z-zM-lpQ">
-                                <rect key="frame" x="87.5" y="226" width="76.5" height="28"/>
+                                <rect key="frame" x="87.5" y="225.5" width="76.5" height="28"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="26"/>
                                 <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -513,7 +521,7 @@
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ーーーー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBm-vq-00j">
-                                <rect key="frame" x="174" y="300" width="82" height="22"/>
+                                <rect key="frame" x="174" y="299.5" width="82" height="22"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="20"/>
                                 <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -522,7 +530,7 @@
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--:--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSp-N9-VY2">
-                                <rect key="frame" x="90.5" y="297.5" width="73.5" height="27"/>
+                                <rect key="frame" x="90.5" y="297" width="73.5" height="27"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="25"/>
                                 <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -540,7 +548,7 @@
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ーーーー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSq-88-Xog">
-                                <rect key="frame" x="174" y="371" width="82" height="22"/>
+                                <rect key="frame" x="174" y="370.5" width="82" height="22"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="20"/>
                                 <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -567,7 +575,7 @@
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ーーーー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvW-jR-4zM">
-                                <rect key="frame" x="174" y="442" width="82" height="22"/>
+                                <rect key="frame" x="174" y="441.5" width="82" height="22"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="20"/>
                                 <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -686,6 +694,84 @@
             </objects>
             <point key="canvasLocation" x="344.80000000000001" y="839.73013493253382"/>
         </scene>
+        <!--Setting View Controller-->
+        <scene sceneID="5TG-3K-Tl4">
+            <objects>
+                <viewController id="dS2-GV-xiw" customClass="SettingViewController" customModule="eigo_awase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nGy-KX-n2n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SkyBg" translatesAutoresizingMaskIntoConstraints="NO" id="Bfs-KH-G2B">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="weU-En-E4r">
+                                <rect key="frame" x="0.0" y="117.5" width="375" height="419.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">BGM・効果音 Music Atelier Amacha Wingless Seraph MusMus – http://musmus.main.jp/ ポケットサウンド – https://pocket-se.info/
+ イラスト素材 いらすとや</string>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1o1-hD-3Dd">
+                                <rect key="frame" x="87" y="545" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="KAWAIITEGAKIMOJI" family="KAWAIITEGAKIMOJI" pointSize="28"/>
+                                <state key="normal" title="もどる" backgroundImage="banner02">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="banner02"/>
+                                <state key="highlighted" backgroundImage="banner02"/>
+                                <connections>
+                                    <segue destination="Uy6-KF-OfM" kind="presentation" id="xyk-V5-lp1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="クレジット" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47r-i8-i7a" customClass="SpringLabel" customModule="Spring">
+                                <rect key="frame" x="79" y="51" width="217" height="43"/>
+                                <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="43"/>
+                                <color key="textColor" red="1" green="0.38695728299999999" blue="0.41531052680000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="0.0"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="repeatCount">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="47r-i8-i7a" firstAttribute="centerX" secondItem="nGy-KX-n2n" secondAttribute="centerX" id="0O4-eq-sFd"/>
+                            <constraint firstItem="6n8-Be-TwX" firstAttribute="bottom" secondItem="Bfs-KH-G2B" secondAttribute="bottom" id="55t-Wl-Nrw"/>
+                            <constraint firstItem="6n8-Be-TwX" firstAttribute="trailing" secondItem="Bfs-KH-G2B" secondAttribute="trailing" id="6NV-8c-PmU"/>
+                            <constraint firstItem="weU-En-E4r" firstAttribute="leading" secondItem="6n8-Be-TwX" secondAttribute="leading" id="Awl-PC-ch6"/>
+                            <constraint firstItem="Bfs-KH-G2B" firstAttribute="leading" secondItem="nGy-KX-n2n" secondAttribute="leading" id="Bit-e5-wIs"/>
+                            <constraint firstItem="47r-i8-i7a" firstAttribute="top" secondItem="6n8-Be-TwX" secondAttribute="top" constant="31" id="Fby-uj-Yx0"/>
+                            <constraint firstItem="6n8-Be-TwX" firstAttribute="trailing" secondItem="weU-En-E4r" secondAttribute="trailing" id="Ops-ZW-yAS"/>
+                            <constraint firstItem="weU-En-E4r" firstAttribute="top" secondItem="47r-i8-i7a" secondAttribute="bottom" constant="23.5" id="e2H-Fm-2OD"/>
+                            <constraint firstItem="6n8-Be-TwX" firstAttribute="bottom" secondItem="weU-En-E4r" secondAttribute="bottom" constant="130" id="kgC-OB-IuR"/>
+                            <constraint firstItem="Bfs-KH-G2B" firstAttribute="top" secondItem="nGy-KX-n2n" secondAttribute="top" id="o6d-0k-21g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6n8-Be-TwX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ej8-vi-5v3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-436" y="839.73013493253382"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Rank1" width="60" height="41"/>
@@ -706,7 +792,7 @@
         <image name="ロゴ_背景透明.png" width="433" height="76"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ViH-cg-7Rl"/>
+        <segue reference="xyk-V5-lp1"/>
         <segue reference="iUW-aV-tWE"/>
     </inferredMetricsTieBreakers>
 </document>

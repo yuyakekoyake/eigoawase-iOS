@@ -12,13 +12,19 @@ import Spring
 import AVFoundation
 import GoogleMobileAds
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, GADInterstitialDelegate {
     @IBOutlet weak var TitleE: SpringImageView!
     @IBOutlet weak var TitleI: SpringImageView!
     @IBOutlet weak var TitleGo: SpringImageView!
     @IBOutlet weak var TitleA: SpringImageView!
     @IBOutlet weak var TitleWa: SpringImageView!
     @IBOutlet weak var TitleSe: SpringImageView!
+    
+    var colud = LOTAnimationView()
+    var sun = LOTAnimationView()
+    var Airplane = LOTAnimationView()
+    var WatermelonAni = LOTAnimationView()
+    var WhaleAni = LOTAnimationView()
     
     var timer:Timer?
     
@@ -46,9 +52,16 @@ class HomeViewController: UIViewController {
        
         BgmSound()
         
-        //interstitial広告
+    //animation
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            self.TitleAnimation()
+        }
+        startTimer()
+        
+    //interstitial広告
         let interstitial = GADInterstitial(adUnitID: AdMobID)
-        //interstitial.delegate = self
+        interstitial.delegate = self
         let request = GADRequest()
         if(DeviceTest){
             request.testDevices = [DEVICE_TEST_ID]
@@ -69,65 +82,73 @@ class HomeViewController: UIViewController {
                 self.showAdMob(interstitial: interstitial)
             }
         }
+    }
+    
+    @IBAction func FruitsBtn(_ sender: Any) {
+        StartSound()
+        Bgm.stop()
         
-    // アニメーションのviewを生成
-        let colud = LOTAnimationView(name: "cloud.json")
+    }
+    
+    func LottieAnimation (){
+        // アニメーションのviewを生成
+        colud = LOTAnimationView(name: "cloud.json")
         colud.frame = CGRect(x: 0, y: 100, width: view.bounds.width/4.0, height: view.bounds.height/5)
         colud.contentMode = .scaleAspectFit
         colud.loopAnimation = true
         
-        let sun = LOTAnimationView(name: "sun_burst_weather_icon.json")
+        sun = LOTAnimationView(name: "sun_burst_weather_icon.json")
         sun.frame = CGRect(x: view.bounds.width-120, y: 20, width: view.bounds.width/3, height: view.bounds.height/6)
         sun.contentMode = .scaleAspectFit
         sun.loopAnimation = true
         
-        let Airplane = LOTAnimationView(name: "airplane.json")
+        Airplane = LOTAnimationView(name: "airplane.json")
         Airplane.frame = CGRect(x: view.bounds.width-120, y: 20, width: view.bounds.width/3, height: view.bounds.height/7)
         Airplane.loopAnimation = true
         Airplane.contentMode = .scaleAspectFit
         Airplane.animationSpeed = 0.3
         
-        let WatermelonAni = LOTAnimationView(name: "Watermelon.json")
+        WatermelonAni = LOTAnimationView(name: "Watermelon.json")
         WatermelonAni.frame = CGRect(x: 0, y: view.bounds.height-110, width: view.bounds.width/2, height: view.bounds.height/4)
         WatermelonAni.contentMode = .scaleAspectFit
         WatermelonAni.loopAnimation = true
         
-        let WhaleAni = LOTAnimationView(name: "Whale.json")
+        WhaleAni = LOTAnimationView(name: "Whale.json")
         WhaleAni.frame = CGRect(x: view.bounds.width-100, y: view.bounds.height/4, width: view.bounds.width/5, height: view.bounds.height/4)
         WhaleAni.contentMode = .scaleAspectFill
         WhaleAni.loopAnimation = true
-       
+        
         //let CloudAni = LOTAnimationView(name: "cloud.json")
-       // CloudAni.frame = CGRect(x: view.bounds.width-100, y: 170, width: view.bounds.width/4, height: view.bounds.height/7)
-       // CloudAni.contentMode = .scaleAspectFit
+        // CloudAni.frame = CGRect(x: view.bounds.width-100, y: 170, width: view.bounds.width/4, height: view.bounds.height/7)
+        // CloudAni.contentMode = .scaleAspectFit
         //CloudAni.loopAnimation = true
         
         
         //Add view
         self.view.addSubview(colud)
         self.view.addSubview(sun)
-       // self.view.addSubview(CloudAni)
+        // self.view.addSubview(CloudAni)
         self.view.addSubview(Airplane)
         self.view.addSubview(WatermelonAni)
         self.view.addSubview(WhaleAni)
         // アニメーションを開始
         colud.play()
         sun.play()
-       // CloudAni.play()
+        // CloudAni.play()
         Airplane.play()
         WatermelonAni.play()
         WhaleAni.play()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            self.TitleAnimation()
-        }
-        startTimer()
     }
     
-    @IBAction func FruitsBtn(_ sender: Any) {
+    func AnimationStop () {
+        colud.stop()
+        sun.stop()
+        Airplane.stop()
+        WatermelonAni.stop()
+        WhaleAni.stop()
         
     }
     
-
     @objc func  TitleAnimation(){
         TitleE.animation = "swing"
         TitleE.duration = 1.0
@@ -192,16 +213,30 @@ class HomeViewController: UIViewController {
             interstitial.present(fromRootViewController: self)
         }
     }
+    func interstitialWillPresentScreen(_ ad: GADInterstitial) {
+        print("interstitialWillPresentScreen")
+    }
+    
+    // インタースティシャルが消えた直後
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+        print("interstitialDidDismissScreen")
+        AnimationStop()
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    //画面が表示された直後
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        LottieAnimation()
+        print("FirstViewControllerのviewDidAppearが呼ばれた")
+    }
     //画面から非表示になる瞬間
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        StartSound()
-        Bgm.stop()
     }
 
     /*

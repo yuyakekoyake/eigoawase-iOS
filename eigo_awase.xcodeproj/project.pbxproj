@@ -48,6 +48,7 @@
 		8370974E1FDFEC1E004EC266 /* eigo_awaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8370974D1FDFEC1E004EC266 /* eigo_awaseTests.swift */; };
 		837097591FDFEC1E004EC266 /* eigo_awaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837097581FDFEC1E004EC266 /* eigo_awaseUITests.swift */; };
 		837097671FDFEC66004EC266 /* CardControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837097661FDFEC66004EC266 /* CardControl.swift */; };
+		83A39C1D20175F08003EC84D /* clearBGM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83A39C1C20175F08003EC84D /* clearBGM.mp3 */; };
 		83B6B24F200A60C800503639 /* RankingRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6B24E200A60C800503639 /* RankingRealm.swift */; };
 		83BA61212007A0A0004417DE /* helicopter.json in Resources */ = {isa = PBXBuildFile; fileRef = 83BA61202007A0A0004417DE /* helicopter.json */; };
 		83ECAFA1200CEF2500317D52 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ECAFA0200CEF2500317D52 /* RankingViewController.swift */; };
@@ -152,6 +153,7 @@
 		837097581FDFEC1E004EC266 /* eigo_awaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eigo_awaseUITests.swift; sourceTree = "<group>"; };
 		8370975A1FDFEC1E004EC266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		837097661FDFEC66004EC266 /* CardControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardControl.swift; sourceTree = "<group>"; };
+		83A39C1C20175F08003EC84D /* clearBGM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = clearBGM.mp3; sourceTree = "<group>"; };
 		83B6B24E200A60C800503639 /* RankingRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingRealm.swift; sourceTree = "<group>"; };
 		83BA61202007A0A0004417DE /* helicopter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = helicopter.json; sourceTree = "<group>"; };
 		83ECAFA0200CEF2500317D52 /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 		8364F34A1FE2C9D400388509 /* sounds */ = {
 			isa = PBXGroup;
 			children = (
+				83A39C1C20175F08003EC84D /* clearBGM.mp3 */,
 				83EE5FA320037E4D009E3521 /* tw080.mp3 */,
 				83ECAFAB200DDE7A00317D52 /* famipop3.mp3 */,
 				83EE5F91200344AF009E3521 /* retrogamecenter2.mp3 */,
@@ -547,6 +550,7 @@
 				8364F3AE1FE574B800388509 /* blip03.mp3 in Resources */,
 				8364F35F1FE2C9F400388509 /* orange.mp3 in Resources */,
 				8364F3391FE0201900388509 /* washi2.jpg in Resources */,
+				83A39C1D20175F08003EC84D /* clearBGM.mp3 in Resources */,
 				83EE5F9820035782009E3521 /* flight_icon_interaction.json in Resources */,
 				83ECAFB0200DE6FC00317D52 /* sun_burst_weather_icon.json in Resources */,
 				83EE5FA02003665D009E3521 /* star.json in Resources */,

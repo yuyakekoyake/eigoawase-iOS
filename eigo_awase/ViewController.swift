@@ -21,6 +21,7 @@ class ViewController: UIViewController, CardControlDelegate {
     var WrSound:AVAudioPlayer!
     var path3 = Bundle.main.bundleURL.appendingPathComponent("blip03.mp3")
     var Bgm:AVAudioPlayer!
+    var ClearBgm:AVAudioPlayer!
     
     var cards = [CardControl]()
     var cardSelected: CardControl?
@@ -277,7 +278,9 @@ class ViewController: UIViewController, CardControlDelegate {
                     SaveRanking()
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                         self.AllClearAnimation()
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                        self.Bgm.stop()
+                        self.ClearSound()
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
                             self.performSegue(withIdentifier: "ToHome", sender: nil)
     
                         }
@@ -342,6 +345,18 @@ class ViewController: UIViewController, CardControlDelegate {
             Bgm.numberOfLoops = -1
             Bgm.volume = 0.2
             Bgm.play()
+        }catch{
+            print("エラーです")
+        }
+    }
+    //ClearBGM
+    func ClearSound () {
+        let path = Bundle.main.bundleURL.appendingPathComponent("clearBGM.mp3")
+        do{
+            try ClearBgm = AVAudioPlayer(contentsOf: path)
+            ClearBgm.numberOfLoops = -1
+            ClearBgm.volume = 3
+            ClearBgm.play()
         }catch{
             print("エラーです")
         }
@@ -449,7 +464,7 @@ class ViewController: UIViewController, CardControlDelegate {
     //画面から非表示になる瞬間
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        Bgm.stop()
+        ClearBgm.stop()
     }
     
 }

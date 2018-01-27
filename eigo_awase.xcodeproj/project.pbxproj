@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		5851B46F140D5801DF9A14E8 /* Pods_eigo_awase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3660CEA3302F671BF4A3393A /* Pods_eigo_awase.framework */; };
 		6D9580FA00D5861ECE764599 /* Pods_eigo_awaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D70770D88E56C2B8564A5274 /* Pods_eigo_awaseTests.framework */; };
+		83291FDB201CD40A00E74DF7 /* boat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83291FDA201CD40A00E74DF7 /* boat.mp3 */; };
+		83291FDD201CD41700E74DF7 /* rocket.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83291FDC201CD41700E74DF7 /* rocket.mp3 */; };
+		83291FE6201CD43600E74DF7 /* cat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83291FDE201CD43500E74DF7 /* cat.mp3 */; };
+		83291FE7201CD43600E74DF7 /* tiger.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83291FDF201CD43500E74DF7 /* tiger.mp3 */; };
+		83291FE8201CD43600E74DF7 /* dog.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83291FE0201CD43500E74DF7 /* dog.mp3 */; };
+		83291FE9201CD43600E74DF7 /* elephant.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83291FE1201CD43500E74DF7 /* elephant.mp3 */; };
+		83291FEA201CD43600E74DF7 /* horse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83291FE2201CD43600E74DF7 /* horse.mp3 */; };
+		83291FEB201CD43600E74DF7 /* giraffe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83291FE3201CD43600E74DF7 /* giraffe.mp3 */; };
+		83291FEC201CD43600E74DF7 /* lion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83291FE4201CD43600E74DF7 /* lion.mp3 */; };
+		83291FED201CD43600E74DF7 /* pig.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83291FE5201CD43600E74DF7 /* pig.mp3 */; };
 		8364F32F1FE0163100388509 /* saru_original_透過.png in Resources */ = {isa = PBXBuildFile; fileRef = 8364F32E1FE0163100388509 /* saru_original_透過.png */; };
 		8364F3331FE018F400388509 /* buttonBack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3321FE018F400388509 /* buttonBack.jpg */; };
 		8364F3351FE01FD000388509 /* ロゴ_背景透明.png in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3341FE01FCF00388509 /* ロゴ_背景透明.png */; };
@@ -22,13 +32,11 @@
 		8364F3451FE044BF00388509 /* banana.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3441FE044BF00388509 /* banana.jpg */; };
 		8364F3471FE044D000388509 /* lemon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3461FE044D000388509 /* lemon.jpg */; };
 		8364F3491FE044E000388509 /* melon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3481FE044E000388509 /* melon.jpg */; };
-		8364F35B1FE2C9F400388509 /* motorcycle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F34B1FE2C9F200388509 /* motorcycle.mp3 */; };
 		8364F35C1FE2C9F400388509 /* banana.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F34C1FE2C9F300388509 /* banana.mp3 */; };
 		8364F35D1FE2C9F400388509 /* grape.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F34D1FE2C9F300388509 /* grape.mp3 */; };
 		8364F35E1FE2C9F400388509 /* train.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F34E1FE2C9F300388509 /* train.mp3 */; };
 		8364F35F1FE2C9F400388509 /* orange.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F34F1FE2C9F300388509 /* orange.mp3 */; };
 		8364F3601FE2C9F400388509 /* bicycle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3501FE2C9F300388509 /* bicycle.mp3 */; };
-		8364F3611FE2C9F400388509 /* fire truck.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3511FE2C9F300388509 /* fire truck.mp3 */; };
 		8364F3621FE2C9F400388509 /* apple.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3521FE2C9F300388509 /* apple.mp3 */; };
 		8364F3631FE2C9F400388509 /* car.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3531FE2C9F300388509 /* car.mp3 */; };
 		8364F3641FE2C9F400388509 /* melon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3541FE2C9F300388509 /* melon.mp3 */; };
@@ -110,6 +118,16 @@
 		5F83F0C08D447F8A4E520215 /* Pods-eigo_awaseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eigo_awaseUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eigo_awaseUITests/Pods-eigo_awaseUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		607269BC5CABD8A108FC7E9B /* Pods-eigo_awaseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eigo_awaseUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-eigo_awaseUITests/Pods-eigo_awaseUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7BB3E5C990A69BF37D8E303F /* Pods-eigo_awaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eigo_awaseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eigo_awaseTests/Pods-eigo_awaseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		83291FDA201CD40A00E74DF7 /* boat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = boat.mp3; sourceTree = "<group>"; };
+		83291FDC201CD41700E74DF7 /* rocket.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rocket.mp3; sourceTree = "<group>"; };
+		83291FDE201CD43500E74DF7 /* cat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cat.mp3; sourceTree = "<group>"; };
+		83291FDF201CD43500E74DF7 /* tiger.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tiger.mp3; sourceTree = "<group>"; };
+		83291FE0201CD43500E74DF7 /* dog.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dog.mp3; sourceTree = "<group>"; };
+		83291FE1201CD43500E74DF7 /* elephant.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = elephant.mp3; sourceTree = "<group>"; };
+		83291FE2201CD43600E74DF7 /* horse.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = horse.mp3; sourceTree = "<group>"; };
+		83291FE3201CD43600E74DF7 /* giraffe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = giraffe.mp3; sourceTree = "<group>"; };
+		83291FE4201CD43600E74DF7 /* lion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lion.mp3; sourceTree = "<group>"; };
+		83291FE5201CD43600E74DF7 /* pig.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pig.mp3; sourceTree = "<group>"; };
 		8364F32E1FE0163100388509 /* saru_original_透過.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "saru_original_透過.png"; sourceTree = "<group>"; };
 		8364F3321FE018F400388509 /* buttonBack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = buttonBack.jpg; sourceTree = "<group>"; };
 		8364F3341FE01FCF00388509 /* ロゴ_背景透明.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ロゴ_背景透明.png"; sourceTree = "<group>"; };
@@ -123,13 +141,11 @@
 		8364F3441FE044BF00388509 /* banana.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = banana.jpg; sourceTree = "<group>"; };
 		8364F3461FE044D000388509 /* lemon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lemon.jpg; sourceTree = "<group>"; };
 		8364F3481FE044E000388509 /* melon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = melon.jpg; sourceTree = "<group>"; };
-		8364F34B1FE2C9F200388509 /* motorcycle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = motorcycle.mp3; sourceTree = "<group>"; };
 		8364F34C1FE2C9F300388509 /* banana.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = banana.mp3; sourceTree = "<group>"; };
 		8364F34D1FE2C9F300388509 /* grape.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = grape.mp3; sourceTree = "<group>"; };
 		8364F34E1FE2C9F300388509 /* train.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = train.mp3; sourceTree = "<group>"; };
 		8364F34F1FE2C9F300388509 /* orange.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = orange.mp3; sourceTree = "<group>"; };
 		8364F3501FE2C9F300388509 /* bicycle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bicycle.mp3; sourceTree = "<group>"; };
-		8364F3511FE2C9F300388509 /* fire truck.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "fire truck.mp3"; sourceTree = "<group>"; };
 		8364F3521FE2C9F300388509 /* apple.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = apple.mp3; sourceTree = "<group>"; };
 		8364F3531FE2C9F300388509 /* car.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = car.mp3; sourceTree = "<group>"; };
 		8364F3541FE2C9F300388509 /* melon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = melon.mp3; sourceTree = "<group>"; };
@@ -254,6 +270,15 @@
 		8364F34A1FE2C9D400388509 /* sounds */ = {
 			isa = PBXGroup;
 			children = (
+				83291FDE201CD43500E74DF7 /* cat.mp3 */,
+				83291FE0201CD43500E74DF7 /* dog.mp3 */,
+				83291FE1201CD43500E74DF7 /* elephant.mp3 */,
+				83291FE3201CD43600E74DF7 /* giraffe.mp3 */,
+				83291FE2201CD43600E74DF7 /* horse.mp3 */,
+				83291FE4201CD43600E74DF7 /* lion.mp3 */,
+				83291FE5201CD43600E74DF7 /* pig.mp3 */,
+				83291FDF201CD43500E74DF7 /* tiger.mp3 */,
+				83291FDC201CD41700E74DF7 /* rocket.mp3 */,
 				83A39C1C20175F08003EC84D /* clearBGM.mp3 */,
 				83EE5FA320037E4D009E3521 /* tw080.mp3 */,
 				83ECAFAB200DDE7A00317D52 /* famipop3.mp3 */,
@@ -262,15 +287,14 @@
 				8364F3551FE2C9F300388509 /* airplane.mp3 */,
 				8364F3521FE2C9F300388509 /* apple.mp3 */,
 				8364F34C1FE2C9F300388509 /* banana.mp3 */,
+				83291FDA201CD40A00E74DF7 /* boat.mp3 */,
 				8364F3501FE2C9F300388509 /* bicycle.mp3 */,
 				8364F3571FE2C9F400388509 /* bus.mp3 */,
 				8364F3531FE2C9F300388509 /* car.mp3 */,
 				8364F3591FE2C9F400388509 /* cherry.mp3 */,
-				8364F3511FE2C9F300388509 /* fire truck.mp3 */,
 				8364F34D1FE2C9F300388509 /* grape.mp3 */,
 				8364F3561FE2C9F300388509 /* lemon.mp3 */,
 				8364F3541FE2C9F300388509 /* melon.mp3 */,
-				8364F34B1FE2C9F200388509 /* motorcycle.mp3 */,
 				8364F34F1FE2C9F300388509 /* orange.mp3 */,
 				8364F3581FE2C9F400388509 /* peach.mp3 */,
 				8364F35A1FE2C9F400388509 /* ship.mp3 */,
@@ -523,6 +547,7 @@
 				83ECAFA6200DC34D00317D52 /* hunwariusagi.ttf in Resources */,
 				83ECAFB2200DEAB200317D52 /* Whale.json in Resources */,
 				83ECAFA4200DC27000317D52 /* KTEGAKI.ttf in Resources */,
+				83291FDD201CD41700E74DF7 /* rocket.mp3 in Resources */,
 				8364F3681FE2C9F400388509 /* peach.mp3 in Resources */,
 				837097431FDFEC1E004EC266 /* LaunchScreen.storyboard in Resources */,
 				83EE5F8A20012D2D009E3521 /* hiragana_04_e.png in Resources */,
@@ -539,18 +564,22 @@
 				8364F35E1FE2C9F400388509 /* train.mp3 in Resources */,
 				83EE5F7C1FFFD6B0009E3521 /* Watermelon.json in Resources */,
 				83EE5FA420037E4D009E3521 /* tw080.mp3 in Resources */,
-				8364F3611FE2C9F400388509 /* fire truck.mp3 in Resources */,
+				83291FE8201CD43600E74DF7 /* dog.mp3 in Resources */,
 				83EE5F8C20012D2D009E3521 /* hiragana_02_i.png in Resources */,
 				8364F3671FE2C9F400388509 /* bus.mp3 in Resources */,
 				83ECAFAC200DDE7A00317D52 /* famipop3.mp3 in Resources */,
 				83ECAFAE200DE62A00317D52 /* cloud_disconnection.json in Resources */,
 				8364F3691FE2C9F400388509 /* cherry.mp3 in Resources */,
 				83EE5F741FFFCDEA009E3521 /* x_pop.json in Resources */,
+				83291FE9201CD43600E74DF7 /* elephant.mp3 in Resources */,
+				83291FED201CD43600E74DF7 /* pig.mp3 in Resources */,
 				83EE5F9020012D37009E3521 /* hiragana_74_wa.png in Resources */,
+				83291FEA201CD43600E74DF7 /* horse.mp3 in Resources */,
 				8364F3431FE044AE00388509 /* grape.jpg in Resources */,
 				8364F3411FE044A000388509 /* cherry.jpg in Resources */,
 				8364F33F1FE0448F00388509 /* orange.jpg in Resources */,
 				8364F3331FE018F400388509 /* buttonBack.jpg in Resources */,
+				83291FEB201CD43600E74DF7 /* giraffe.mp3 in Resources */,
 				83ECAFB6200DEE6800317D52 /* star2.json in Resources */,
 				8364F3661FE2C9F400388509 /* lemon.mp3 in Resources */,
 				8364F3AC1FE5740100388509 /* クイズ・正解.mp3 in Resources */,
@@ -560,26 +589,29 @@
 				83A39C1D20175F08003EC84D /* clearBGM.mp3 in Resources */,
 				83EE5F9820035782009E3521 /* flight_icon_interaction.json in Resources */,
 				83ECAFB0200DE6FC00317D52 /* sun_burst_weather_icon.json in Resources */,
+				83291FE7201CD43600E74DF7 /* tiger.mp3 in Resources */,
 				83EE5FA02003665D009E3521 /* star.json in Resources */,
 				8364F33D1FE0447100388509 /* peach.jpg in Resources */,
+				83291FDB201CD40A00E74DF7 /* boat.mp3 in Resources */,
 				8364F3641FE2C9F400388509 /* melon.mp3 in Resources */,
 				8364F3491FE044E000388509 /* melon.jpg in Resources */,
 				8364F3451FE044BF00388509 /* banana.jpg in Resources */,
 				83EE5F781FFFCF11009E3521 /* trophy.json in Resources */,
 				83EE5F8F20012D37009E3521 /* hiragana_24_se.png in Resources */,
+				83291FEC201CD43600E74DF7 /* lion.mp3 in Resources */,
 				8364F35C1FE2C9F400388509 /* banana.mp3 in Resources */,
 				83EE5F8B20012D2D009E3521 /* hiragana_20_go.png in Resources */,
 				8364F35D1FE2C9F400388509 /* grape.mp3 in Resources */,
 				83ECAFB4200DEC9000317D52 /* airplane.json in Resources */,
 				8364F3621FE2C9F400388509 /* apple.mp3 in Resources */,
 				8364F3651FE2C9F400388509 /* airplane.mp3 in Resources */,
+				83291FE6201CD43600E74DF7 /* cat.mp3 in Resources */,
 				83ECAFB8200DEF6C00317D52 /* like_animation.json in Resources */,
 				83EE5F92200344AF009E3521 /* retrogamecenter2.mp3 in Resources */,
 				8364F36A1FE2C9F400388509 /* ship.mp3 in Resources */,
 				8364F3351FE01FD000388509 /* ロゴ_背景透明.png in Resources */,
 				83EE5F9420034C6A009E3521 /* save-02.wav in Resources */,
 				8364F3471FE044D000388509 /* lemon.jpg in Resources */,
-				8364F35B1FE2C9F400388509 /* motorcycle.mp3 in Resources */,
 				8364F32F1FE0163100388509 /* saru_original_透過.png in Resources */,
 				8370973E1FDFEC1E004EC266 /* Main.storyboard in Resources */,
 			);

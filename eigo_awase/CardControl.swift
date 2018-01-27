@@ -16,6 +16,7 @@ class CardControl: UIView {
     //mondai
     let Fruit = ["apple","orange","cherry","banana","grape","lemon","peach","melon"]
     let vehicle = ["airplane","bicycle","boat","bus","car","rocket","ship","train"]
+    let Animal = ["cat","dog","elephant","giraffe","horse","lion","pig","tiger"]
 
      let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
@@ -67,10 +68,12 @@ class CardControl: UIView {
         
         var cardAryStr: [String] = []
         switch appDelegate.MondaiCategory {
-        case "fruit":
+        case "くだもの":
             cardAryStr = Fruit
-        case "vehicle":
+        case "のりもの":
             cardAryStr = vehicle
+        case "どうぶつ":
+            cardAryStr = Animal
         default:
             break
         }

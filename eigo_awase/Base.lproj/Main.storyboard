@@ -255,6 +255,10 @@
                                         <size key="value" width="1" height="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Animal:" destination="Uy6-KF-OfM" eventType="touchUpInside" id="ffQ-b2-4VC"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="5a6-fB-Xxf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fE9-Hf-C1o">
                                 <rect key="frame" x="102" y="320" width="170" height="40"/>

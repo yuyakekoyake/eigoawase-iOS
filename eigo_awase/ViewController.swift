@@ -41,6 +41,12 @@ class ViewController: UIViewController, CardControlDelegate {
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
+    //mondai
+    let Fruit = ["apple","orange","cherry","banana","grape","lemon","peach","melon"]
+    let vehicle = ["airplane","bicycle","boat","bus","car","rocket","ship","train"]
+    let Animal = ["cat","dog","elephant","giraffe","horse","lion","pig","tiger"]
+    
+    var OpenSoundAry: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,6 +82,19 @@ class ViewController: UIViewController, CardControlDelegate {
         elapsedTime.layer.masksToBounds = true
     //timerStart
         startTimer()
+        
+    //音声の切り替え
+        switch appDelegate.MondaiCategory {
+        case "くだもの":
+            OpenSoundAry = Fruit
+        case "のりもの":
+            OpenSoundAry = vehicle
+        case "どうぶつ":
+            OpenSoundAry = Animal
+        default:
+            break
+        }
+        
         var numArray = [Int]()
         for i in 0..<16 {
             numArray.append(i)
@@ -114,28 +133,28 @@ class ViewController: UIViewController, CardControlDelegate {
             switch number {
             case 0:
                 AsrNum = 0
-                path = Bundle.main.bundleURL.appendingPathComponent("apple.mp3")
+                path = Bundle.main.bundleURL.appendingPathComponent(OpenSoundAry[0] + ".mp3")
             case 1:
                 AsrNum = 1
-                path = Bundle.main.bundleURL.appendingPathComponent("orange.mp3")
+                path = Bundle.main.bundleURL.appendingPathComponent(OpenSoundAry[1] + ".mp3")
             case 2:
                 AsrNum = 2
-                path = Bundle.main.bundleURL.appendingPathComponent("cherry.mp3")
+                path = Bundle.main.bundleURL.appendingPathComponent(OpenSoundAry[2] + ".mp3")
             case 3:
                 AsrNum = 3
-                path = Bundle.main.bundleURL.appendingPathComponent("banana.mp3")
+                path = Bundle.main.bundleURL.appendingPathComponent(OpenSoundAry[3] + ".mp3")
             case 4:
                 AsrNum = 4
-                path = Bundle.main.bundleURL.appendingPathComponent("grape.mp3")
+                path = Bundle.main.bundleURL.appendingPathComponent(OpenSoundAry[4] + ".mp3")
             case 5:
                 AsrNum = 5
-                path = Bundle.main.bundleURL.appendingPathComponent("lemon.mp3")
+                path = Bundle.main.bundleURL.appendingPathComponent(OpenSoundAry[5] + ".mp3")
             case 6:
                 AsrNum = 6
-                path = Bundle.main.bundleURL.appendingPathComponent("peach.mp3")
+                path = Bundle.main.bundleURL.appendingPathComponent(OpenSoundAry[6] + ".mp3")
             case 7:
                 AsrNum = 7
-                path = Bundle.main.bundleURL.appendingPathComponent("melon.mp3")
+                path = Bundle.main.bundleURL.appendingPathComponent(OpenSoundAry[7] + ".mp3")
             case 8:
                 AsrNum = 0
                 path = Bundle.main.bundleURL.appendingPathComponent("")
@@ -175,28 +194,28 @@ class ViewController: UIViewController, CardControlDelegate {
                 switch cardSelected!.number {
                 case 0:
                     AsrNum1 = 0
-                    path = Bundle.main.bundleURL.appendingPathComponent("apple.mp3")
+                    path = Bundle.main.bundleURL.appendingPathComponent(OpenSoundAry[0] + ".mp3")
                 case 1:
                     AsrNum1 = 1
-                    path = Bundle.main.bundleURL.appendingPathComponent("orange.mp3")
+                    path = Bundle.main.bundleURL.appendingPathComponent(OpenSoundAry[1] + ".mp3")
                 case 2:
                     AsrNum1 = 2
-                    path = Bundle.main.bundleURL.appendingPathComponent("cherry.mp3")
+                    path = Bundle.main.bundleURL.appendingPathComponent(OpenSoundAry[2] + ".mp3")
                 case 3:
                     AsrNum1 = 3
-                    path = Bundle.main.bundleURL.appendingPathComponent("banana.mp3")
+                    path = Bundle.main.bundleURL.appendingPathComponent(OpenSoundAry[3] + ".mp3")
                 case 4:
                     AsrNum1 = 4
-                    path = Bundle.main.bundleURL.appendingPathComponent("grape.mp3")
+                    path = Bundle.main.bundleURL.appendingPathComponent(OpenSoundAry[4] + ".mp3")
                 case 5:
                     AsrNum1 = 5
-                    path = Bundle.main.bundleURL.appendingPathComponent("lemon.mp3")
+                    path = Bundle.main.bundleURL.appendingPathComponent(OpenSoundAry[5] + ".mp3")
                 case 6:
                     AsrNum1 = 6
-                    path = Bundle.main.bundleURL.appendingPathComponent("peach.mp3")
+                    path = Bundle.main.bundleURL.appendingPathComponent(OpenSoundAry[6] + ".mp3")
                 case 7:
                     AsrNum1 = 7
-                    path = Bundle.main.bundleURL.appendingPathComponent("melon.mp3")
+                    path = Bundle.main.bundleURL.appendingPathComponent(OpenSoundAry[7] + ".mp3")
                 case 8:
                     AsrNum1 = 0
                     path = Bundle.main.bundleURL.appendingPathComponent("")
@@ -226,21 +245,21 @@ class ViewController: UIViewController, CardControlDelegate {
                 }
                 switch number {
                 case 0:
-                    path = Bundle.main.bundleURL.appendingPathComponent("apple.mp3")
+                    path = Bundle.main.bundleURL.appendingPathComponent(OpenSoundAry[0] + ".mp3")
                 case 1:
-                    path = Bundle.main.bundleURL.appendingPathComponent("orange.mp3")
+                    path = Bundle.main.bundleURL.appendingPathComponent(OpenSoundAry[1] + ".mp3")
                 case 2:
-                    path = Bundle.main.bundleURL.appendingPathComponent("cherry.mp3")
+                    path = Bundle.main.bundleURL.appendingPathComponent(OpenSoundAry[2] + ".mp3")
                 case 3:
-                    path = Bundle.main.bundleURL.appendingPathComponent("banana.mp3")
+                    path = Bundle.main.bundleURL.appendingPathComponent(OpenSoundAry[3] + ".mp3")
                 case 4:
-                    path = Bundle.main.bundleURL.appendingPathComponent("grape.mp3")
+                    path = Bundle.main.bundleURL.appendingPathComponent(OpenSoundAry[4] + ".mp3")
                 case 5:
-                    path = Bundle.main.bundleURL.appendingPathComponent("lemon.mp3")
+                    path = Bundle.main.bundleURL.appendingPathComponent(OpenSoundAry[5] + ".mp3")
                 case 6:
-                    path = Bundle.main.bundleURL.appendingPathComponent("peach.mp3")
+                    path = Bundle.main.bundleURL.appendingPathComponent(OpenSoundAry[6] + ".mp3")
                 case 7:
-                    path = Bundle.main.bundleURL.appendingPathComponent("melon.mp3")
+                    path = Bundle.main.bundleURL.appendingPathComponent(OpenSoundAry[7] + ".mp3")
                 case 8:
                     path = Bundle.main.bundleURL.appendingPathComponent("")
                 case 9:
@@ -356,7 +375,7 @@ class ViewController: UIViewController, CardControlDelegate {
         let path = Bundle.main.bundleURL.appendingPathComponent("clearBGM.mp3")
         do{
             try ClearBgm = AVAudioPlayer(contentsOf: path)
-            ClearBgm.numberOfLoops = 1
+            ClearBgm.numberOfLoops = 0
             ClearBgm.volume = 3
             ClearBgm.play()
         }catch{
@@ -455,7 +474,7 @@ class ViewController: UIViewController, CardControlDelegate {
         let realm = try! Realm()
         let RankigData = RankingRealm()
         let date = Date()
-        RankigData.Category = "くだもの"
+        RankigData.Category = appDelegate.MondaiCategory
         RankigData.Time = count
         RankigData.Date = date
         try! realm.write {

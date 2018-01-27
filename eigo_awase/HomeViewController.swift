@@ -85,18 +85,23 @@ class HomeViewController: UIViewController, GADInterstitialDelegate {
     }
     
     @IBAction func FruitsBtn(_ sender: Any) {
-        appDelegate.MondaiCategory = "fruit"
+        appDelegate.MondaiCategory = "くだもの"
         StartSound()
         Bgm.stop()
         
     }
     
     @IBAction func VehicleBtn(_ sender: Any) {
-        appDelegate.MondaiCategory = "vehicle"
+        appDelegate.MondaiCategory = "のりもの"
         StartSound()
         Bgm.stop()
     }
     
+    @IBAction func Animal(_ sender: Any) {
+        appDelegate.MondaiCategory = "どうぶつ"
+        StartSound()
+        Bgm.stop()
+    }
     
     @IBAction func CreditBtn(_ sender: Any) {
         StartSound()

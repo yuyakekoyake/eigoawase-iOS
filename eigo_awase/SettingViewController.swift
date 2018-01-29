@@ -14,10 +14,23 @@ class SettingViewController: UIViewController {
     var BackEffect:AVAudioPlayer!
     var Bgm:AVAudioPlayer!
     
+    @IBOutlet weak var BackBtnBottom: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
         BgmSound()
         // Do any additional setup after loading the view.
+        
+        //deviceSize
+        switch view.frame.height {
+        case 812: break
+        case 736:
+            BackBtnBottom.constant = 130
+        case 568: break
+        case 480:
+            BackBtnBottom.constant = 7
+        default:
+            break
+        }
     }
 
     override func didReceiveMemoryWarning() {

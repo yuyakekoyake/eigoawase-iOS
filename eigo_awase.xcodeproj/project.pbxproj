@@ -21,7 +21,6 @@
 		83291FED201CD43600E74DF7 /* pig.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83291FE5201CD43600E74DF7 /* pig.mp3 */; };
 		8364F32F1FE0163100388509 /* saru_original_透過.png in Resources */ = {isa = PBXBuildFile; fileRef = 8364F32E1FE0163100388509 /* saru_original_透過.png */; };
 		8364F3331FE018F400388509 /* buttonBack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3321FE018F400388509 /* buttonBack.jpg */; };
-		8364F3351FE01FD000388509 /* ロゴ_背景透明.png in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3341FE01FCF00388509 /* ロゴ_背景透明.png */; };
 		8364F3371FE01FEF00388509 /* FirstSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8364F3361FE01FEE00388509 /* FirstSplashViewController.swift */; };
 		8364F3391FE0201900388509 /* washi2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8364F3381FE0201900388509 /* washi2.jpg */; };
 		8364F33B1FE0432E00388509 /* apple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8364F33A1FE0432E00388509 /* apple.jpg */; };
@@ -130,7 +129,6 @@
 		83291FE5201CD43600E74DF7 /* pig.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pig.mp3; sourceTree = "<group>"; };
 		8364F32E1FE0163100388509 /* saru_original_透過.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "saru_original_透過.png"; sourceTree = "<group>"; };
 		8364F3321FE018F400388509 /* buttonBack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = buttonBack.jpg; sourceTree = "<group>"; };
-		8364F3341FE01FCF00388509 /* ロゴ_背景透明.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ロゴ_背景透明.png"; sourceTree = "<group>"; };
 		8364F3361FE01FEE00388509 /* FirstSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstSplashViewController.swift; sourceTree = "<group>"; };
 		8364F3381FE0201900388509 /* washi2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = washi2.jpg; sourceTree = "<group>"; };
 		8364F33A1FE0432E00388509 /* apple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = apple.jpg; sourceTree = "<group>"; };
@@ -260,7 +258,6 @@
 				8364F3461FE044D000388509 /* lemon.jpg */,
 				8364F3481FE044E000388509 /* melon.jpg */,
 				8364F3381FE0201900388509 /* washi2.jpg */,
-				8364F3341FE01FCF00388509 /* ロゴ_背景透明.png */,
 				8364F3321FE018F400388509 /* buttonBack.jpg */,
 				8364F32E1FE0163100388509 /* saru_original_透過.png */,
 			);
@@ -609,7 +606,6 @@
 				83ECAFB8200DEF6C00317D52 /* like_animation.json in Resources */,
 				83EE5F92200344AF009E3521 /* retrogamecenter2.mp3 in Resources */,
 				8364F36A1FE2C9F400388509 /* ship.mp3 in Resources */,
-				8364F3351FE01FD000388509 /* ロゴ_背景透明.png in Resources */,
 				83EE5F9420034C6A009E3521 /* save-02.wav in Resources */,
 				8364F3471FE044D000388509 /* lemon.jpg in Resources */,
 				8364F32F1FE0163100388509 /* saru_original_透過.png in Resources */,

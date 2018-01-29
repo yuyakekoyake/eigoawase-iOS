@@ -34,6 +34,10 @@ class RankingViewController: UIViewController {
     var BackEffect:AVAudioPlayer!
     var Bgm:AVAudioPlayer!
     
+    @IBOutlet weak var RankingLabelTop: NSLayoutConstraint!
+    @IBOutlet weak var BackBtnTop: NSLayoutConstraint!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -44,6 +48,9 @@ class RankingViewController: UIViewController {
         
 
         let realm = try! Realm()
+        //realmのパス
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
+        print("Realm Path")
         let Rankresults = realm.objects(RankingRealm.self).sorted(byKeyPath: "Time", ascending: true)
         print(Rankresults)
         
@@ -80,6 +87,20 @@ class RankingViewController: UIViewController {
         let df = DateFormatter()
         df.dateFormat = "MM/dd"
         print(df.string(from: date))
+        
+        
+    //deviceSize
+        switch view.frame.height {
+        case 812: break
+        case 736: break
+        case 568:
+            BackBtnTop.constant = 30
+        case 480:
+            RankingLabelTop.constant = 20
+            BackBtnTop.constant = 40
+        default:
+            break
+        }
         
     }
 

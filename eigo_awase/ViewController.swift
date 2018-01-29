@@ -71,7 +71,7 @@ class ViewController: UIViewController, CardControlDelegate {
         print("Google Mobile Ads SDK version: " + GADRequest.sdkVersion())
         //testID"ca-app-pub-3940256099942544/2934735716"
         //本番ID"ca-app-pub-2571146153853390/5479238805"
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.adUnitID = "ca-app-pub-2571146153853390/5479238805"
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
         

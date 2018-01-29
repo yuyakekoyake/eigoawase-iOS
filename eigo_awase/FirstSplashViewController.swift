@@ -18,13 +18,13 @@ class FirstSplashViewController: UIViewController {
         
         //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "washi2.jpg")!)
         // アニメーションのviewを生成
-        let animationView = LOTAnimationView(name: "Watermelon.json")
-        
-        // ViewControllerに配置
-        self.view.addSubview(animationView)
-        
+        let WatermelonAni = LOTAnimationView(name: "Watermelon.json")
+        WatermelonAni.frame = CGRect(x: 0, y: 20, width: view.bounds.width/2, height: view.bounds.height/4)
+        WatermelonAni.contentMode = .scaleAspectFit
+        self.view.addSubview(WatermelonAni)
         // アニメーションを開始
-        animationView.play()
+        WatermelonAni.play()
+        
 
          DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
             

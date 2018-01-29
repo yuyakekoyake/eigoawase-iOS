@@ -17,8 +17,7 @@ class CardControl: UIView {
     let Fruit = ["apple","orange","cherry","banana","grape","lemon","peach","melon"]
     let vehicle = ["airplane","bicycle","boat","bus","car","rocket","ship","train"]
     let Animal = ["cat","dog","elephant","giraffe","horse","lion","pig","tiger"]
-
-     let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     // MARK: プロパティ
     var number:Int = 0 {
@@ -40,7 +39,8 @@ class CardControl: UIView {
     
     weak var delegate: CardControlDelegate?
     
-    static let sizeCard = 70
+    static var sizeCard = 70
+    static var CardcornerRadius = 7
     
     var buttonCard = UIButton()
     
@@ -51,6 +51,8 @@ class CardControl: UIView {
         buttonCard.setTitle("?", for: .normal)
         buttonCard.layer.cornerRadius = 10
         buttonCard.backgroundColor = UIColor(red: 249/255, green: 244/255, blue: 178/255, alpha: 1.0)//UIColor(red: 0.2, green: 0.6, blue: 0.6, alpha: 0.7)
+        
+        
     //ここをSwift4へ
         buttonCard.addTarget(self, action: #selector(CardControl.ButtonTapped(sender:)),for: .touchUpInside)
     
@@ -126,9 +128,12 @@ class CardControl: UIView {
         buttonCard.setTitleColor(UIColor.black, for: .selected)
         buttonCard.setBackgroundImage(buttonImageSelect, for: .selected)
         buttonCard.setTitle(cardstr, for: .selected)
-        buttonCard.titleLabel?.font = UIFont.systemFont(ofSize: 20)
-        buttonCard.layer.cornerRadius = 10
+        buttonCard.titleLabel?.font = UIFont.systemFont(ofSize: 23)
+        buttonCard.layer.cornerRadius = CGFloat(CardControl.CardcornerRadius)
         buttonCard.backgroundColor = UIColor(red: 249/255, green: 244/255, blue: 178/255, alpha: 1.0)//(red: 0.2, green: 0.6, blue: 0.6, alpha: 0.7)
+        //buttonのフォントサイズ可変
+        buttonCard.titleLabel?.adjustsFontSizeToFitWidth = true
+        buttonCard.titleLabel?.minimumScaleFactor = 0.1
         buttonCard.addTarget(self, action: #selector(CardControl.ButtonTapped(sender:)),for: .touchUpInside)
         
         addSubview(buttonCard)

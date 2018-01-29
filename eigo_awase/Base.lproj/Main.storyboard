@@ -34,9 +34,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SkyBg" translatesAutoresizingMaskIntoConstraints="NO" id="Cgm-rh-CMv">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyT-9h-kek">
-                                <rect key="frame" x="87" y="539" width="200" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyT-9h-kek">
+                                <rect key="frame" x="79.5" y="534" width="215" height="53"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="KAWAIITEGAKIMOJI" family="KAWAIITEGAKIMOJI" pointSize="28"/>
                                 <state key="normal" title="ゲームをやめる" backgroundImage="banner02">
@@ -47,12 +46,9 @@
                                     <segue destination="Uy6-KF-OfM" kind="presentation" id="ViH-cg-7Rl"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="のこり：8あわせ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRx-NF-qHs">
-                                <rect key="frame" x="90" y="30" width="195" height="53"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="のこり：8あわせ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="1" translatesAutoresizingMaskIntoConstraints="NO" id="BRx-NF-qHs">
+                                <rect key="frame" x="80" y="30" width="215" height="53"/>
                                 <color key="backgroundColor" red="0.8585694432258606" green="0.64643502235412598" blue="0.39993751049041748" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="53" id="mhn-Ld-km1"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="KAWAIITEGAKIMOJI" family="KAWAIITEGAKIMOJI" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -81,9 +77,8 @@
                                     <constraint firstAttribute="height" constant="50" id="6s2-wl-ncq"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="スタート" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYq-0x-9Gj">
-                                <rect key="frame" x="72" y="435" width="231" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="スタート" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="1" translatesAutoresizingMaskIntoConstraints="NO" id="DYq-0x-9Gj">
+                                <rect key="frame" x="80" y="451" width="215" height="53"/>
                                 <color key="backgroundColor" red="0.97647058823529409" green="0.95686274509803915" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="KAWAIITEGAKIMOJI" family="KAWAIITEGAKIMOJI" pointSize="40"/>
                                 <color key="textColor" red="0.77705987728186665" green="0.21822345673574225" blue="0.13063127891246148" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -95,16 +90,24 @@
                         <color key="backgroundColor" red="0.7914239764213562" green="0.90824055671691895" blue="0.99217194318771362" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="BRx-NF-qHs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="0Co-0L-NmE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BRx-NF-qHs" secondAttribute="trailing" constant="90" id="1gX-Cb-5FG"/>
                             <constraint firstItem="Cgm-rh-CMv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="3gi-qa-uYY"/>
+                            <constraint firstItem="BRx-NF-qHs" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.07946" id="4Rc-ja-HCv"/>
+                            <constraint firstItem="RyT-9h-kek" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ByW-KS-ul8"/>
                             <constraint firstItem="Cgm-rh-CMv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Hwh-Ge-AYn"/>
                             <constraint firstItem="BRx-NF-qHs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IJU-UV-uOm"/>
+                            <constraint firstItem="3C3-Lt-tRc" firstAttribute="top" secondItem="RyT-9h-kek" secondAttribute="bottom" constant="30" id="KtV-Ga-c4O"/>
+                            <constraint firstItem="RyT-9h-kek" firstAttribute="height" secondItem="DYq-0x-9Gj" secondAttribute="height" id="Kzn-l6-sBk"/>
+                            <constraint firstItem="DYq-0x-9Gj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NSg-1J-YWh"/>
                             <constraint firstItem="3C3-Lt-tRc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uuu-vE-NFJ"/>
                             <constraint firstItem="3C3-Lt-tRc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VCj-hc-2OZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cgm-rh-CMv" secondAttribute="trailing" id="Wlc-6L-1WY"/>
+                            <constraint firstItem="DYq-0x-9Gj" firstAttribute="width" secondItem="BRx-NF-qHs" secondAttribute="width" id="YUc-3B-QCz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3C3-Lt-tRc" secondAttribute="trailing" id="agb-4l-bms"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3C3-Lt-tRc" secondAttribute="bottom" id="ez8-W3-MLN"/>
-                            <constraint firstItem="BRx-NF-qHs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="k4u-In-QzF"/>
+                            <constraint firstItem="RyT-9h-kek" firstAttribute="top" secondItem="DYq-0x-9Gj" secondAttribute="bottom" constant="30" id="f6x-73-XU1"/>
+                            <constraint firstItem="BRx-NF-qHs" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.57333" id="fmv-fZ-qiK"/>
+                            <constraint firstItem="DYq-0x-9Gj" firstAttribute="height" secondItem="BRx-NF-qHs" secondAttribute="height" id="geK-qC-TzT"/>
+                            <constraint firstItem="RyT-9h-kek" firstAttribute="width" secondItem="DYq-0x-9Gj" secondAttribute="width" id="h7W-cr-Bhr"/>
                             <constraint firstItem="Cgm-rh-CMv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sma-6c-Wbd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -112,6 +115,8 @@
                     <connections>
                         <outlet property="CountLabel" destination="BRx-NF-qHs" id="7Vz-sp-sfS"/>
                         <outlet property="FinishBtn" destination="RyT-9h-kek" id="R8W-CY-yfd"/>
+                        <outlet property="FinishBtnBottom" destination="KtV-Ga-c4O" id="ybu-aa-2PJ"/>
+                        <outlet property="TimeLabelBottom" destination="f6x-73-XU1" id="zug-ng-9vp"/>
                         <outlet property="bannerView" destination="3C3-Lt-tRc" id="W1V-bg-k1u"/>
                         <outlet property="elapsedTime" destination="DYq-0x-9Gj" id="leW-0c-du9"/>
                         <segue destination="Uy6-KF-OfM" kind="presentation" identifier="ToHome" id="Uyj-BS-X4H"/>
@@ -339,6 +344,7 @@
                             <constraint firstItem="kik-5c-pqb" firstAttribute="centerY" secondItem="TC7-mQ-Vh6" secondAttribute="centerY" id="LbF-HI-8UP"/>
                             <constraint firstItem="ptD-Zt-0c1" firstAttribute="centerY" secondItem="Eec-Oo-sA2" secondAttribute="centerY" id="MmF-dG-JLi"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="73a-C8-umq" secondAttribute="trailing" constant="20" symbolic="YES" id="MuF-g6-Xzd"/>
+                            <constraint firstItem="k5J-vL-bz7" firstAttribute="bottom" secondItem="jS3-Kh-Kxv" secondAttribute="bottom" constant="92" id="QCQ-Af-RcL"/>
                             <constraint firstItem="SxI-d6-wQ2" firstAttribute="leading" secondItem="k5J-vL-bz7" secondAttribute="leading" id="UCY-wV-8Wo"/>
                             <constraint firstItem="ptD-Zt-0c1" firstAttribute="width" secondItem="Eec-Oo-sA2" secondAttribute="width" id="UCs-Cs-cWT"/>
                             <constraint firstItem="2fD-0h-eZD" firstAttribute="height" secondItem="fE9-Hf-C1o" secondAttribute="height" id="Uhe-rO-3eu"/>
@@ -350,7 +356,6 @@
                             <constraint firstItem="P1I-Iy-fEw" firstAttribute="width" secondItem="ptD-Zt-0c1" secondAttribute="width" id="Zc6-yR-sgp"/>
                             <constraint firstItem="Y2i-09-ozl" firstAttribute="centerY" secondItem="TC7-mQ-Vh6" secondAttribute="centerY" id="aJw-Di-auq"/>
                             <constraint firstItem="jS3-Kh-Kxv" firstAttribute="centerX" secondItem="Qkg-Wm-sWY" secondAttribute="centerX" id="aOh-NU-AQK"/>
-                            <constraint firstItem="fE9-Hf-C1o" firstAttribute="top" secondItem="k5J-vL-bz7" secondAttribute="top" constant="300" id="ajp-DM-7yd"/>
                             <constraint firstItem="ptD-Zt-0c1" firstAttribute="leading" secondItem="Eec-Oo-sA2" secondAttribute="trailing" id="bOY-4N-yUs"/>
                             <constraint firstItem="fE9-Hf-C1o" firstAttribute="width" secondItem="Qkg-Wm-sWY" secondAttribute="width" multiplier="0.4533" id="bzj-Su-onB"/>
                             <constraint firstItem="k5J-vL-bz7" firstAttribute="bottom" secondItem="SxI-d6-wQ2" secondAttribute="bottom" id="cek-bk-iAN"/>

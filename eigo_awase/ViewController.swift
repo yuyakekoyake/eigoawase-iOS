@@ -46,7 +46,15 @@ class ViewController: UIViewController, CardControlDelegate {
     let vehicle = ["airplane","bicycle","boat","bus","car","rocket","ship","train"]
     let Animal = ["cat","dog","elephant","giraffe","horse","lion","pig","tiger"]
     
+    //音声切り替え配列
     var OpenSoundAry: [String] = []
+    
+    //オートレイアウト
+    @IBOutlet weak var TimeLabelTop: NSLayoutConstraint!
+    @IBOutlet weak var TimeLabelBottom: NSLayoutConstraint!
+    @IBOutlet weak var FinishBtnBottom: NSLayoutConstraint!
+    var CardTop = 100
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,12 +82,39 @@ class ViewController: UIViewController, CardControlDelegate {
 //        CountLabel.layer.masksToBounds = true
         CountLabel.text = "のこり：\(MondaiCount)あわせ"
     //FinishBtn
+        FinishBtn.titleLabel?.adjustsFontSizeToFitWidth = true
+        FinishBtn.titleLabel?.minimumScaleFactor = 0.1
         self.view.bringSubview(toFront: FinishBtn)
     //stopwatchi
         elapsedTime.layer.cornerRadius = 5
         elapsedTime.layer.shadowOpacity = 2.0
         elapsedTime.layer.shadowOffset = CGSize(width: 2,height: 2)
         elapsedTime.layer.masksToBounds = true
+        
+    //deviceSize
+        switch view.frame.height {
+        case 736:
+            CardControl.sizeCard = 80
+            CardControl.CardcornerRadius = 8
+            TimeLabelBottom.constant = 40
+            FinishBtnBottom.constant = 30
+        case 568:
+            CardControl.sizeCard = 59
+            CardControl.CardcornerRadius = 6
+            TimeLabelBottom.constant = 20
+        case 480:
+            CardControl.sizeCard = 55
+            CardControl.CardcornerRadius = 5
+            TimeLabelBottom.constant = 10
+            FinishBtnBottom.constant = 10
+            CardTop = 75
+        default:
+            break
+        }
+       
+        
+        
+        
     //timerStart
         startTimer()
         
@@ -101,15 +136,17 @@ class ViewController: UIViewController, CardControlDelegate {
         }
         print(numArray)
         //var numArray: [String] = ["a", "b", "c", "d", "e", "f", "g", "h"]
+        //ここでカードの位置を作成　ipadminiとplusのサイズだけを設定する？
         
         for i in 0..<16 {
             let idx = Int(arc4random_uniform(UInt32(numArray.count)))
-            let card = CardControl(number: numArray[idx], frame: CGRect(x: 30 + (CardControl.sizeCard + 10) * (i % 4), y: 100 + (CardControl.sizeCard + 10) * (i / 4), width: CardControl.sizeCard, height: CardControl.sizeCard))
+            let card = CardControl(number: numArray[idx], frame: CGRect(x: 30 + (CardControl.sizeCard + 10) * (i % 4), y: CardTop + (CardControl.sizeCard + 10) * (i / 4), width: CardControl.sizeCard, height: CardControl.sizeCard))
             card.delegate = self
             view.addSubview(card)
             cards.append(card)
             numArray.remove(at: idx)
         }
+        
         
     }
     
@@ -404,7 +441,7 @@ class ViewController: UIViewController, CardControlDelegate {
         // アニメーションのviewを生成
         let animationView = LOTAnimationView(name: "x_pop.json")
         // ViewControllerに配置
-        animationView.frame = CGRect(x: 0, y: -120, width: view.bounds.width, height: view.bounds.height)
+        animationView.frame = CGRect(x: 0, y: -100, width: view.bounds.width, height: view.bounds.height)
         animationView.loopAnimation = false
         animationView.contentMode = .scaleAspectFit
         animationView.animationSpeed = 2.0
@@ -421,12 +458,12 @@ class ViewController: UIViewController, CardControlDelegate {
         // アニメーションのviewを生成
         let animationView = LOTAnimationView(name: "trophy.json")
         // ViewControllerに配置
-        animationView.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height)
+        animationView.frame = CGRect(x: 0, y: -100, width: view.bounds.width, height: view.bounds.height)
         animationView.loopAnimation = false
         animationView.contentMode = .scaleAspectFit
         animationView.animationSpeed = 0.7
         self.view.addSubview(animationView)
-        // アニメーションを開始
+        // アニメーションの開始
         animationView.play()
     }
     

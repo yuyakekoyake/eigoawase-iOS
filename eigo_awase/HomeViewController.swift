@@ -20,6 +20,12 @@ class HomeViewController: UIViewController, GADInterstitialDelegate {
     @IBOutlet weak var TitleWa: SpringImageView!
     @IBOutlet weak var TitleSe: SpringImageView!
     
+    @IBOutlet weak var FruitBtn: UIButton!
+    @IBOutlet weak var VihicleBtn: UIButton!
+    @IBOutlet weak var AnimalBtn: UIButton!
+    @IBOutlet weak var RankingBtn: UIButton!
+    @IBOutlet weak var CreditBtn: UIButton!
+    
     var colud = LOTAnimationView()
     var sun = LOTAnimationView()
     var Airplane = LOTAnimationView()
@@ -45,12 +51,40 @@ class HomeViewController: UIViewController, GADInterstitialDelegate {
     // delay sec
     let delayTime = 3.0
     
+    @IBOutlet weak var CreditBtnBottom: NSLayoutConstraint!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
     //BGMスタート
        
         BgmSound()
+        
+    // autolayout
+        FruitBtn.titleLabel?.adjustsFontSizeToFitWidth = true
+        FruitBtn.titleLabel?.minimumScaleFactor = 0.1
+        VihicleBtn.titleLabel?.adjustsFontSizeToFitWidth = true
+        VihicleBtn.titleLabel?.minimumScaleFactor = 0.1
+        AnimalBtn.titleLabel?.adjustsFontSizeToFitWidth = true
+        AnimalBtn.titleLabel?.minimumScaleFactor = 0.1
+        RankingBtn.titleLabel?.adjustsFontSizeToFitWidth = true
+        RankingBtn.titleLabel?.minimumScaleFactor = 0.1
+        CreditBtn.titleLabel?.adjustsFontSizeToFitWidth = true
+        CreditBtn.titleLabel?.minimumScaleFactor = 0.1
+        
+        //deviceSize
+        switch view.frame.height {
+        case 736:
+            CreditBtnBottom.constant = 110
+        case 568:
+            break
+        case 480:
+            CreditBtnBottom.constant = 70
+        default:
+            break
+        }
+        
         
     //animation
         
@@ -144,6 +178,22 @@ class HomeViewController: UIViewController, GADInterstitialDelegate {
         // CloudAni.frame = CGRect(x: view.bounds.width-100, y: 170, width: view.bounds.width/4, height: view.bounds.height/7)
         // CloudAni.contentMode = .scaleAspectFit
         //CloudAni.loopAnimation = true
+    //deviceSize
+        switch view.frame.height {
+        case 812:
+            WhaleAni.frame = CGRect(x: view.bounds.width-200, y: view.bounds.height/4, width: view.bounds.width/1.5, height: view.bounds.height/4)
+            WhaleAni.contentMode = .scaleAspectFit
+            WatermelonAni.frame = CGRect(x: 0, y: view.bounds.height-160, width: view.bounds.width/2, height: view.bounds.height/4)
+        case 736:
+            WatermelonAni.frame = CGRect(x: 0, y: view.bounds.height-120, width: view.bounds.width/2, height: view.bounds.height/4)
+        case 568: break
+        case 480:
+            WhaleAni.frame = CGRect(x: view.bounds.width-70, y: view.bounds.height/3, width: view.bounds.width/5, height: view.bounds.height/4)
+            Airplane.frame = CGRect(x: view.bounds.width-100, y: 40, width: view.bounds.width/3, height: view.bounds.height/7)
+            WatermelonAni.frame = CGRect(x: 0, y: view.bounds.height-80, width: view.bounds.width/2, height: view.bounds.height/4)
+        default:
+            break
+        }
         
         
         //Add view

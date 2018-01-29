@@ -93,6 +93,12 @@ class ViewController: UIViewController, CardControlDelegate {
         
     //deviceSize
         switch view.frame.height {
+        case 812:
+            CardTop = 150
+            CardControl.sizeCard = 73
+            CardControl.CardcornerRadius = 7
+            TimeLabelBottom.constant = 30
+            FinishBtnBottom.constant = 60
         case 736:
             CardControl.sizeCard = 80
             CardControl.CardcornerRadius = 8

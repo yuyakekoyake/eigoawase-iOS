@@ -171,7 +171,7 @@ class CardControl: UIView {
     
     func DisableCard() {
         buttonCard.removeTarget(self, action: #selector(CardControl.ButtonTapped(sender:)),for: .touchUpInside)
-        buttonCard.backgroundColor = UIColor(red: 249/255, green: 244/255, blue: 178/255, alpha: 1.0)//UIColor(red: 0.2, green: 0.6, blue: 0.6, alpha: 0.3)
+        buttonCard.backgroundColor = UIColor.clear//UIColor(red: 249/255, green: 244/255, blue: 178/255, alpha: 1.0)//UIColor(red: 0.2, green: 0.6, blue: 0.6, alpha: 0.3)
     }
 }
 

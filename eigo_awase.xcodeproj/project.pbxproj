@@ -70,7 +70,6 @@
 		83ECAFB0200DE6FC00317D52 /* sun_burst_weather_icon.json in Resources */ = {isa = PBXBuildFile; fileRef = 83ECAFAF200DE6FC00317D52 /* sun_burst_weather_icon.json */; };
 		83ECAFB2200DEAB200317D52 /* Whale.json in Resources */ = {isa = PBXBuildFile; fileRef = 83ECAFB1200DEAB200317D52 /* Whale.json */; };
 		83ECAFB4200DEC9000317D52 /* airplane.json in Resources */ = {isa = PBXBuildFile; fileRef = 83ECAFB3200DEC9000317D52 /* airplane.json */; };
-		83ECAFB6200DEE6800317D52 /* star2.json in Resources */ = {isa = PBXBuildFile; fileRef = 83ECAFB5200DEE6800317D52 /* star2.json */; };
 		83ECAFB8200DEF6C00317D52 /* like_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 83ECAFB7200DEF6C00317D52 /* like_animation.json */; };
 		83EE5F741FFFCDEA009E3521 /* x_pop.json in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F731FFFCDEA009E3521 /* x_pop.json */; };
 		83EE5F781FFFCF11009E3521 /* trophy.json in Resources */ = {isa = PBXBuildFile; fileRef = 83EE5F751FFFCF10009E3521 /* trophy.json */; };
@@ -184,7 +183,6 @@
 		83ECAFAF200DE6FC00317D52 /* sun_burst_weather_icon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sun_burst_weather_icon.json; sourceTree = "<group>"; };
 		83ECAFB1200DEAB200317D52 /* Whale.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Whale.json; sourceTree = "<group>"; };
 		83ECAFB3200DEC9000317D52 /* airplane.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airplane.json; sourceTree = "<group>"; };
-		83ECAFB5200DEE6800317D52 /* star2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = star2.json; path = "../../../../JSONファイル/star2.json"; sourceTree = "<group>"; };
 		83ECAFB7200DEF6C00317D52 /* like_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = like_animation.json; sourceTree = "<group>"; };
 		83EE5F731FFFCDEA009E3521 /* x_pop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = x_pop.json; sourceTree = "<group>"; };
 		83EE5F751FFFCF10009E3521 /* trophy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trophy.json; sourceTree = "<group>"; };
@@ -381,7 +379,6 @@
 			isa = PBXGroup;
 			children = (
 				83ECAFB7200DEF6C00317D52 /* like_animation.json */,
-				83ECAFB5200DEE6800317D52 /* star2.json */,
 				83ECAFB3200DEC9000317D52 /* airplane.json */,
 				83ECAFB1200DEAB200317D52 /* Whale.json */,
 				83ECAFAF200DE6FC00317D52 /* sun_burst_weather_icon.json */,
@@ -577,7 +574,6 @@
 				8364F33F1FE0448F00388509 /* orange.jpg in Resources */,
 				8364F3331FE018F400388509 /* buttonBack.jpg in Resources */,
 				83291FEB201CD43600E74DF7 /* giraffe.mp3 in Resources */,
-				83ECAFB6200DEE6800317D52 /* star2.json in Resources */,
 				8364F3661FE2C9F400388509 /* lemon.mp3 in Resources */,
 				8364F3AC1FE5740100388509 /* クイズ・正解.mp3 in Resources */,
 				8364F3AE1FE574B800388509 /* blip03.mp3 in Resources */,

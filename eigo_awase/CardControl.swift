@@ -17,6 +17,14 @@ class CardControl: UIView {
     let Fruit = ["apple","orange","cherry","banana","grape","lemon","peach","melon"]
     let vehicle = ["airplane","bicycle","boat","bus","car","rocket","ship","train"]
     let Animal = ["cat","dog","elephant","giraffe","horse","lion","pig","tiger"]
+    let Animal2 = ["crocodile","duck","fox","mouse","penguin","rabbit","squirrel","zebra"]
+    let Sports = ["baseball","basketball","bowling","football","golf","rugby","tennis","volleyball"]
+    let Food = ["bread","cake","candy","donut","egg","rice","tomato","rice ball"]
+    let Food2 = ["carrot","corn","eggplant","green pepper","mushroom","potato","broccoli","pumpkin"]
+    // let Necessary
+    // let Necessary2
+    // let Color
+    
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     // MARK: プロパティ

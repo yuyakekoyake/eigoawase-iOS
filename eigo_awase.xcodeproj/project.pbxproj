@@ -55,6 +55,7 @@
 		8370974E1FDFEC1E004EC266 /* eigo_awaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8370974D1FDFEC1E004EC266 /* eigo_awaseTests.swift */; };
 		837097591FDFEC1E004EC266 /* eigo_awaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837097581FDFEC1E004EC266 /* eigo_awaseUITests.swift */; };
 		837097671FDFEC66004EC266 /* CardControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837097661FDFEC66004EC266 /* CardControl.swift */; };
+		839100C72029759500481ED0 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839100C62029759500481ED0 /* CategoryViewController.swift */; };
 		83A39C1D20175F08003EC84D /* clearBGM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83A39C1C20175F08003EC84D /* clearBGM.mp3 */; };
 		83A39C1F20176194003EC84D /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A39C1E20176194003EC84D /* SettingViewController.swift */; };
 		83A39C2320177F74003EC84D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 83A39C2220177F73003EC84D /* Settings.bundle */; };
@@ -168,6 +169,7 @@
 		837097581FDFEC1E004EC266 /* eigo_awaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eigo_awaseUITests.swift; sourceTree = "<group>"; };
 		8370975A1FDFEC1E004EC266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		837097661FDFEC66004EC266 /* CardControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardControl.swift; sourceTree = "<group>"; };
+		839100C62029759500481ED0 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		83A39C1C20175F08003EC84D /* clearBGM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = clearBGM.mp3; sourceTree = "<group>"; };
 		83A39C1E20176194003EC84D /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		83A39C2220177F73003EC84D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -333,6 +335,7 @@
 				83ECAFA0200CEF2500317D52 /* RankingViewController.swift */,
 				83B6B24E200A60C800503639 /* RankingRealm.swift */,
 				83A39C1E20176194003EC84D /* SettingViewController.swift */,
+				839100C62029759500481ED0 /* CategoryViewController.swift */,
 				8370973C1FDFEC1E004EC266 /* Main.storyboard */,
 				8370973F1FDFEC1E004EC266 /* Assets.xcassets */,
 				837097411FDFEC1E004EC266 /* LaunchScreen.storyboard */,
@@ -793,6 +796,7 @@
 				83ECAFA1200CEF2500317D52 /* RankingViewController.swift in Sources */,
 				837097671FDFEC66004EC266 /* CardControl.swift in Sources */,
 				83B6B24F200A60C800503639 /* RankingRealm.swift in Sources */,
+				839100C72029759500481ED0 /* CategoryViewController.swift in Sources */,
 				837097391FDFEC1E004EC266 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

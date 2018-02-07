@@ -121,7 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1088.8" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1846" y="134"/>
         </scene>
         <!--First Splash View Controller-->
         <scene sceneID="IIV-dk-Fll">
@@ -324,6 +324,16 @@
                                     <constraint firstAttribute="width" secondItem="kik-5c-pqb" secondAttribute="height" multiplier="1:1" id="ggw-gi-Hhp"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NnT-Jh-shY">
+                                <rect key="frame" x="255" y="617" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Kxd-wR-aiX" kind="presentation" id="xP6-5B-VpH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="2fD-0h-eZD" firstAttribute="centerX" secondItem="Qkg-Wm-sWY" secondAttribute="centerX" id="0mB-7F-zk3"/>
@@ -390,6 +400,85 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u9S-8o-xg1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="344.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Category View Controller-->
+        <scene sceneID="DWL-e6-Eyv">
+            <objects>
+                <viewController id="Kxd-wR-aiX" customClass="CategoryViewController" customModule="eigo_awase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="87g-eF-sgZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SkyBg" translatesAutoresizingMaskIntoConstraints="NO" id="2hJ-Tv-1YG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="1" translatesAutoresizingMaskIntoConstraints="NO" id="8kX-YJ-fov" customClass="SpringLabel" customModule="Spring">
+                                <rect key="frame" x="5" y="25" width="365" height="124"/>
+                                <string key="text">チャレンジする
+もんだいをえらんでね！</string>
+                                <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="62"/>
+                                <color key="textColor" red="1" green="0.38695728299999999" blue="0.41531052680000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="0.0"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="repeatCount">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D2Z-b3-Frd">
+                                <rect key="frame" x="0.0" y="162" width="375" height="381"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="jBW-qN-0oe">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jBW-qN-0oe" id="SW4-ek-1vY">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Kxd-wR-aiX" id="jrr-X8-NoM"/>
+                                    <outlet property="delegate" destination="Kxd-wR-aiX" id="eub-dA-ImY"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2hJ-Tv-1YG" firstAttribute="leading" secondItem="87g-eF-sgZ" secondAttribute="leading" id="8yP-Pn-OMw"/>
+                            <constraint firstAttribute="trailing" secondItem="2hJ-Tv-1YG" secondAttribute="trailing" id="Pbl-KD-fAg"/>
+                            <constraint firstItem="8kX-YJ-fov" firstAttribute="top" secondItem="fK9-G4-nn3" secondAttribute="top" constant="5" id="Qfl-ov-rPv"/>
+                            <constraint firstItem="8kX-YJ-fov" firstAttribute="leading" secondItem="fK9-G4-nn3" secondAttribute="leading" constant="5" id="W3B-Uz-cg3"/>
+                            <constraint firstAttribute="bottom" secondItem="2hJ-Tv-1YG" secondAttribute="bottom" id="dVh-oX-QmP"/>
+                            <constraint firstItem="2hJ-Tv-1YG" firstAttribute="top" secondItem="87g-eF-sgZ" secondAttribute="top" id="erW-oN-kqX"/>
+                            <constraint firstItem="fK9-G4-nn3" firstAttribute="trailing" secondItem="8kX-YJ-fov" secondAttribute="trailing" constant="5" id="vW3-3p-7Ko"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fK9-G4-nn3"/>
+                    </view>
+                    <connections>
+                        <outlet property="TableView" destination="D2Z-b3-Frd" id="fsu-xB-F6T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jh0-PI-dSn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1092" y="131.78410794602701"/>
         </scene>
         <!--Ranking View Controller-->
         <scene sceneID="JDS-SI-Get">
@@ -1029,7 +1118,7 @@ Cg
         <image name="ロゴ_背景透明50" width="285" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Uyj-BS-X4H"/>
-        <segue reference="hFb-Gw-1Lp"/>
+        <segue reference="ViH-cg-7Rl"/>
+        <segue reference="SLa-8u-dx5"/>
     </inferredMetricsTieBreakers>
 </document>

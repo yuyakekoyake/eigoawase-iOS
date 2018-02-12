@@ -16,6 +16,9 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
     let category:[String] = ["くだもの","のりもの","どうぶつ","どうぶつ2","スポーツ","たべもの","たべもの2","てんき/きせつ","ものの名前","ものの名前2"]
     let cellimage = ["apple","train","dog","rabbit","football","carrot","cake","sunny","pen","desk"]
     
+    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -64,6 +67,13 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
     // Cellの高さを決める
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectData = tableView.cellForRow(at: indexPath as IndexPath)!.textLabel!.text
+        print("タッブ後\(selectData!)")
+        appDelegate.MondaiCategory = selectData!
+        performSegue(withIdentifier: "ToChallenge", sender: nil)
     }
     
     override func didReceiveMemoryWarning() {

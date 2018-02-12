@@ -10,6 +10,7 @@ pod 'lottie-ios'
 pod 'Spring', :git => 'https://github.com/MengTo/Spring.git'
 pod 'Google-Mobile-Ads-SDK'
 pod 'RealmSwift'
+pod 'RandomKit'
 
 post_install do | installer |
   require 'fileutils'

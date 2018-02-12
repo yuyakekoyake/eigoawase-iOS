@@ -474,6 +474,7 @@
                     </view>
                     <connections>
                         <outlet property="TableView" destination="D2Z-b3-Frd" id="fsu-xB-F6T"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="ToChallenge" id="O7c-gC-wiO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jh0-PI-dSn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1119,6 +1120,6 @@ Cg
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ViH-cg-7Rl"/>
-        <segue reference="SLa-8u-dx5"/>
+        <segue reference="O7c-gC-wiO"/>
     </inferredMetricsTieBreakers>
 </document>

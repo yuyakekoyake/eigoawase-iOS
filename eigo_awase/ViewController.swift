@@ -42,9 +42,17 @@ class ViewController: UIViewController, CardControlDelegate {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     //mondai
-    let Fruit = ["apple","orange","cherry","banana","grape","lemon","peach","melon"]
-    let vehicle = ["airplane","bicycle","boat","bus","car","rocket","ship","train"]
-    let Animal = ["cat","dog","elephant","giraffe","horse","lion","pig","tiger"]
+    let Fruit: [String] = ["apple","orange","cherry","banana","grape","lemon","peach","melon"]
+    let vehicle: [String] = ["airplane","bicycle","boat","bus","car","rocket","ship","train"]
+    let Animal: [String] = ["cat","dog","elephant","giraffe","horse","lion","pig","tiger"]
+    let Animal2: [String] = ["crocodile","duck","fox","mouse","penguin","rabbit","squirrel","zebra"]
+    let Sports: [String] = ["baseball","basketball","bowling","football","golf","rugby","tennis","volleyball"]
+    let Food: [String] = ["bread","cake","candy","donut","egg","rice","tomato","rice ball"]
+    let Food2: [String] = ["carrot","corn","eggplant","green pepper","mushroom","potato","broccoli","pumpkin"]
+    let Weather: [String] = ["autumn","cloudy","rain","snow","spring","summer","sunny","winter"]
+    let Supplies: [String] = ["door","bed","chair","desk","window","clock","piano","camera"]
+    let Supplies2: [String] = ["calculator","computer","eraser","notebook","pen","scissors","stapler","picture"]
+    let Color: [String] = ["red","green","blue","white","black","yellow","purple","orange"]
     
     //音声切り替え配列
     var OpenSoundAry: [String] = []
@@ -132,6 +140,24 @@ class ViewController: UIViewController, CardControlDelegate {
             OpenSoundAry = vehicle
         case "どうぶつ":
             OpenSoundAry = Animal
+        case "どうぶつ2":
+            OpenSoundAry = Animal2
+        case "スポーツ":
+            OpenSoundAry = Sports
+        case "たべもの":
+            OpenSoundAry = Food
+        case "たべもの2":
+            OpenSoundAry = Food2
+        case "てんき/きせつ":
+            OpenSoundAry = Weather
+        case "ものの名前":
+            OpenSoundAry = Supplies
+        case "ものの名前2":
+            OpenSoundAry = Supplies2
+        case "カラー":
+            OpenSoundAry = Color
+            //        case "らんだむ":
+        //            OpenSoundAry = Random
         default:
             break
         }

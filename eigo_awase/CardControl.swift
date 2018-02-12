@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RandomKit
 
 protocol CardControlDelegate: class {
     func OnCardTapped(sender: CardControl)
@@ -14,16 +15,18 @@ protocol CardControlDelegate: class {
 
 class CardControl: UIView {
     //mondai
-    let Fruit = ["apple","orange","cherry","banana","grape","lemon","peach","melon"]
-    let vehicle = ["airplane","bicycle","boat","bus","car","rocket","ship","train"]
-    let Animal = ["cat","dog","elephant","giraffe","horse","lion","pig","tiger"]
-    let Animal2 = ["crocodile","duck","fox","mouse","penguin","rabbit","squirrel","zebra"]
-    let Sports = ["baseball","basketball","bowling","football","golf","rugby","tennis","volleyball"]
-    let Food = ["bread","cake","candy","donut","egg","rice","tomato","rice ball"]
-    let Food2 = ["carrot","corn","eggplant","green pepper","mushroom","potato","broccoli","pumpkin"]
-    // let Necessary
-    // let Necessary2
-    // let Color
+    let Fruit: [String] = ["apple","orange","cherry","banana","grape","lemon","peach","melon"]
+    let vehicle: [String] = ["airplane","bicycle","boat","bus","car","rocket","ship","train"]
+    let Animal: [String] = ["cat","dog","elephant","giraffe","horse","lion","pig","tiger"]
+    let Animal2: [String] = ["crocodile","duck","fox","mouse","penguin","rabbit","squirrel","zebra"]
+    let Sports: [String] = ["baseball","basketball","bowling","football","golf","rugby","tennis","volleyball"]
+    let Food: [String] = ["bread","cake","candy","donut","egg","rice","tomato","rice ball"]
+    let Food2: [String] = ["carrot","corn","eggplant","green pepper","mushroom","potato","broccoli","pumpkin"]
+    let Weather: [String] = ["autumn","cloudy","rain","snow","spring","summer","sunny","winter"]
+    let Supplies: [String] = ["door","bed","chair","desk","window","clock","piano","camera"]
+    let Supplies2: [String] = ["calculator","computer","eraser","notebook","pen","scissors","stapler","picture"]
+    let Color: [String] = ["red","green","blue","white","black","yellow","purple","orange"]
+    
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
@@ -74,7 +77,11 @@ class CardControl: UIView {
         let buttonImage = UIImage(named:"ABC")
         var buttonImageSelect = UIImage(named:"buttonBack.jpg")
         //buttonCard.setTitle("⭐︎", for: .normal)
-         buttonCard.setBackgroundImage(buttonImage, for: .normal)
+        buttonCard.setBackgroundImage(buttonImage, for: .normal)
+        //buttonCard.setImage(buttonImage, for: .normal)
+        
+        //let Random = Fruit + vehicle + Animal + Animal2 + Sports + Food + Food2 + Weather + Supplies + Supplies2 + Color
+        //Random = Random.shuffled(using: &Xoroshiro.default)
         
         var cardAryStr: [String] = []
         switch appDelegate.MondaiCategory {
@@ -84,6 +91,24 @@ class CardControl: UIView {
             cardAryStr = vehicle
         case "どうぶつ":
             cardAryStr = Animal
+        case "どうぶつ2":
+            cardAryStr = Animal2
+        case "スポーツ":
+            cardAryStr = Sports
+        case "たべもの":
+            cardAryStr = Food
+        case "たべもの2":
+            cardAryStr = Food2
+        case "てんき/きせつ":
+            cardAryStr = Weather
+        case "ものの名前":
+            cardAryStr = Supplies
+        case "ものの名前2":
+            cardAryStr = Supplies2
+        case "カラー":
+            cardAryStr = Color
+//        case "らんだむ":
+//            cardAryStr = Random
         default:
             break
         }
@@ -133,10 +158,14 @@ class CardControl: UIView {
         default:
             cardstr = "test"
         }
+        
         buttonCard.setTitleColor(UIColor.black, for: .selected)
         buttonCard.setBackgroundImage(buttonImageSelect, for: .selected)
+        //buttonCard.setImage(buttonImageSelect, for: .selected)
         buttonCard.setTitle(cardstr, for: .selected)
         buttonCard.titleLabel?.font = UIFont.systemFont(ofSize: 23)
+        buttonCard.imageView?.contentMode = .scaleAspectFit
+        //buttonCard.contentMode = .scaleAspectFit
         buttonCard.layer.cornerRadius = CGFloat(CardControl.CardcornerRadius)
         buttonCard.backgroundColor = UIColor(red: 249/255, green: 244/255, blue: 178/255, alpha: 1.0)//(red: 0.2, green: 0.6, blue: 0.6, alpha: 0.7)
         //buttonのフォントサイズ可変

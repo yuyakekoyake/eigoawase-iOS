@@ -83,13 +83,87 @@
                                 <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xeJ-7w-coN">
+                                <rect key="frame" x="12" y="30" width="351" height="490"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="クリア！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYB-DZ-C8a" customClass="SpringLabel" customModule="Spring">
+                                        <rect key="frame" x="27" y="28" width="320" height="71"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="48"/>
+                                        <color key="textColor" red="1" green="0.38695728299999999" blue="0.41531052680000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="repeatCount">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rotate">
+                                                <real key="value" value="100"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="スタート" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="1" translatesAutoresizingMaskIntoConstraints="NO" id="DuZ-bA-Ewe" customClass="SpringLabel" customModule="Spring">
+                                        <rect key="frame" x="68" y="410" width="215" height="53"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.97647058819999999" green="0.95686274510000002" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="KAWAIITEGAKIMOJI" family="KAWAIITEGAKIMOJI" pointSize="40"/>
+                                        <color key="textColor" red="0.77705987730000003" green="0.21822345670000001" blue="0.13063127890000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="1" height="1"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ランキングいりしたよ！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rca-T7-09R" customClass="SpringLabel" customModule="Spring">
+                                        <rect key="frame" x="23" y="346" width="320" height="56"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="27"/>
+                                        <color key="textColor" red="1" green="0.38695728299999999" blue="0.41531052680000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="repeatCount">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rotate">
+                                                <real key="value" value="100"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97647058823529409" green="0.95686274509803915" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xeJ-7w-coN" secondAttribute="height" multiplier="351:490" id="JOi-9g-URk"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.7914239764213562" green="0.90824055671691895" blue="0.99217194318771362" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="BRx-NF-qHs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="0Co-0L-NmE"/>
                             <constraint firstItem="Cgm-rh-CMv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="3gi-qa-uYY"/>
+                            <constraint firstItem="xeJ-7w-coN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="4Jt-KE-XaE"/>
                             <constraint firstItem="BRx-NF-qHs" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.07946" id="4Rc-ja-HCv"/>
                             <constraint firstItem="RyT-9h-kek" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ByW-KS-ul8"/>
+                            <constraint firstItem="xeJ-7w-coN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CPA-ss-Gd7"/>
                             <constraint firstItem="Cgm-rh-CMv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Hwh-Ge-AYn"/>
                             <constraint firstItem="BRx-NF-qHs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IJU-UV-uOm"/>
                             <constraint firstItem="3C3-Lt-tRc" firstAttribute="top" secondItem="RyT-9h-kek" secondAttribute="bottom" constant="30" id="KtV-Ga-c4O"/>
@@ -106,13 +180,17 @@
                             <constraint firstItem="DYq-0x-9Gj" firstAttribute="height" secondItem="BRx-NF-qHs" secondAttribute="height" id="geK-qC-TzT"/>
                             <constraint firstItem="RyT-9h-kek" firstAttribute="width" secondItem="DYq-0x-9Gj" secondAttribute="width" id="h7W-cr-Bhr"/>
                             <constraint firstItem="Cgm-rh-CMv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sma-6c-Wbd"/>
+                            <constraint firstItem="xeJ-7w-coN" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.73463" id="xf1-Ua-AZx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="ClearTime" destination="DuZ-bA-Ewe" id="7Bg-Ll-aV8"/>
+                        <outlet property="ClearView" destination="xeJ-7w-coN" id="h6j-Df-7cG"/>
                         <outlet property="CountLabel" destination="BRx-NF-qHs" id="7Vz-sp-sfS"/>
                         <outlet property="FinishBtn" destination="RyT-9h-kek" id="R8W-CY-yfd"/>
                         <outlet property="FinishBtnBottom" destination="KtV-Ga-c4O" id="ybu-aa-2PJ"/>
+                        <outlet property="RankingLabel" destination="rca-T7-09R" id="0MP-7y-lMu"/>
                         <outlet property="TimeLabelBottom" destination="f6x-73-XU1" id="zug-ng-9vp"/>
                         <outlet property="bannerView" destination="3C3-Lt-tRc" id="W1V-bg-k1u"/>
                         <outlet property="elapsedTime" destination="DYq-0x-9Gj" id="leW-0c-du9"/>
@@ -121,7 +199,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1846" y="134"/>
+            <point key="canvasLocation" x="1845.5999999999999" y="133.5832083958021"/>
         </scene>
         <!--First Splash View Controller-->
         <scene sceneID="IIV-dk-Fll">
@@ -1125,7 +1203,7 @@ Cg
         <image name="ロゴ_背景透明50" width="285" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="B3Y-dJ-9bx"/>
+        <segue reference="Uyj-BS-X4H"/>
         <segue reference="O7c-gC-wiO"/>
     </inferredMetricsTieBreakers>
 </document>

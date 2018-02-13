@@ -11,6 +11,7 @@ import AVFoundation
 import Lottie
 import GoogleMobileAds
 import RealmSwift
+import Spring
 
 class ViewController: UIViewController, CardControlDelegate {
 
@@ -35,7 +36,10 @@ class ViewController: UIViewController, CardControlDelegate {
     
     @IBOutlet weak var CountLabel: UILabel!
     @IBOutlet weak var FinishBtn: UIButton!
+    @IBOutlet weak var ClearTime: SpringLabel!
     @IBOutlet weak var elapsedTime: UILabel!
+    @IBOutlet weak var ClearView: UIView!
+    @IBOutlet weak var RankingLabel: SpringLabel!
     
     @IBOutlet weak var bannerView: GADBannerView!
     
@@ -98,6 +102,10 @@ class ViewController: UIViewController, CardControlDelegate {
         elapsedTime.layer.shadowOpacity = 2.0
         elapsedTime.layer.shadowOffset = CGSize(width: 2,height: 2)
         elapsedTime.layer.masksToBounds = true
+        
+    //clearview
+        ClearView.isHidden = true
+        RankingLabel.isHidden = true
         
     //deviceSize
         switch view.frame.height {
@@ -178,7 +186,8 @@ class ViewController: UIViewController, CardControlDelegate {
             cards.append(card)
             numArray.remove(at: idx)
         }
-        
+        //cleaviewFront
+        self.view.bringSubview(toFront: ClearView)
         
     }
     
@@ -367,12 +376,12 @@ class ViewController: UIViewController, CardControlDelegate {
                     stopTimer()
                     SaveRanking()
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                        self.ClearView.isHidden = false
                         self.AllClearAnimation()
                         self.Bgm.stop()
                         self.ClearSound()
                         DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
-                            self.performSegue(withIdentifier: "ToHome", sender: nil)
-    
+                            self.BgmSound2()
                         }
                     }
                 }
@@ -439,6 +448,17 @@ class ViewController: UIViewController, CardControlDelegate {
             print("エラーです")
         }
     }
+    func BgmSound2 () {
+        let path = Bundle.main.bundleURL.appendingPathComponent("retrogamecenter2.mp3")
+        do{
+            try Bgm = AVAudioPlayer(contentsOf: path)
+            Bgm.numberOfLoops = -1
+            Bgm.play()
+        }catch{
+            print("エラーです")
+        }
+    }
+    
     //ClearBGM
     func ClearSound () {
         let path = Bundle.main.bundleURL.appendingPathComponent("clearBGM.mp3")
@@ -490,11 +510,11 @@ class ViewController: UIViewController, CardControlDelegate {
         // アニメーションのviewを生成
         let animationView = LOTAnimationView(name: "trophy.json")
         // ViewControllerに配置
-        animationView.frame = CGRect(x: 0, y: -100, width: view.bounds.width, height: view.bounds.height)
-        animationView.loopAnimation = false
+        animationView.frame = CGRect(x: -10, y: -150, width: view.bounds.width, height: view.bounds.height)
+        animationView.loopAnimation = true
         animationView.contentMode = .scaleAspectFit
         animationView.animationSpeed = 0.7
-        self.view.addSubview(animationView)
+        self.ClearView.addSubview(animationView)
         // アニメーションの開始
         animationView.play()
     }
@@ -536,6 +556,7 @@ class ViewController: UIViewController, CardControlDelegate {
         let min: Int = count / 60
         let sec: Int = count % 60
         elapsedTime.text = String(format:"%02d:%02d",min, sec)
+        ClearTime.text = String(format:"%02d:%02d",min, sec)
     }
 
     //Realmへ保存

@@ -217,10 +217,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73a-C8-umq">
-                                <rect key="frame" x="102" y="370" width="170" height="40"/>
+                                <rect key="frame" x="102" y="405" width="170" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="30"/>
-                                <state key="normal" title="のりもの" backgroundImage="banner12">
+                                <state key="normal" title="ランダム" backgroundImage="banner12">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -235,16 +235,16 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="VehicleBtn:" destination="Uy6-KF-OfM" eventType="touchUpInside" id="Nby-KC-QsR"/>
+                                    <action selector="RandomBtn:" destination="Uy6-KF-OfM" eventType="touchUpInside" id="Nby-KC-QsR"/>
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="SLa-8u-dx5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEo-5u-b6p">
-                                <rect key="frame" x="102" y="420" width="170" height="40"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEo-5u-b6p">
+                                <rect key="frame" x="102" y="455" width="170" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="30"/>
                                 <state key="normal" title="どうぶつ" backgroundImage="banner12">
-                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowIBColor">
@@ -263,11 +263,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fE9-Hf-C1o">
-                                <rect key="frame" x="102" y="320" width="170" height="40"/>
+                                <rect key="frame" x="102" y="345" width="170" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="30"/>
-                                <state key="normal" title="くだもの" backgroundImage="banner12">
-                                    <color key="titleColor" red="0.92062717009999995" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="スタート" backgroundImage="banner12">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <state key="highlighted" title="スタート" backgroundImage="banner12">
                                     <color key="titleColor" red="0.92062717009999995" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -284,8 +284,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="FruitsBtn:" destination="Uy6-KF-OfM" eventType="touchUpInside" id="ICR-p3-MO0"/>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="iUW-aV-tWE"/>
+                                    <action selector="StartBtn:" destination="Uy6-KF-OfM" eventType="touchUpInside" id="ICR-p3-MO0"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hiragana_04_e.png" translatesAutoresizingMaskIntoConstraints="NO" id="Eec-Oo-sA2" customClass="SpringImageView" customModule="Spring">
@@ -324,16 +323,6 @@
                                     <constraint firstAttribute="width" secondItem="kik-5c-pqb" secondAttribute="height" multiplier="1:1" id="ggw-gi-Hhp"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NnT-Jh-shY">
-                                <rect key="frame" x="255" y="617" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Kxd-wR-aiX" kind="presentation" id="xP6-5B-VpH"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="2fD-0h-eZD" firstAttribute="centerX" secondItem="Qkg-Wm-sWY" secondAttribute="centerX" id="0mB-7F-zk3"/>
@@ -357,7 +346,7 @@
                             <constraint firstItem="2fD-0h-eZD" firstAttribute="height" secondItem="fE9-Hf-C1o" secondAttribute="height" id="Uhe-rO-3eu"/>
                             <constraint firstItem="Eec-Oo-sA2" firstAttribute="leading" secondItem="k5J-vL-bz7" secondAttribute="leading" constant="15" id="W9o-Wz-DNs"/>
                             <constraint firstItem="73a-C8-umq" firstAttribute="centerX" secondItem="Qkg-Wm-sWY" secondAttribute="centerX" id="WeV-n3-6eT"/>
-                            <constraint firstItem="73a-C8-umq" firstAttribute="top" secondItem="fE9-Hf-C1o" secondAttribute="bottom" constant="10" id="WxQ-Rd-8iJ"/>
+                            <constraint firstItem="73a-C8-umq" firstAttribute="top" secondItem="fE9-Hf-C1o" secondAttribute="bottom" constant="20" id="WxQ-Rd-8iJ"/>
                             <constraint firstItem="TC7-mQ-Vh6" firstAttribute="top" secondItem="ptD-Zt-0c1" secondAttribute="bottom" id="XTz-yY-beS"/>
                             <constraint firstItem="2fD-0h-eZD" firstAttribute="width" secondItem="fE9-Hf-C1o" secondAttribute="width" id="YcC-YR-Oez"/>
                             <constraint firstItem="P1I-Iy-fEw" firstAttribute="width" secondItem="ptD-Zt-0c1" secondAttribute="width" id="Zc6-yR-sgp"/>
@@ -374,7 +363,7 @@
                             <constraint firstItem="73a-C8-umq" firstAttribute="height" secondItem="fE9-Hf-C1o" secondAttribute="height" id="hEG-Aq-LSf"/>
                             <constraint firstItem="TC7-mQ-Vh6" firstAttribute="leading" secondItem="ptD-Zt-0c1" secondAttribute="leading" id="iej-ZW-74X"/>
                             <constraint firstItem="fE9-Hf-C1o" firstAttribute="height" secondItem="Qkg-Wm-sWY" secondAttribute="height" multiplier="0.0599" id="iyC-Dz-vo4"/>
-                            <constraint firstItem="2fD-0h-eZD" firstAttribute="top" secondItem="bEo-5u-b6p" secondAttribute="bottom" constant="25" id="q1A-jL-uOH"/>
+                            <constraint firstItem="2fD-0h-eZD" firstAttribute="top" secondItem="73a-C8-umq" secondAttribute="bottom" constant="40" id="q1A-jL-uOH"/>
                             <constraint firstItem="fE9-Hf-C1o" firstAttribute="centerX" secondItem="Qkg-Wm-sWY" secondAttribute="centerX" id="rXB-ie-JRG"/>
                             <constraint firstItem="73a-C8-umq" firstAttribute="width" secondItem="fE9-Hf-C1o" secondAttribute="width" id="sq6-hC-mQj"/>
                             <constraint firstItem="P1I-Iy-fEw" firstAttribute="centerY" secondItem="Eec-Oo-sA2" secondAttribute="centerY" id="uUK-xs-Ku3"/>
@@ -386,15 +375,16 @@
                         <outlet property="AnimalBtn" destination="bEo-5u-b6p" id="xGw-rP-XpI"/>
                         <outlet property="CreditBtn" destination="jS3-Kh-Kxv" id="Q5Y-i1-Kyh"/>
                         <outlet property="CreditBtnBottom" destination="QCQ-Af-RcL" id="bLR-BF-jjn"/>
-                        <outlet property="FruitBtn" destination="fE9-Hf-C1o" id="d1D-wi-vEp"/>
+                        <outlet property="RandomBtn" destination="73a-C8-umq" id="z7X-yn-QyE"/>
                         <outlet property="RankingBtn" destination="2fD-0h-eZD" id="qip-6N-08l"/>
+                        <outlet property="StartBtn" destination="fE9-Hf-C1o" id="d1D-wi-vEp"/>
                         <outlet property="TitleA" destination="TC7-mQ-Vh6" id="v10-Yb-zqM"/>
                         <outlet property="TitleE" destination="Eec-Oo-sA2" id="ZOZ-32-Lp4"/>
                         <outlet property="TitleGo" destination="P1I-Iy-fEw" id="bkq-dx-shE"/>
                         <outlet property="TitleI" destination="ptD-Zt-0c1" id="2ni-ah-gkR"/>
                         <outlet property="TitleSe" destination="kik-5c-pqb" id="Q1l-34-Gg1"/>
                         <outlet property="TitleWa" destination="Y2i-09-ozl" id="eFS-5y-mjf"/>
-                        <outlet property="VihicleBtn" destination="73a-C8-umq" id="z7X-yn-QyE"/>
+                        <segue destination="Kxd-wR-aiX" kind="presentation" identifier="ToCategory" id="5vj-Mp-wYE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u9S-8o-xg1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -442,6 +432,7 @@
                                 <rect key="frame" x="0.0" y="162" width="375" height="381"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="jBW-qN-0oe">
@@ -459,6 +450,21 @@
                                     <outlet property="delegate" destination="Kxd-wR-aiX" id="eub-dA-ImY"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3N-Bf-dZF">
+                                <rect key="frame" x="87" y="579" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="KAWAIITEGAKIMOJI" family="KAWAIITEGAKIMOJI" pointSize="28"/>
+                                <state key="normal" title="もどる" backgroundImage="banner02">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="banner02"/>
+                                <state key="highlighted" backgroundImage="banner02"/>
+                                <connections>
+                                    <action selector="BackBtn:" destination="Kxd-wR-aiX" eventType="touchUpInside" id="r40-kh-Dm9"/>
+                                    <segue destination="Uy6-KF-OfM" kind="presentation" id="B3Y-dJ-9bx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -1119,7 +1125,7 @@ Cg
         <image name="ロゴ_背景透明50" width="285" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ViH-cg-7Rl"/>
+        <segue reference="B3Y-dJ-9bx"/>
         <segue reference="O7c-gC-wiO"/>
     </inferredMetricsTieBreakers>
 </document>

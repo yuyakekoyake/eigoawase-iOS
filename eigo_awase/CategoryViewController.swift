@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import AVFoundation
 
 class CategoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var TableView: UITableView!
     
+    var Bgm:AVAudioPlayer!
+    var StartEffect:AVAudioPlayer!
     
     let category:[String] = ["くだもの","のりもの","どうぶつ","どうぶつ2","スポーツ","たべもの","たべもの2","てんき/きせつ","ものの名前","ものの名前2"]
     let cellimage = ["apple","train","dog","rabbit","football","carrot","cake","sunny","pen","desk"]
@@ -22,6 +25,10 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //BGMスタート
+        BgmSound()
+        
+        
         //tableviewのdelegate
         TableView.dataSource = self
         TableView.delegate = self
@@ -43,6 +50,12 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
         ///let iv = UIImageView(frame: CGRect(x: 15, y: 0, width: 50, height: 50))
         // セルに表示する値を設定する
         cell.textLabel!.text = category[indexPath.row]
+        //セル背景
+        cell.backgroundColor = UIColor.clear
+        // 選択された背景色を白に設定
+        let cellSelectedBgView = UIView()
+        cellSelectedBgView.backgroundColor = UIColor(red: 245/255, green: 215/255, blue: 110/255, alpha: 0.7)
+        cell.selectedBackgroundView = cellSelectedBgView
         
         //iv.image = UIImage(named: cellimage[indexPath.row])
         //cell.contentView.addSubview(iv)
@@ -71,8 +84,11 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectData = tableView.cellForRow(at: indexPath as IndexPath)!.textLabel!.text
+        
         print("タッブ後\(selectData!)")
         appDelegate.MondaiCategory = selectData!
+        StartSound()
+        Bgm.stop()
         performSegue(withIdentifier: "ToChallenge", sender: nil)
     }
     
@@ -81,6 +97,39 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
         // Dispose of any resources that can be recreated.
     }
     
+    //画面から非表示になる瞬間
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+    }
+    
+    @IBAction func BackBtn(_ sender: Any) {
+        Bgm.stop()
+        StartSound()
+    }
+    
+    
+    
+    func BgmSound () {
+        let path = Bundle.main.bundleURL.appendingPathComponent("retrogamecenter2.mp3")
+        do{
+            try Bgm = AVAudioPlayer(contentsOf: path)
+            Bgm.numberOfLoops = -1
+            Bgm.play()
+        }catch{
+            print("エラーです")
+        }
+    }
+    
+    func StartSound () {
+        let path = Bundle.main.bundleURL.appendingPathComponent("save-02.wav")
+        do{
+            try StartEffect = AVAudioPlayer(contentsOf: path)
+            StartEffect.play()
+        }catch{
+            print("エラーです")
+        }
+    }
 
     /*
     // MARK: - Navigation

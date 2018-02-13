@@ -20,8 +20,8 @@ class HomeViewController: UIViewController, GADInterstitialDelegate {
     @IBOutlet weak var TitleWa: SpringImageView!
     @IBOutlet weak var TitleSe: SpringImageView!
     
-    @IBOutlet weak var FruitBtn: UIButton!
-    @IBOutlet weak var VihicleBtn: UIButton!
+    @IBOutlet weak var StartBtn: UIButton!
+    @IBOutlet weak var RandomBtn: UIButton!
     @IBOutlet weak var AnimalBtn: UIButton!
     @IBOutlet weak var RankingBtn: UIButton!
     @IBOutlet weak var CreditBtn: UIButton!
@@ -62,10 +62,10 @@ class HomeViewController: UIViewController, GADInterstitialDelegate {
         BgmSound()
         
     // autolayout
-        FruitBtn.titleLabel?.adjustsFontSizeToFitWidth = true
-        FruitBtn.titleLabel?.minimumScaleFactor = 0.1
-        VihicleBtn.titleLabel?.adjustsFontSizeToFitWidth = true
-        VihicleBtn.titleLabel?.minimumScaleFactor = 0.1
+        StartBtn.titleLabel?.adjustsFontSizeToFitWidth = true
+        StartBtn.titleLabel?.minimumScaleFactor = 0.1
+        RandomBtn.titleLabel?.adjustsFontSizeToFitWidth = true
+        RandomBtn.titleLabel?.minimumScaleFactor = 0.1
         AnimalBtn.titleLabel?.adjustsFontSizeToFitWidth = true
         AnimalBtn.titleLabel?.minimumScaleFactor = 0.1
         RankingBtn.titleLabel?.adjustsFontSizeToFitWidth = true
@@ -118,15 +118,15 @@ class HomeViewController: UIViewController, GADInterstitialDelegate {
         }
     }
     
-    @IBAction func FruitsBtn(_ sender: Any) {
-        appDelegate.MondaiCategory = "くだもの"
+    @IBAction func StartBtn(_ sender: Any) {
+        performSegue(withIdentifier: "ToCategory", sender: nil)
         StartSound()
         Bgm.stop()
         
     }
     
-    @IBAction func VehicleBtn(_ sender: Any) {
-        appDelegate.MondaiCategory = "のりもの"
+    @IBAction func RandomBtn(_ sender: Any) {
+        appDelegate.MondaiCategory = "くだもの"
         StartSound()
         Bgm.stop()
     }

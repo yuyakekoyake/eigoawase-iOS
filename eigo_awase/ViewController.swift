@@ -377,6 +377,7 @@ class ViewController: UIViewController, CardControlDelegate {
                     SaveRanking()
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                         self.ClearView.isHidden = false
+                        self.Ranking()
                         self.AllClearAnimation()
                         self.Bgm.stop()
                         self.ClearSound()
@@ -519,8 +520,21 @@ class ViewController: UIViewController, CardControlDelegate {
         animationView.play()
     }
     
+    func Ranking() {
+        let realm = try! Realm()
+        let Rankresults = realm.objects(RankingRealm.self).sorted(byKeyPath: "Time", ascending: true)
+        if Rankresults.count > 4 {
+            print("rank4個以上")
+            if count < Rankresults[4].Time{
+                print("ランク入り")
+                RankingLabel.isHidden = false
+                self.ClearView.addSubview(RankingLabel)
+            }
+        }
+    }
+    
+    
     func startTimer() {
-        
         //タイマーが動いている状態で押されたら処理しない
         if timer.isValid == true {
             return

@@ -16,8 +16,8 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
     var Bgm:AVAudioPlayer!
     var StartEffect:AVAudioPlayer!
     
-    let category:[String] = ["くだもの","のりもの","どうぶつ","どうぶつ2","スポーツ","たべもの","たべもの2","てんき/きせつ","ものの名前","ものの名前2"]
-    let cellimage = ["apple","train","dog","rabbit","football","carrot","cake","sunny","pen","desk"]
+    let category:[String] = ["くだもの","のりもの","どうぶつ","どうぶつ2","スポーツ","たべもの","たべもの2","てんき/きせつ","ものの名前","ものの名前2","いろ"]
+    let cellimage = ["apple","train","dog","rabbit","football","cake","carrot","sunny","pen","notebook","color"]
     
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate

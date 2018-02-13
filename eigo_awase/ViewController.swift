@@ -49,14 +49,14 @@ class ViewController: UIViewController, CardControlDelegate {
     let Fruit: [String] = ["apple","orange","cherry","banana","grape","lemon","peach","melon"]
     let vehicle: [String] = ["airplane","bicycle","boat","bus","car","rocket","ship","train"]
     let Animal: [String] = ["cat","dog","elephant","giraffe","horse","lion","pig","tiger"]
-    let Animal2: [String] = ["crocodile","duck","fox","mouse","penguin","rabbit","squirrel","zebra"]
+    let Animal2: [String] = ["duck","fox","mouse","penguin","rabbit","squirrel","zebra","crocodile"]
     let Sports: [String] = ["baseball","basketball","bowling","football","golf","rugby","tennis","volleyball"]
     let Food: [String] = ["bread","cake","candy","donut","egg","rice","tomato","rice ball"]
     let Food2: [String] = ["carrot","corn","eggplant","green pepper","mushroom","potato","broccoli","pumpkin"]
     let Weather: [String] = ["autumn","cloudy","rain","snow","spring","summer","sunny","winter"]
     let Supplies: [String] = ["door","bed","chair","desk","window","clock","piano","camera"]
     let Supplies2: [String] = ["calculator","computer","eraser","notebook","pen","scissors","stapler","picture"]
-    let Color: [String] = ["red","green","blue","white","black","yellow","purple","orange"]
+    let Color: [String] = ["red","green","blue","white","black","yellow","purple","grey"]
     
     //音声切り替え配列
     var OpenSoundAry: [String] = []
@@ -105,7 +105,8 @@ class ViewController: UIViewController, CardControlDelegate {
         
     //clearview
         ClearView.isHidden = true
-        RankingLabel.isHidden = true
+        //RankingLabel.isHidden = true
+        RankingLabel.text = "クリア時間"
         
     //deviceSize
         switch view.frame.height {
@@ -162,7 +163,7 @@ class ViewController: UIViewController, CardControlDelegate {
             OpenSoundAry = Supplies
         case "ものの名前2":
             OpenSoundAry = Supplies2
-        case "カラー":
+        case "いろ":
             OpenSoundAry = Color
             //        case "らんだむ":
         //            OpenSoundAry = Random
@@ -527,7 +528,8 @@ class ViewController: UIViewController, CardControlDelegate {
             print("rank4個以上")
             if count < Rankresults[4].Time{
                 print("ランク入り")
-                RankingLabel.isHidden = false
+                //RankingLabel.isHidden = false
+                RankingLabel.text = "ランキングいりしたよ！"
                 self.ClearView.addSubview(RankingLabel)
             }
         }

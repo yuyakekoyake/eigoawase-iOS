@@ -18,14 +18,14 @@ class CardControl: UIView {
     let Fruit: [String] = ["apple","orange","cherry","banana","grape","lemon","peach","melon"]
     let vehicle: [String] = ["airplane","bicycle","boat","bus","car","rocket","ship","train"]
     let Animal: [String] = ["cat","dog","elephant","giraffe","horse","lion","pig","tiger"]
-    let Animal2: [String] = ["crocodile","duck","fox","mouse","penguin","rabbit","squirrel","zebra"]
+    let Animal2: [String] = ["duck","fox","mouse","penguin","rabbit","squirrel","zebra","crocodile"]
     let Sports: [String] = ["baseball","basketball","bowling","football","golf","rugby","tennis","volleyball"]
     let Food: [String] = ["bread","cake","candy","donut","egg","rice","tomato","rice ball"]
     let Food2: [String] = ["carrot","corn","eggplant","green pepper","mushroom","potato","broccoli","pumpkin"]
     let Weather: [String] = ["autumn","cloudy","rain","snow","spring","summer","sunny","winter"]
     let Supplies: [String] = ["door","bed","chair","desk","window","clock","piano","camera"]
     let Supplies2: [String] = ["calculator","computer","eraser","notebook","pen","scissors","stapler","picture"]
-    let Color: [String] = ["red","green","blue","white","black","yellow","purple","orange"]
+    let Color: [String] = ["red","green","blue","white","black","yellow","purple","grey"]
     
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -105,7 +105,7 @@ class CardControl: UIView {
             cardAryStr = Supplies
         case "ものの名前2":
             cardAryStr = Supplies2
-        case "カラー":
+        case "いろ":
             cardAryStr = Color
 //        case "らんだむ":
 //            cardAryStr = Random
@@ -169,8 +169,11 @@ class CardControl: UIView {
         buttonCard.layer.cornerRadius = CGFloat(CardControl.CardcornerRadius)
         buttonCard.backgroundColor = UIColor(red: 249/255, green: 244/255, blue: 178/255, alpha: 1.0)//(red: 0.2, green: 0.6, blue: 0.6, alpha: 0.7)
         //buttonのフォントサイズ可変
+        
         buttonCard.titleLabel?.adjustsFontSizeToFitWidth = true
-        buttonCard.titleLabel?.minimumScaleFactor = 0.1
+        buttonCard.titleLabel?.minimumScaleFactor = 0.5
+        buttonCard.titleLabel?.numberOfLines = 1
+        buttonCard.titleLabel!.textAlignment = NSTextAlignment.center
         buttonCard.addTarget(self, action: #selector(CardControl.ButtonTapped(sender:)),for: .touchUpInside)
         
         addSubview(buttonCard)

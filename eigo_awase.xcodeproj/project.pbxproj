@@ -117,6 +117,15 @@
 		83ACA3132031496C000F33EE /* piano.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83ACA2DB2031496C000F33EE /* piano.mp3 */; };
 		83B6B24F200A60C800503639 /* RankingRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6B24E200A60C800503639 /* RankingRealm.swift */; };
 		83BA61212007A0A0004417DE /* helicopter.json in Resources */ = {isa = PBXBuildFile; fileRef = 83BA61202007A0A0004417DE /* helicopter.json */; };
+		83D7596220333451006B31C8 /* grey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83D7596120333450006B31C8 /* grey.mp3 */; };
+		83D7596B20334472006B31C8 /* winter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83D7596320334470006B31C8 /* winter.mp3 */; };
+		83D7596C20334472006B31C8 /* snow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83D7596420334470006B31C8 /* snow.mp3 */; };
+		83D7596D20334472006B31C8 /* sunny.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83D7596520334471006B31C8 /* sunny.mp3 */; };
+		83D7596E20334472006B31C8 /* cloudy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83D7596620334471006B31C8 /* cloudy.mp3 */; };
+		83D7596F20334472006B31C8 /* rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83D7596720334471006B31C8 /* rain.mp3 */; };
+		83D7597020334472006B31C8 /* spring.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83D7596820334471006B31C8 /* spring.mp3 */; };
+		83D7597120334472006B31C8 /* autumn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83D7596920334471006B31C8 /* autumn.mp3 */; };
+		83D7597220334472006B31C8 /* summer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83D7596A20334472006B31C8 /* summer.mp3 */; };
 		83ECAFA1200CEF2500317D52 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ECAFA0200CEF2500317D52 /* RankingViewController.swift */; };
 		83ECAFA4200DC27000317D52 /* KTEGAKI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83ECAFA3200DC01400317D52 /* KTEGAKI.ttf */; };
 		83ECAFA6200DC34D00317D52 /* hunwariusagi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83ECAFA5200DC34800317D52 /* hunwariusagi.ttf */; };
@@ -287,6 +296,15 @@
 		83ACA2DB2031496C000F33EE /* piano.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = piano.mp3; sourceTree = "<group>"; };
 		83B6B24E200A60C800503639 /* RankingRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingRealm.swift; sourceTree = "<group>"; };
 		83BA61202007A0A0004417DE /* helicopter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = helicopter.json; sourceTree = "<group>"; };
+		83D7596120333450006B31C8 /* grey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = grey.mp3; sourceTree = "<group>"; };
+		83D7596320334470006B31C8 /* winter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = winter.mp3; sourceTree = "<group>"; };
+		83D7596420334470006B31C8 /* snow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = snow.mp3; sourceTree = "<group>"; };
+		83D7596520334471006B31C8 /* sunny.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sunny.mp3; sourceTree = "<group>"; };
+		83D7596620334471006B31C8 /* cloudy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cloudy.mp3; sourceTree = "<group>"; };
+		83D7596720334471006B31C8 /* rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rain.mp3; sourceTree = "<group>"; };
+		83D7596820334471006B31C8 /* spring.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = spring.mp3; sourceTree = "<group>"; };
+		83D7596920334471006B31C8 /* autumn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = autumn.mp3; sourceTree = "<group>"; };
+		83D7596A20334472006B31C8 /* summer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = summer.mp3; sourceTree = "<group>"; };
 		83ECAFA0200CEF2500317D52 /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
 		83ECAFA3200DC01400317D52 /* KTEGAKI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KTEGAKI.ttf; sourceTree = "<group>"; };
 		83ECAFA5200DC34800317D52 /* hunwariusagi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = hunwariusagi.ttf; sourceTree = "<group>"; };
@@ -379,6 +397,14 @@
 		8364F34A1FE2C9D400388509 /* sounds */ = {
 			isa = PBXGroup;
 			children = (
+				83D7596920334471006B31C8 /* autumn.mp3 */,
+				83D7596620334471006B31C8 /* cloudy.mp3 */,
+				83D7596720334471006B31C8 /* rain.mp3 */,
+				83D7596420334470006B31C8 /* snow.mp3 */,
+				83D7596820334471006B31C8 /* spring.mp3 */,
+				83D7596A20334472006B31C8 /* summer.mp3 */,
+				83D7596520334471006B31C8 /* sunny.mp3 */,
+				83D7596320334470006B31C8 /* winter.mp3 */,
 				83291FDE201CD43500E74DF7 /* cat.mp3 */,
 				83291FE0201CD43500E74DF7 /* dog.mp3 */,
 				83291FE1201CD43500E74DF7 /* elephant.mp3 */,
@@ -405,6 +431,7 @@
 				8364F3561FE2C9F300388509 /* lemon.mp3 */,
 				8364F3541FE2C9F300388509 /* melon.mp3 */,
 				83ACA2D62031496B000F33EE /* mushroom.mp3 */,
+				83D7596120333450006B31C8 /* grey.mp3 */,
 				83ACA2D92031496C000F33EE /* notebook.mp3 */,
 				8364F34F1FE2C9F300388509 /* orange.mp3 */,
 				8364F3581FE2C9F400388509 /* peach.mp3 */,
@@ -754,16 +781,20 @@
 				83ACA2FC2031496C000F33EE /* baseball.mp3 in Resources */,
 				83291FE9201CD43600E74DF7 /* elephant.mp3 in Resources */,
 				83291FED201CD43600E74DF7 /* pig.mp3 in Resources */,
+				83D7596D20334472006B31C8 /* sunny.mp3 in Resources */,
 				83ACA2FF2031496C000F33EE /* pen.mp3 in Resources */,
 				83ACA30C2031496C000F33EE /* red.mp3 in Resources */,
 				83EE5F9020012D37009E3521 /* hiragana_74_wa.png in Resources */,
+				83D7596E20334472006B31C8 /* cloudy.mp3 in Resources */,
 				83291FEA201CD43600E74DF7 /* horse.mp3 in Resources */,
 				8364F3431FE044AE00388509 /* grape.jpg in Resources */,
 				83ACA30E2031496C000F33EE /* mushroom.mp3 in Resources */,
 				83ACA3112031496C000F33EE /* notebook.mp3 in Resources */,
 				83ACA2E02031496C000F33EE /* window.mp3 in Resources */,
 				8364F3411FE044A000388509 /* cherry.jpg in Resources */,
+				83D7597020334472006B31C8 /* spring.mp3 in Resources */,
 				8364F33F1FE0448F00388509 /* orange.jpg in Resources */,
+				83D7597120334472006B31C8 /* autumn.mp3 in Resources */,
 				83ACA30F2031496C000F33EE /* bread.mp3 in Resources */,
 				83ACA2E52031496C000F33EE /* eraser.mp3 in Resources */,
 				83ACA2E92031496C000F33EE /* crocodile.mp3 in Resources */,
@@ -785,6 +816,7 @@
 				83ECAFB0200DE6FC00317D52 /* sun_burst_weather_icon.json in Resources */,
 				83ACA2F22031496C000F33EE /* corn.mp3 in Resources */,
 				83291FE7201CD43600E74DF7 /* tiger.mp3 in Resources */,
+				83D7596B20334472006B31C8 /* winter.mp3 in Resources */,
 				83ACA3092031496C000F33EE /* calculator.mp3 in Resources */,
 				83EE5FA02003665D009E3521 /* star.json in Resources */,
 				8364F33D1FE0447100388509 /* peach.jpg in Resources */,
@@ -814,6 +846,7 @@
 				83ACA2F62031496C000F33EE /* bowling.mp3 in Resources */,
 				8364F3621FE2C9F400388509 /* apple.mp3 in Resources */,
 				83ACA2E22031496C000F33EE /* rugby.mp3 in Resources */,
+				83D7597220334472006B31C8 /* summer.mp3 in Resources */,
 				83ACA2FB2031496C000F33EE /* golf.mp3 in Resources */,
 				83ACA2F32031496C000F33EE /* picture.mp3 in Resources */,
 				8364F3651FE2C9F400388509 /* airplane.mp3 in Resources */,
@@ -826,12 +859,15 @@
 				8364F36A1FE2C9F400388509 /* ship.mp3 in Resources */,
 				83ACA2E62031496C000F33EE /* zebra.mp3 in Resources */,
 				83ACA2DE2031496C000F33EE /* green.mp3 in Resources */,
+				83D7596C20334472006B31C8 /* snow.mp3 in Resources */,
 				83EE5F9420034C6A009E3521 /* save-02.wav in Resources */,
 				8364F3471FE044D000388509 /* lemon.jpg in Resources */,
 				8364F32F1FE0163100388509 /* saru_original_透過.png in Resources */,
 				83ACA3072031496C000F33EE /* pumpkin.mp3 in Resources */,
 				83ACA2DC2031496C000F33EE /* candy.mp3 in Resources */,
+				83D7596220333451006B31C8 /* grey.mp3 in Resources */,
 				83ACA3132031496C000F33EE /* piano.mp3 in Resources */,
+				83D7596F20334472006B31C8 /* rain.mp3 in Resources */,
 				8370973E1FDFEC1E004EC266 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

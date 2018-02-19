@@ -11,6 +11,7 @@ import Lottie
 import Spring
 import AVFoundation
 import GoogleMobileAds
+import RandomKit
 
 class HomeViewController: UIViewController, GADInterstitialDelegate {
     @IBOutlet weak var TitleE: SpringImageView!
@@ -116,6 +117,11 @@ class HomeViewController: UIViewController, GADInterstitialDelegate {
                 self.showAdMob(interstitial: interstitial)
             }
         }
+        
+        //randam
+        appDelegate.MondaiRandom = ["apple","orange","cherry","banana","grape","lemon","peach","melon","airplane","bicycle","boat","bus","car","rocket","ship","train","cat","dog","elephant","giraffe","horse","lion","pig","tiger","duck","fox","mouse","penguin","rabbit","squirrel","zebra","crocodile","baseball","basketball","bowling","football","golf","rugby","tennis","volleyball","bread","cake","candy","donut","egg","rice","tomato","rice ball","carrot","corn","eggplant","green pepper","mushroom","potato","broccoli","pumpkin","autumn","cloudy","rain","snow","spring","summer","sunny","winter","door","bed","chair","desk","window","clock","piano","camera","calculator","computer","eraser","notebook","pen","scissors","stapler","picture","red","green","blue","white","black","yellow","purple","grey"]
+        appDelegate.MondaiRandom = appDelegate.MondaiRandom.shuffled(using: &Xoroshiro.default)
+        print(appDelegate.MondaiRandom)
     }
     
     @IBAction func StartBtn(_ sender: Any) {
@@ -126,7 +132,7 @@ class HomeViewController: UIViewController, GADInterstitialDelegate {
     }
     
     @IBAction func RandomBtn(_ sender: Any) {
-        appDelegate.MondaiCategory = "くだもの"
+        appDelegate.MondaiCategory = "ランダム"
         StartSound()
         Bgm.stop()
     }

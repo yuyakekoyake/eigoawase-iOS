@@ -1,14 +1,14 @@
 PODS:
-  - Google-Mobile-Ads-SDK (7.27.0)
-  - lottie-ios (2.1.5)
+  - Google-Mobile-Ads-SDK (7.28.0)
+  - lottie-ios (2.5.0)
   - RandomKit (5.2.3):
     - ShiftOperations (~> 1.0.2)
     - Threadly (~> 1.0)
-  - Realm (3.1.0):
-    - Realm/Headers (= 3.1.0)
-  - Realm/Headers (3.1.0)
-  - RealmSwift (3.1.0):
-    - Realm (= 3.1.0)
+  - Realm (3.1.1):
+    - Realm/Headers (= 3.1.1)
+  - Realm/Headers (3.1.1)
+  - RealmSwift (3.1.1):
+    - Realm (= 3.1.1)
   - ShiftOperations (1.0.2)
   - Spring (1.0.5)
   - Threadly (1.2.0)
@@ -30,11 +30,11 @@ CHECKOUT OPTIONS:
     :git: https://github.com/MengTo/Spring.git
 
 SPEC CHECKSUMS:
-  Google-Mobile-Ads-SDK: 83f7f890e638ce8f1debd440ea363338c9f6be3b
-  lottie-ios: 836cdbba92f62f3c6a00e37a4ce485321fe317cf
+  Google-Mobile-Ads-SDK: 7f9bc0011df363ae5616449de3682a14c4701612
+  lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
   RandomKit: 380745911c4f7989707489b2ce297194bfcf5031
-  Realm: 09513d7c054678d65cd02ce09871f805b0d758ac
-  RealmSwift: e868fee9b10e5490ad94b6b6ecd9027944da1824
+  Realm: 42d1c38a5b1bbcc828b48a7ce702cb86fc68adf4
+  RealmSwift: d31937ca6a6ee54acde64ec839523c0a3c04924b
   ShiftOperations: 702c9aa98d3b20d98dceb71dd8437b562f7ab3ad
   Spring: 48aad470f3ead043b2da98b64e0bf0630b7ebc42
   Threadly: b772ed7c1ff4a3f03eb4600bbc5ef83b3be5cb29

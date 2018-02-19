@@ -33,6 +33,7 @@ class ViewController: UIViewController, CardControlDelegate {
     //stopwatch
     var timer: Timer = Timer()
     var count: Int = 0
+    @IBOutlet weak var PlusLabel: SpringLabel!
     
     @IBOutlet weak var CountLabel: UILabel!
     @IBOutlet weak var FinishBtn: UIButton!
@@ -66,7 +67,8 @@ class ViewController: UIViewController, CardControlDelegate {
     @IBOutlet weak var TimeLabelBottom: NSLayoutConstraint!
     @IBOutlet weak var FinishBtnBottom: NSLayoutConstraint!
     var CardTop = 100
-    
+    var ClearAniX:CGFloat = 0
+    var ClearAniY:CGFloat = 70
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -104,9 +106,11 @@ class ViewController: UIViewController, CardControlDelegate {
         elapsedTime.layer.masksToBounds = true
         
     //clearview
-        ClearView.isHidden = true
+        //ClearView.isHidden = true
+       
+        RankingLabel.text = "ランキングいりしたよ！"
         //RankingLabel.isHidden = true
-        RankingLabel.text = "クリア時間"
+        //RankingLabel.text = "クリア時間"
         
     //deviceSize
         switch view.frame.height {
@@ -125,16 +129,20 @@ class ViewController: UIViewController, CardControlDelegate {
             CardControl.sizeCard = 59
             CardControl.CardcornerRadius = 6
             TimeLabelBottom.constant = 20
+           
         case 480:
             CardControl.sizeCard = 55
             CardControl.CardcornerRadius = 5
             TimeLabelBottom.constant = 10
             FinishBtnBottom.constant = 10
             CardTop = 75
+            ClearAniX = -150
+            ClearAniY = 15
         default:
             break
         }
        
+         AllClearAnimation()
         
         
         
@@ -165,8 +173,8 @@ class ViewController: UIViewController, CardControlDelegate {
             OpenSoundAry = Supplies2
         case "いろ":
             OpenSoundAry = Color
-            //        case "らんだむ":
-        //            OpenSoundAry = Random
+        case "ランダム":
+            OpenSoundAry = appDelegate.MondaiRandom
         default:
             break
         }
@@ -382,7 +390,7 @@ class ViewController: UIViewController, CardControlDelegate {
                         self.AllClearAnimation()
                         self.Bgm.stop()
                         self.ClearSound()
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
                             self.BgmSound2()
                         }
                     }
@@ -391,6 +399,7 @@ class ViewController: UIViewController, CardControlDelegate {
                     print("失敗．．")
                     WrongSound()
                     WrongAnimation()
+                    PlusTimer()
                     self.canOpen = false
                     DispatchQueue.global(qos: .userInitiated).async {
                         sleep(1)
@@ -512,7 +521,7 @@ class ViewController: UIViewController, CardControlDelegate {
         // アニメーションのviewを生成
         let animationView = LOTAnimationView(name: "trophy.json")
         // ViewControllerに配置
-        animationView.frame = CGRect(x: -10, y: -150, width: view.bounds.width, height: view.bounds.height)
+        animationView.frame = CGRect(x:-100, y:50, width: animationView.bounds.width, height: animationView.bounds.height/1.6)
         animationView.loopAnimation = true
         animationView.contentMode = .scaleAspectFit
         animationView.animationSpeed = 0.7
@@ -573,6 +582,17 @@ class ViewController: UIViewController, CardControlDelegate {
         let sec: Int = count % 60
         elapsedTime.text = String(format:"%02d:%02d",min, sec)
         ClearTime.text = String(format:"%02d:%02d",min, sec)
+    }
+    
+    func PlusTimer(){
+        PlusLabel.isHidden = false
+        PlusLabel.animation = "zoomOut"
+        PlusLabel.duration = 3.0
+        PlusLabel.animate()
+        count += 2
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            self.PlusLabel.isHidden = true
+        }
     }
 
     //Realmへ保存

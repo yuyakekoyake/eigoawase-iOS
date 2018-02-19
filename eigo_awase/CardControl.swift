@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import RandomKit
+
 
 protocol CardControlDelegate: class {
     func OnCardTapped(sender: CardControl)
@@ -26,7 +26,6 @@ class CardControl: UIView {
     let Supplies: [String] = ["door","bed","chair","desk","window","clock","piano","camera"]
     let Supplies2: [String] = ["calculator","computer","eraser","notebook","pen","scissors","stapler","picture"]
     let Color: [String] = ["red","green","blue","white","black","yellow","purple","grey"]
-    
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
@@ -80,8 +79,7 @@ class CardControl: UIView {
         buttonCard.setBackgroundImage(buttonImage, for: .normal)
         //buttonCard.setImage(buttonImage, for: .normal)
         
-        //let Random = Fruit + vehicle + Animal + Animal2 + Sports + Food + Food2 + Weather + Supplies + Supplies2 + Color
-        //Random = Random.shuffled(using: &Xoroshiro.default)
+        
         
         var cardAryStr: [String] = []
         switch appDelegate.MondaiCategory {
@@ -107,8 +105,8 @@ class CardControl: UIView {
             cardAryStr = Supplies2
         case "いろ":
             cardAryStr = Color
-//        case "らんだむ":
-//            cardAryStr = Random
+        case "ランダム":
+            cardAryStr = appDelegate.MondaiRandom
         default:
             break
         }

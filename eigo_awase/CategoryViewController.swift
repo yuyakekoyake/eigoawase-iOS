@@ -17,7 +17,7 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
     var StartEffect:AVAudioPlayer!
     
     let category:[String] = ["くだもの","のりもの","どうぶつ","どうぶつ2","スポーツ","たべもの","たべもの2","てんき/きせつ","ものの名前","ものの名前2","いろ"]
-    let cellimage = ["apple","train","dog","rabbit","football","cake","carrot","sunny","pen","notebook","color"]
+    let cellimage = ["apple","train","dog","rabbit","football","cake","carrot","sunny","camera","notebook","color"]
     
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -63,10 +63,10 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
         
         //backimage
         let imageView = UIImageView(frame: CGRect(x:10, y:5, width:cell.frame.width - 20, height:cell.frame.height - 5))
-        let image = UIImage(named: "banner12")
+        let image = UIImage(named: "banner18.png")
         imageView.image = image
         cell.backgroundView = UIView()
-        cell.backgroundView!.addSubview(imageView)
+       // cell.backgroundView!.addSubview(imageView)
 
         // 文字サイズ変更
         cell.textLabel?.font = UIFont(name: "KodomoRounded", size: 28)

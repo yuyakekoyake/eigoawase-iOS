@@ -116,6 +116,7 @@
 		83ACA3122031496C000F33EE /* chair.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83ACA2DA2031496C000F33EE /* chair.mp3 */; };
 		83ACA3132031496C000F33EE /* piano.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83ACA2DB2031496C000F33EE /* piano.mp3 */; };
 		83B6B24F200A60C800503639 /* RankingRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6B24E200A60C800503639 /* RankingRealm.swift */; };
+		83B6EA68203AEFEB00DA8093 /* banner18.png in Resources */ = {isa = PBXBuildFile; fileRef = 83B6EA67203AEFEB00DA8093 /* banner18.png */; };
 		83BA61212007A0A0004417DE /* helicopter.json in Resources */ = {isa = PBXBuildFile; fileRef = 83BA61202007A0A0004417DE /* helicopter.json */; };
 		83D7596220333451006B31C8 /* grey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83D7596120333450006B31C8 /* grey.mp3 */; };
 		83D7596B20334472006B31C8 /* winter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83D7596320334470006B31C8 /* winter.mp3 */; };
@@ -295,6 +296,7 @@
 		83ACA2DA2031496C000F33EE /* chair.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chair.mp3; sourceTree = "<group>"; };
 		83ACA2DB2031496C000F33EE /* piano.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = piano.mp3; sourceTree = "<group>"; };
 		83B6B24E200A60C800503639 /* RankingRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingRealm.swift; sourceTree = "<group>"; };
+		83B6EA67203AEFEB00DA8093 /* banner18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner18.png; sourceTree = "<group>"; };
 		83BA61202007A0A0004417DE /* helicopter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = helicopter.json; sourceTree = "<group>"; };
 		83D7596120333450006B31C8 /* grey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = grey.mp3; sourceTree = "<group>"; };
 		83D7596320334470006B31C8 /* winter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = winter.mp3; sourceTree = "<group>"; };
@@ -372,6 +374,7 @@
 		8364F32D1FE0162600388509 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				83B6EA67203AEFEB00DA8093 /* banner18.png */,
 				83EE5F8D20012D37009E3521 /* hiragana_24_se.png */,
 				83EE5F8E20012D37009E3521 /* hiragana_74_wa.png */,
 				83EE5F8520012D2C009E3521 /* hiragana_01_a.png */,
@@ -630,6 +633,7 @@
 				837097331FDFEC1E004EC266 /* Resources */,
 				65C6D2272456EC1E0FC254D8 /* [CP] Embed Pods Frameworks */,
 				AB3933B3C572FF34E9BF67E0 /* [CP] Copy Pods Resources */,
+				830E0F5A203ADF00004A59C1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -827,6 +831,7 @@
 				83ACA2E82031496C000F33EE /* bed.mp3 in Resources */,
 				8364F3451FE044BF00388509 /* banana.jpg in Resources */,
 				83EE5F781FFFCF11009E3521 /* trophy.json in Resources */,
+				83B6EA68203AEFEB00DA8093 /* banner18.png in Resources */,
 				83EE5F8F20012D37009E3521 /* hiragana_24_se.png in Resources */,
 				83ACA3122031496C000F33EE /* chair.mp3 in Resources */,
 				83ACA2F02031496C000F33EE /* tennis.mp3 in Resources */,
@@ -891,7 +896,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		006E28A86EE148050A18A98E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
@@ -902,10 +907,9 @@
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-eigo_awase-checkManifestLockResult.txt",
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 		3A319F6C1FA2B02DB0394AA2 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -924,7 +928,7 @@
 		};
 		65C6D2272456EC1E0FC254D8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -982,6 +986,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eigo_awaseTests/Pods-eigo_awaseTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		830E0F5A203ADF00004A59C1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
 		9A9872186A8B8A1E10FA62C9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1020,7 +1037,7 @@
 		};
 		AB3933B3C572FF34E9BF67E0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -1233,6 +1250,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 53JT26R44G;
 				INFOPLIST_FILE = eigo_awase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.english-society.eigo-awase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1249,6 +1267,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 53JT26R44G;
 				INFOPLIST_FILE = eigo_awase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.english-society.eigo-awase";
 				PRODUCT_NAME = "$(TARGET_NAME)";

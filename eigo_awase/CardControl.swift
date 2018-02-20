@@ -169,7 +169,7 @@ class CardControl: UIView {
         //buttonのフォントサイズ可変
         
         buttonCard.titleLabel?.adjustsFontSizeToFitWidth = true
-        buttonCard.titleLabel?.minimumScaleFactor = 0.5
+        buttonCard.titleLabel?.minimumScaleFactor = 0.1
         buttonCard.titleLabel?.numberOfLines = 1
         buttonCard.titleLabel!.textAlignment = NSTextAlignment.center
         buttonCard.addTarget(self, action: #selector(CardControl.ButtonTapped(sender:)),for: .touchUpInside)

@@ -30,6 +30,8 @@ class ViewController: UIViewController, CardControlDelegate {
     
     var MondaiCount = 8
     
+    let ClearAnimationView = LOTAnimationView(name: "trophy.json")
+    
     //stopwatch
     var timer: Timer = Timer()
     var count: Int = 0
@@ -106,11 +108,15 @@ class ViewController: UIViewController, CardControlDelegate {
         elapsedTime.layer.masksToBounds = true
         
     //clearview
-        //ClearView.isHidden = true
+        ClearView.isHidden = true
        
-        RankingLabel.text = "ランキングいりしたよ！"
+        //RankingLabel.text = "ランキングいりしたよ！"
         //RankingLabel.isHidden = true
-        //RankingLabel.text = "クリア時間"
+        RankingLabel.text = "クリア時間"
+        
+        
+    //clearanimation
+        ClearAnimationView.frame = CGRect(x:-100, y:50, width: ClearAnimationView.bounds.width, height: ClearAnimationView.bounds.height/1.6)
         
     //deviceSize
         switch view.frame.height {
@@ -120,15 +126,18 @@ class ViewController: UIViewController, CardControlDelegate {
             CardControl.CardcornerRadius = 7
             TimeLabelBottom.constant = 30
             FinishBtnBottom.constant = 60
+            ClearAnimationView.frame = CGRect(x:-65, y:100, width: ClearAnimationView.bounds.width, height: ClearAnimationView.bounds.height)
         case 736:
             CardControl.sizeCard = 80
             CardControl.CardcornerRadius = 8
             TimeLabelBottom.constant = 40
             FinishBtnBottom.constant = 30
+            ClearAnimationView.frame = CGRect(x:-90, y:80, width: ClearAnimationView.bounds.width, height: ClearAnimationView.bounds.height)
         case 568:
             CardControl.sizeCard = 59
             CardControl.CardcornerRadius = 6
             TimeLabelBottom.constant = 20
+            ClearAnimationView.frame = CGRect(x:-130, y:70, width: ClearAnimationView.bounds.width, height: ClearAnimationView.bounds.height/1.3)
            
         case 480:
             CardControl.sizeCard = 55
@@ -136,13 +145,12 @@ class ViewController: UIViewController, CardControlDelegate {
             TimeLabelBottom.constant = 10
             FinishBtnBottom.constant = 10
             CardTop = 75
-            ClearAniX = -150
-            ClearAniY = 15
+            ClearAnimationView.frame = CGRect(x:-150, y:50, width: ClearAnimationView.bounds.width, height: ClearAnimationView.bounds.height/1.6)
         default:
             break
         }
        
-         AllClearAnimation()
+         
         
         
         
@@ -244,28 +252,28 @@ class ViewController: UIViewController, CardControlDelegate {
                 path = Bundle.main.bundleURL.appendingPathComponent(OpenSoundAry[7] + ".mp3")
             case 8:
                 AsrNum = 0
-                path = Bundle.main.bundleURL.appendingPathComponent("")
+                path = Bundle.main.bundleURL.appendingPathComponent("Motion-Pop21-1.mp3")
             case 9:
                 AsrNum = 1
-                path = Bundle.main.bundleURL.appendingPathComponent("")
+                path = Bundle.main.bundleURL.appendingPathComponent("Motion-Pop21-1.mp3")
             case 10:
                 AsrNum = 2
-                path = Bundle.main.bundleURL.appendingPathComponent("")
+                path = Bundle.main.bundleURL.appendingPathComponent("Motion-Pop21-1.mp3")
             case 11:
                 AsrNum = 3
-                path = Bundle.main.bundleURL.appendingPathComponent("")
+                path = Bundle.main.bundleURL.appendingPathComponent("Motion-Pop21-1.mp3")
             case 12:
                 AsrNum = 4
-                path = Bundle.main.bundleURL.appendingPathComponent("")
+                path = Bundle.main.bundleURL.appendingPathComponent("Motion-Pop21-1.mp3")
             case 13:
                 AsrNum = 5
-                path = Bundle.main.bundleURL.appendingPathComponent("")
+                path = Bundle.main.bundleURL.appendingPathComponent("Motion-Pop21-1.mp3")
             case 14:
                 AsrNum = 6
-                path = Bundle.main.bundleURL.appendingPathComponent("")
+                path = Bundle.main.bundleURL.appendingPathComponent("Motion-Pop21-1.mp3")
             case 15:
                 AsrNum = 7
-                path = Bundle.main.bundleURL.appendingPathComponent("")
+                path = Bundle.main.bundleURL.appendingPathComponent("Motion-Pop21-1.mp3")
             default:
                 print("Asrnumエラー")
             }
@@ -305,28 +313,28 @@ class ViewController: UIViewController, CardControlDelegate {
                     path = Bundle.main.bundleURL.appendingPathComponent(OpenSoundAry[7] + ".mp3")
                 case 8:
                     AsrNum1 = 0
-                    path = Bundle.main.bundleURL.appendingPathComponent("")
+                    path = Bundle.main.bundleURL.appendingPathComponent("Motion-Pop21-1.mp3")
                 case 9:
                     AsrNum1 = 1
-                    path = Bundle.main.bundleURL.appendingPathComponent("")
+                    path = Bundle.main.bundleURL.appendingPathComponent("Motion-Pop21-1.mp3")
                 case 10:
                     AsrNum1 = 2
-                    path = Bundle.main.bundleURL.appendingPathComponent("")
+                    path = Bundle.main.bundleURL.appendingPathComponent("Motion-Pop21-1.mp3")
                 case 11:
                     AsrNum1 = 3
-                    path = Bundle.main.bundleURL.appendingPathComponent("")
+                    path = Bundle.main.bundleURL.appendingPathComponent("Motion-Pop21-1.mp3")
                 case 12:
                     AsrNum1 = 4
-                    path = Bundle.main.bundleURL.appendingPathComponent("")
+                    path = Bundle.main.bundleURL.appendingPathComponent("Motion-Pop21-1.mp3")
                 case 13:
                     AsrNum1 = 5
-                    path = Bundle.main.bundleURL.appendingPathComponent("")
+                    path = Bundle.main.bundleURL.appendingPathComponent("Motion-Pop21-1.mp3")
                 case 14:
                     AsrNum1 = 6
-                    path = Bundle.main.bundleURL.appendingPathComponent("")
+                    path = Bundle.main.bundleURL.appendingPathComponent("Motion-Pop21-1.mp3")
                 case 15:
                     AsrNum1 = 7
-                    path = Bundle.main.bundleURL.appendingPathComponent("")
+                    path = Bundle.main.bundleURL.appendingPathComponent("Motion-Pop21-1.mp3")
                 default:
                     print("Asrnum1エラー")
                 }
@@ -348,19 +356,19 @@ class ViewController: UIViewController, CardControlDelegate {
                 case 7:
                     path = Bundle.main.bundleURL.appendingPathComponent(OpenSoundAry[7] + ".mp3")
                 case 8:
-                    path = Bundle.main.bundleURL.appendingPathComponent("")
+                    path = Bundle.main.bundleURL.appendingPathComponent("Motion-Pop21-1.mp3")
                 case 9:
-                    path = Bundle.main.bundleURL.appendingPathComponent("")
+                    path = Bundle.main.bundleURL.appendingPathComponent("Motion-Pop21-1.mp3")
                 case 10:
-                    path = Bundle.main.bundleURL.appendingPathComponent("")
+                    path = Bundle.main.bundleURL.appendingPathComponent("Motion-Pop21-1.mp3")
                 case 11:
-                    path = Bundle.main.bundleURL.appendingPathComponent("")
+                    path = Bundle.main.bundleURL.appendingPathComponent("Motion-Pop21-1.mp3")
                 case 12:
-                    path = Bundle.main.bundleURL.appendingPathComponent("")
+                    path = Bundle.main.bundleURL.appendingPathComponent("Motion-Pop21-1.mp3")
                 case 13:
-                    path = Bundle.main.bundleURL.appendingPathComponent("")
+                    path = Bundle.main.bundleURL.appendingPathComponent("Motion-Pop21-1.mp3")
                 case 14:
-                    path = Bundle.main.bundleURL.appendingPathComponent("")
+                    path = Bundle.main.bundleURL.appendingPathComponent("Motion-Pop21-1.mp3")
                 case 15:
                     path = Bundle.main.bundleURL.appendingPathComponent("")
                 default:
@@ -482,6 +490,20 @@ class ViewController: UIViewController, CardControlDelegate {
             print("エラーです")
         }
     }
+    
+    //ClearBGM
+    func StartSound () {
+        let path = Bundle.main.bundleURL.appendingPathComponent("start1.mp3")
+        do{
+            try ClearBgm = AVAudioPlayer(contentsOf: path)
+            ClearBgm.numberOfLoops = 0
+            ClearBgm.volume = 3
+            ClearBgm.play()
+        }catch{
+            print("エラーです")
+        }
+    }
+    
     //Animation
     func CorrectAnimation () {
         // アニメーションのviewを生成
@@ -519,15 +541,13 @@ class ViewController: UIViewController, CardControlDelegate {
     
     func AllClearAnimation () {
         // アニメーションのviewを生成
-        let animationView = LOTAnimationView(name: "trophy.json")
-        // ViewControllerに配置
-        animationView.frame = CGRect(x:-100, y:50, width: animationView.bounds.width, height: animationView.bounds.height/1.6)
-        animationView.loopAnimation = true
-        animationView.contentMode = .scaleAspectFit
-        animationView.animationSpeed = 0.7
-        self.ClearView.addSubview(animationView)
+        
+        ClearAnimationView.loopAnimation = true
+        ClearAnimationView.contentMode = .scaleAspectFit
+        ClearAnimationView.animationSpeed = 0.7
+        self.ClearView.addSubview(ClearAnimationView)
         // アニメーションの開始
-        animationView.play()
+        ClearAnimationView.play()
     }
     
     func Ranking() {
@@ -611,7 +631,12 @@ class ViewController: UIViewController, CardControlDelegate {
     @IBAction func FinishBtn(_ sender: Any) {
         Bgm.stop()
     }
-    
+    //画面が表示された直後
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        StartSound()
+        
+    }
     
     //画面から非表示になる瞬間
     override func viewWillDisappear(_ animated: Bool) {

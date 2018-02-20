@@ -289,7 +289,7 @@
 		83ACA2CF2031496A000F33EE /* pumpkin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pumpkin.mp3; sourceTree = "<group>"; };
 		83ACA2D02031496A000F33EE /* donut.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = donut.mp3; sourceTree = "<group>"; };
 		83ACA2D12031496A000F33EE /* calculator.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = calculator.mp3; sourceTree = "<group>"; };
-		83ACA2D22031496A000F33EE /* orange.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = orange.mp3; path = "../../../../素材(音源)/英語音声2/orange.mp3"; sourceTree = "<group>"; };
+		83ACA2D22031496A000F33EE /* orange.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = orange.mp3; sourceTree = "<group>"; };
 		83ACA2D32031496B000F33EE /* scissors.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = scissors.mp3; sourceTree = "<group>"; };
 		83ACA2D42031496B000F33EE /* red.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = red.mp3; sourceTree = "<group>"; };
 		83ACA2D52031496B000F33EE /* cake.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cake.mp3; sourceTree = "<group>"; };

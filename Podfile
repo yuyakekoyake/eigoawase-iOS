@@ -11,6 +11,7 @@ pod 'Spring', :git => 'https://github.com/MengTo/Spring.git'
 pod 'Google-Mobile-Ads-SDK'
 pod 'RealmSwift'
 pod 'RandomKit'
+pod 'Cheers'
 
 post_install do | installer |
   require 'fileutils'

@@ -12,6 +12,7 @@ import Lottie
 import GoogleMobileAds
 import RealmSwift
 import Spring
+import Cheers
 
 class ViewController: UIViewController, CardControlDelegate {
 
@@ -31,6 +32,9 @@ class ViewController: UIViewController, CardControlDelegate {
     var MondaiCount = 8
     
     let ClearAnimationView = LOTAnimationView(name: "trophy.json")
+    // Create the view
+    let cheerView = CheerView()
+    
     
     //stopwatch
     var timer: Timer = Timer()
@@ -74,6 +78,16 @@ class ViewController: UIViewController, CardControlDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    // Create the view
+        cheerView.frame = CGRect(x: 50, y: 0, width: 200, height: 400)
+        ClearView.addSubview(cheerView)
+    // Configure
+        cheerView.config.particle = .confetti(allowedShapes: [Particle.ConfettiShape.triangle])
+   
+        
+        // Stop
+        //cheerView.stop()
+        
     
     //interstisialのフラグをONへ
         appDelegate.InterstitialFlug = true
@@ -109,7 +123,7 @@ class ViewController: UIViewController, CardControlDelegate {
         
     //clearview
         ClearView.isHidden = true
-       
+       //ClearView.isHidden = false
         //RankingLabel.text = "ランキングいりしたよ！"
         //RankingLabel.isHidden = true
         RankingLabel.text = "クリア時間"
@@ -558,6 +572,8 @@ class ViewController: UIViewController, CardControlDelegate {
             if count < Rankresults[4].Time{
                 print("ランク入り")
                 //RankingLabel.isHidden = false
+                // Start
+                cheerView.start()
                 RankingLabel.text = "ランキングいりしたよ！"
                 self.ClearView.addSubview(RankingLabel)
             }

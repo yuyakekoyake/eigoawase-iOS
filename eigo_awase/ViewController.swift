@@ -239,6 +239,7 @@ class ViewController: UIViewController, CardControlDelegate {
         }
         if sender.isOpen {
             print("カードは既に開いています")
+            Opensound ()
         }
         else {
             let number = sender.OpenCard()!

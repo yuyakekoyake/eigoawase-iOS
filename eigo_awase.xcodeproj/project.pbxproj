@@ -55,6 +55,7 @@
 		8370974E1FDFEC1E004EC266 /* eigo_awaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8370974D1FDFEC1E004EC266 /* eigo_awaseTests.swift */; };
 		837097591FDFEC1E004EC266 /* eigo_awaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837097581FDFEC1E004EC266 /* eigo_awaseUITests.swift */; };
 		837097671FDFEC66004EC266 /* CardControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837097661FDFEC66004EC266 /* CardControl.swift */; };
+		838856102049A03200D9BB8D /* Motion-Pop21-1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8388560F2049A03200D9BB8D /* Motion-Pop21-1.mp3 */; };
 		839100C72029759500481ED0 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839100C62029759500481ED0 /* CategoryViewController.swift */; };
 		83A39C1D20175F08003EC84D /* clearBGM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83A39C1C20175F08003EC84D /* clearBGM.mp3 */; };
 		83A39C1F20176194003EC84D /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A39C1E20176194003EC84D /* SettingViewController.swift */; };
@@ -120,7 +121,6 @@
 		83B6EA6A203BFB0300DA8093 /* start1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83B6EA69203BFB0300DA8093 /* start1.mp3 */; };
 		83B6EA6C203C004400DA8093 /* Onmtp-Click02-2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83B6EA6B203C004400DA8093 /* Onmtp-Click02-2.mp3 */; };
 		83B6EA6E203C007200DA8093 /* Bicycle_Horn01-1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83B6EA6D203C007200DA8093 /* Bicycle_Horn01-1.mp3 */; };
-		83B6EA70203C01C300DA8093 /* Motion-Pop21-1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83B6EA6F203C01C300DA8093 /* Motion-Pop21-1.mp3 */; };
 		83BA61212007A0A0004417DE /* helicopter.json in Resources */ = {isa = PBXBuildFile; fileRef = 83BA61202007A0A0004417DE /* helicopter.json */; };
 		83D7596220333451006B31C8 /* grey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83D7596120333450006B31C8 /* grey.mp3 */; };
 		83D7596B20334472006B31C8 /* winter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83D7596320334470006B31C8 /* winter.mp3 */; };
@@ -239,6 +239,7 @@
 		837097581FDFEC1E004EC266 /* eigo_awaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eigo_awaseUITests.swift; sourceTree = "<group>"; };
 		8370975A1FDFEC1E004EC266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		837097661FDFEC66004EC266 /* CardControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardControl.swift; sourceTree = "<group>"; };
+		8388560F2049A03200D9BB8D /* Motion-Pop21-1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Motion-Pop21-1.mp3"; sourceTree = "<group>"; };
 		839100C62029759500481ED0 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		83A39C1C20175F08003EC84D /* clearBGM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = clearBGM.mp3; sourceTree = "<group>"; };
 		83A39C1E20176194003EC84D /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -304,7 +305,6 @@
 		83B6EA69203BFB0300DA8093 /* start1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = start1.mp3; sourceTree = "<group>"; };
 		83B6EA6B203C004400DA8093 /* Onmtp-Click02-2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Onmtp-Click02-2.mp3"; sourceTree = "<group>"; };
 		83B6EA6D203C007200DA8093 /* Bicycle_Horn01-1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Bicycle_Horn01-1.mp3"; sourceTree = "<group>"; };
-		83B6EA6F203C01C300DA8093 /* Motion-Pop21-1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Motion-Pop21-1.mp3"; sourceTree = "<group>"; };
 		83BA61202007A0A0004417DE /* helicopter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = helicopter.json; sourceTree = "<group>"; };
 		83D7596120333450006B31C8 /* grey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = grey.mp3; sourceTree = "<group>"; };
 		83D7596320334470006B31C8 /* winter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = winter.mp3; sourceTree = "<group>"; };
@@ -408,7 +408,7 @@
 		8364F34A1FE2C9D400388509 /* sounds */ = {
 			isa = PBXGroup;
 			children = (
-				83B6EA6F203C01C300DA8093 /* Motion-Pop21-1.mp3 */,
+				8388560F2049A03200D9BB8D /* Motion-Pop21-1.mp3 */,
 				83B6EA6D203C007200DA8093 /* Bicycle_Horn01-1.mp3 */,
 				83B6EA6B203C004400DA8093 /* Onmtp-Click02-2.mp3 */,
 				83B6EA69203BFB0300DA8093 /* start1.mp3 */,
@@ -787,6 +787,7 @@
 				83ACA2E12031496C000F33EE /* stapler.mp3 in Resources */,
 				8364F3671FE2C9F400388509 /* bus.mp3 in Resources */,
 				83ECAFAC200DDE7A00317D52 /* famipop3.mp3 in Resources */,
+				838856102049A03200D9BB8D /* Motion-Pop21-1.mp3 in Resources */,
 				83ACA3002031496C000F33EE /* carrot.mp3 in Resources */,
 				83ACA2EE2031496C000F33EE /* purple.mp3 in Resources */,
 				83ACA3102031496C000F33EE /* white.mp3 in Resources */,
@@ -815,7 +816,6 @@
 				83ACA2E52031496C000F33EE /* eraser.mp3 in Resources */,
 				83ACA2E92031496C000F33EE /* crocodile.mp3 in Resources */,
 				83ACA2FD2031496C000F33EE /* clock.mp3 in Resources */,
-				83B6EA70203C01C300DA8093 /* Motion-Pop21-1.mp3 in Resources */,
 				8364F3331FE018F400388509 /* buttonBack.jpg in Resources */,
 				83B6EA6A203BFB0300DA8093 /* start1.mp3 in Resources */,
 				83291FEB201CD43600E74DF7 /* giraffe.mp3 in Resources */,

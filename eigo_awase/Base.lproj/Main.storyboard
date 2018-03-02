@@ -84,7 +84,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xeJ-7w-coN">
-                                <rect key="frame" x="12" y="25" width="351" height="490"/>
+                                <rect key="frame" x="12" y="25" width="351" height="576"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Clear !!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="kYB-DZ-C8a" customClass="SpringLabel" customModule="Spring">
                                         <rect key="frame" x="0.0" y="25" width="351" height="50"/>
@@ -143,19 +143,34 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XX2-9l-bh9">
+                                        <rect key="frame" x="25" y="503" width="301" height="53"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="KAWAIITEGAKIMOJI" family="KAWAIITEGAKIMOJI" pointSize="25"/>
+                                        <state key="normal" title="つぎのもんだいをえらぶ" backgroundImage="banner02">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ChallengeEndBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p1O-Tb-nuY"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.97647058823529409" green="0.95686274509803915" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="rca-T7-09R" firstAttribute="leading" secondItem="kYB-DZ-C8a" secondAttribute="leading" id="3jG-xx-91X"/>
-                                    <constraint firstAttribute="bottom" secondItem="DuZ-bA-Ewe" secondAttribute="bottom" constant="25" id="Ab8-fN-2bH"/>
+                                    <constraint firstItem="XX2-9l-bh9" firstAttribute="centerX" secondItem="xeJ-7w-coN" secondAttribute="centerX" id="4nK-DJ-yFQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="DuZ-bA-Ewe" secondAttribute="bottom" constant="111" id="Ab8-fN-2bH"/>
+                                    <constraint firstAttribute="bottom" secondItem="XX2-9l-bh9" secondAttribute="bottom" constant="20" id="B7i-Eq-6r6"/>
                                     <constraint firstItem="rca-T7-09R" firstAttribute="trailing" secondItem="kYB-DZ-C8a" secondAttribute="trailing" id="EPr-V6-4JL"/>
-                                    <constraint firstAttribute="width" secondItem="xeJ-7w-coN" secondAttribute="height" multiplier="351:490" id="JOi-9g-URk"/>
+                                    <constraint firstAttribute="width" secondItem="xeJ-7w-coN" secondAttribute="height" multiplier="351:490" constant="-61.604081632653106" id="JOi-9g-URk"/>
+                                    <constraint firstItem="XX2-9l-bh9" firstAttribute="leading" secondItem="xeJ-7w-coN" secondAttribute="leading" constant="25" id="Llh-gz-bHW"/>
                                     <constraint firstItem="DuZ-bA-Ewe" firstAttribute="leading" secondItem="xeJ-7w-coN" secondAttribute="leading" constant="50" id="Nxx-T2-M0D"/>
                                     <constraint firstAttribute="trailing" secondItem="kYB-DZ-C8a" secondAttribute="trailing" id="OB6-6y-Yed"/>
                                     <constraint firstItem="kYB-DZ-C8a" firstAttribute="leading" secondItem="xeJ-7w-coN" secondAttribute="leading" id="ROj-Nt-OSd"/>
                                     <constraint firstItem="kYB-DZ-C8a" firstAttribute="top" secondItem="xeJ-7w-coN" secondAttribute="top" constant="25" id="XkJ-sx-WIP"/>
                                     <constraint firstItem="DuZ-bA-Ewe" firstAttribute="top" secondItem="rca-T7-09R" secondAttribute="bottom" constant="10" id="a68-FN-NGi"/>
                                     <constraint firstAttribute="trailing" secondItem="DuZ-bA-Ewe" secondAttribute="trailing" constant="50" id="iUh-Co-3xC"/>
+                                    <constraint firstAttribute="trailing" secondItem="XX2-9l-bh9" secondAttribute="trailing" constant="25" id="u27-nd-K3Y"/>
                                 </constraints>
                             </view>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+2" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KnT-9G-fDb" customClass="SpringLabel" customModule="Spring">
@@ -178,6 +193,7 @@
                             <constraint firstItem="3C3-Lt-tRc" firstAttribute="top" secondItem="RyT-9h-kek" secondAttribute="bottom" constant="30" id="KtV-Ga-c4O"/>
                             <constraint firstItem="RyT-9h-kek" firstAttribute="height" secondItem="DYq-0x-9Gj" secondAttribute="height" id="Kzn-l6-sBk"/>
                             <constraint firstItem="DYq-0x-9Gj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NSg-1J-YWh"/>
+                            <constraint firstItem="RyT-9h-kek" firstAttribute="height" secondItem="XX2-9l-bh9" secondAttribute="height" id="Sii-2j-ebY"/>
                             <constraint firstItem="3C3-Lt-tRc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uuu-vE-NFJ"/>
                             <constraint firstItem="3C3-Lt-tRc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VCj-hc-2OZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cgm-rh-CMv" secondAttribute="trailing" id="Wlc-6L-1WY"/>
@@ -190,12 +206,13 @@
                             <constraint firstItem="RyT-9h-kek" firstAttribute="width" secondItem="DYq-0x-9Gj" secondAttribute="width" id="h7W-cr-Bhr"/>
                             <constraint firstItem="KnT-9G-fDb" firstAttribute="centerY" secondItem="DYq-0x-9Gj" secondAttribute="centerY" id="hmf-N3-e4s"/>
                             <constraint firstItem="Cgm-rh-CMv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sma-6c-Wbd"/>
-                            <constraint firstItem="xeJ-7w-coN" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.73463" id="xf1-Ua-AZx"/>
+                            <constraint firstItem="xeJ-7w-coN" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.73463" constant="86.001789999999971" id="xf1-Ua-AZx"/>
                             <constraint firstItem="KnT-9G-fDb" firstAttribute="trailing" secondItem="DYq-0x-9Gj" secondAttribute="trailing" id="zd8-Dq-RWV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="ChallengeEndBtn" destination="XX2-9l-bh9" id="LSb-hg-g4W"/>
                         <outlet property="ClearTime" destination="DuZ-bA-Ewe" id="7Bg-Ll-aV8"/>
                         <outlet property="ClearView" destination="xeJ-7w-coN" id="h6j-Df-7cG"/>
                         <outlet property="CountLabel" destination="BRx-NF-qHs" id="7Vz-sp-sfS"/>
@@ -207,6 +224,7 @@
                         <outlet property="bannerView" destination="3C3-Lt-tRc" id="W1V-bg-k1u"/>
                         <outlet property="elapsedTime" destination="DYq-0x-9Gj" id="leW-0c-du9"/>
                         <segue destination="Uy6-KF-OfM" kind="presentation" identifier="ToHome" id="Uyj-BS-X4H"/>
+                        <segue destination="Kxd-wR-aiX" kind="presentation" identifier="ToCategory" id="94j-rJ-drk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -1223,7 +1241,8 @@ Cg
         <image name="ロゴ_背景透明50" width="285" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Uyj-BS-X4H"/>
+        <segue reference="94j-rJ-drk"/>
+        <segue reference="B3Y-dJ-9bx"/>
         <segue reference="O7c-gC-wiO"/>
     </inferredMetricsTieBreakers>
 </document>

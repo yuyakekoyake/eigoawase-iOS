@@ -47,6 +47,7 @@ class ViewController: UIViewController, CardControlDelegate {
     @IBOutlet weak var elapsedTime: UILabel!
     @IBOutlet weak var ClearView: UIView!
     @IBOutlet weak var RankingLabel: SpringLabel!
+    @IBOutlet weak var ChallengeEndBtn: UIButton!
     
     @IBOutlet weak var bannerView: GADBannerView!
     
@@ -127,6 +128,9 @@ class ViewController: UIViewController, CardControlDelegate {
         //RankingLabel.text = "ランキングいりしたよ！"
         //RankingLabel.isHidden = true
         RankingLabel.text = "クリア時間"
+        ChallengeEndBtn.titleLabel?.adjustsFontSizeToFitWidth = true
+        ChallengeEndBtn.titleLabel?.minimumScaleFactor = 0.1
+        ChallengeEndBtn.isHidden = true
         
         
     //clearanimation
@@ -412,8 +416,11 @@ class ViewController: UIViewController, CardControlDelegate {
                         self.AllClearAnimation()
                         self.Bgm.stop()
                         self.ClearSound()
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                             self.BgmSound2()
+                        }
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                            self.ChallengeEndBtn.isHidden = false
                         }
                     }
                 }
@@ -576,6 +583,9 @@ class ViewController: UIViewController, CardControlDelegate {
                 cheerView.start()
                 RankingLabel.text = "ランキングいりしたよ！"
                 self.ClearView.addSubview(RankingLabel)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+                    self.cheerView.stop()
+                }
             }
         }
     }
@@ -654,6 +664,10 @@ class ViewController: UIViewController, CardControlDelegate {
         
     }
     
+    @IBAction func ChallengeEndBtn(_ sender: Any) {
+        Bgm.stop()
+        performSegue(withIdentifier: "ToCategory", sender: nil)
+    }
     //画面から非表示になる瞬間
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)

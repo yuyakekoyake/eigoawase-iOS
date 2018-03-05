@@ -12,6 +12,7 @@ pod 'Google-Mobile-Ads-SDK'
 pod 'RealmSwift'
 pod 'RandomKit'
 pod 'Cheers'
+pod "SwiftRater"
 
 post_install do | installer |
   require 'fileutils'

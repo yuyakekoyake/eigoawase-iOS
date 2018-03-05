@@ -60,7 +60,7 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
         TableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
         
         //loadingview
-       // LoadingBackview.isHidden = true
+        LoadingBackview.isHidden = true
         
         //interstitial広告
         let interstitial = GADInterstitial(adUnitID: AdMobID)

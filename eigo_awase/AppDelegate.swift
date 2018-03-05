@@ -8,6 +8,7 @@
 
 import UIKit
 import GoogleMobileAds
+import SwiftRater
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -27,6 +28,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Initialize the Google Mobile Ads SDK.
         // Sample AdMob app ID: ca-app-pub-3940256099942544~1458002511
         GADMobileAds.configure(withApplicationID: "ca-app-pub-2571146153853390~7511216219")
+        
+    
+    //SwiftRater
+        SwiftRater.daysUntilPrompt = 3
+        SwiftRater.usesUntilPrompt = 4
+        SwiftRater.significantUsesUntilPrompt = 3
+        SwiftRater.daysBeforeReminding = 2
+        SwiftRater.showLaterButton = true
+        SwiftRater.debugMode = false
+        SwiftRater.appLaunched()
         
         return true
     }

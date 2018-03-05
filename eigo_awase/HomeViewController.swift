@@ -12,6 +12,7 @@ import Spring
 import AVFoundation
 import GoogleMobileAds
 import RandomKit
+import SwiftRater
 
 class HomeViewController: UIViewController, GADInterstitialDelegate {
     @IBOutlet weak var TitleE: SpringImageView!
@@ -58,8 +59,10 @@ class HomeViewController: UIViewController, GADInterstitialDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    //SwiftRater
+        SwiftRater.check()
+        
     //BGMスタート
-       
         BgmSound()
         
     // autolayout

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EF1A04679F1EB6FE77A2C1250C36035E"
+               BlueprintIdentifier = "C1DFF4707F34F24B2B13AD4292109C5F"
                BuildableName = "Pods_eigo_awase.framework"
                BlueprintName = "Pods-eigo_awase"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EF1A04679F1EB6FE77A2C1250C36035E"
+            BlueprintIdentifier = "C1DFF4707F34F24B2B13AD4292109C5F"
             BuildableName = "Pods_eigo_awase.framework"
             BlueprintName = "Pods-eigo_awase"
             ReferencedContainer = "container:Pods.xcodeproj">

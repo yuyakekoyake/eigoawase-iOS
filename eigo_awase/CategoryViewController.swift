@@ -8,16 +8,37 @@
 
 import UIKit
 import AVFoundation
+import Lottie
+import GoogleMobileAds
 
-class CategoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class CategoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, GADInterstitialDelegate {
 
     @IBOutlet weak var TableView: UITableView!
+   // @IBOutlet weak var LoadingBackview: UIImageView!
+    @IBOutlet weak var LoadingBackview: UIView!
     
     var Bgm:AVAudioPlayer!
     var StartEffect:AVAudioPlayer!
     
     let category:[String] = ["くだもの","のりもの","どうぶつ","どうぶつ2","スポーツ","たべもの","たべもの2","てんき/きせつ","ものの名前","ものの名前2","いろ"]
     let cellimage = ["apple","train","dog","rabbit","football","cake","carrot","sunny","camera","notebook","color"]
+    
+    var waiting = LOTAnimationView()
+    var sun = LOTAnimationView()
+    var Loding = LOTAnimationView()
+    var Stars = LOTAnimationView()
+    
+    //interstitial広告用
+    // Interstitial AdMob ID を入れてください
+    let AdMobID = "ca-app-pub-2571146153853390/9841155648"
+    // Simulator ID
+    let SIMULSTOR_ID = kGADSimulatorID
+    // 実機テスト用 ID を入れる
+    let DEVICE_TEST_ID = "aaaaaaaaaaaaaaaaa0123456789"
+    let DeviceTest:Bool = false
+    let SimulatorTest:Bool = true
+    // delay sec
+    let delayTime = 4.0
     
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -28,12 +49,46 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
         //BGMスタート
         BgmSound()
         
+        //lottie
+        LottieAnimation()
+        
         
         //tableviewのdelegate
         TableView.dataSource = self
         TableView.delegate = self
         
         TableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
+        
+        //loadingview
+       // LoadingBackview.isHidden = true
+        
+        //interstitial広告
+        let interstitial = GADInterstitial(adUnitID: AdMobID)
+        interstitial.delegate = self
+        let request = GADRequest()
+        if(DeviceTest){
+            request.testDevices = [DEVICE_TEST_ID]
+        }
+        else if SimulatorTest {
+            request.testDevices = [SIMULSTOR_ID]
+            print("AdMobシミュレーター")
+        }
+        else{
+            // AdMob
+            print("AdMob本番")
+        }
+        interstitial.load(request);
+        
+        if appDelegate.InterstitialFlug == false {
+        }else{
+            LoadingBackview.isHidden = false
+            // 4秒間待たせる
+            DispatchQueue.main.asyncAfter(deadline: .now() + delayTime) {
+                self.LoadingBackview.isHidden = true
+                self.appDelegate.InterstitialFlug = false
+                self.showAdMob(interstitial: interstitial)
+            }
+        }
         
         
         
@@ -92,6 +147,63 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
         performSegue(withIdentifier: "ToChallenge", sender: nil)
     }
     
+    
+    
+    func LottieAnimation (){
+        
+        // アニメーションのviewを生成
+        waiting = LOTAnimationView(name: "waiting.json")
+        waiting.frame = CGRect(x: 10, y: 50, width: view.bounds.width/4.0, height: view.bounds.height/5)
+        waiting.tintColor = UIColor.red
+        waiting.contentMode = .scaleAspectFit
+        waiting.loopAnimation = true
+        
+        sun = LOTAnimationView(name: "star.json")
+        sun.frame = CGRect(x: view.bounds.width-140, y: 10, width: view.bounds.width/3, height: view.bounds.height/6)
+        sun.contentMode = .scaleAspectFit
+        sun.loopAnimation = true
+        
+        Loding = LOTAnimationView(name: "spinner.json")
+        Loding.frame = CGRect(x: self.LoadingBackview.center.x, y: self.LoadingBackview.center.y ,width: 150, height: 150)
+        Loding.center = self.LoadingBackview.center
+        Loding.contentMode = .scaleAspectFill
+        Loding.loopAnimation = true
+        
+        Stars = LOTAnimationView(name: "stars.json")
+        Stars.frame = CGRect(x: self.LoadingBackview.center.x, y: self.LoadingBackview.center.y ,width:self.LoadingBackview.frame.width-20, height: self.LoadingBackview.frame.height-20)
+        Stars.center = self.LoadingBackview.center
+        Stars.contentMode = .scaleAspectFill
+        Stars.loopAnimation = true
+        
+        
+        //deviceSize
+        switch view.frame.height {
+        case 812:break
+            
+        case 736:
+            Loding.frame = CGRect(x: self.LoadingBackview.frame.width/3, y: 270 ,width: 170, height: 170)
+            
+        case 568:
+            Loding.frame = CGRect(x: self.LoadingBackview.frame.width/4.2, y: 200 ,width: 150, height: 150)
+        case 480:
+            Loding.frame = CGRect(x: self.LoadingBackview.frame.width/3.5, y: 200 ,width: 120, height: 120)
+        default:
+            break
+        }
+        
+        //Add view
+        self.LoadingBackview.addSubview(Stars)
+        self.LoadingBackview.addSubview(waiting)
+        self.LoadingBackview.addSubview(sun)
+        self.LoadingBackview.addSubview(Loding)
+        
+        // アニメーションを開始
+        waiting.play()
+        sun.play()
+        Loding.play()
+        Stars.play()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -130,6 +242,26 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
             print("エラーです")
         }
     }
+    
+    //インタースティシャル用
+    func showAdMob(interstitial: GADInterstitial){
+        if (interstitial.isReady)
+        {
+            interstitial.present(fromRootViewController: self)
+        }
+    }
+    func interstitialWillPresentScreen(_ ad: GADInterstitial) {
+        print("interstitialWillPresentScreen")
+    }
+    
+    // インタースティシャルが消えた直後
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+        print("interstitialDidDismissScreen")
+        
+        
+    }
+    
+    
 
     /*
     // MARK: - Navigation

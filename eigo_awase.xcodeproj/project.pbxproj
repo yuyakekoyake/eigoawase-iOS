@@ -56,6 +56,12 @@
 		837097591FDFEC1E004EC266 /* eigo_awaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837097581FDFEC1E004EC266 /* eigo_awaseUITests.swift */; };
 		837097671FDFEC66004EC266 /* CardControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837097661FDFEC66004EC266 /* CardControl.swift */; };
 		838856102049A03200D9BB8D /* Motion-Pop21-1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8388560F2049A03200D9BB8D /* Motion-Pop21-1.mp3 */; };
+		838856132049A4E600D9BB8D /* loading_rainbow.json in Resources */ = {isa = PBXBuildFile; fileRef = 838856112049A4E500D9BB8D /* loading_rainbow.json */; };
+		838856142049A4E600D9BB8D /* waiting.json in Resources */ = {isa = PBXBuildFile; fileRef = 838856122049A4E600D9BB8D /* waiting.json */; };
+		83885617204CEFB000D9BB8D /* square_drop_loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 83885615204CEFB000D9BB8D /* square_drop_loader.json */; };
+		83885618204CEFB000D9BB8D /* confetti.json in Resources */ = {isa = PBXBuildFile; fileRef = 83885616204CEFB000D9BB8D /* confetti.json */; };
+		8388561A204CF4DF00D9BB8D /* stars.json in Resources */ = {isa = PBXBuildFile; fileRef = 83885619204CF4DF00D9BB8D /* stars.json */; };
+		8388561C204CF7CB00D9BB8D /* spinner.json in Resources */ = {isa = PBXBuildFile; fileRef = 8388561B204CF7CB00D9BB8D /* spinner.json */; };
 		839100C72029759500481ED0 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839100C62029759500481ED0 /* CategoryViewController.swift */; };
 		83A39C1D20175F08003EC84D /* clearBGM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83A39C1C20175F08003EC84D /* clearBGM.mp3 */; };
 		83A39C1F20176194003EC84D /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A39C1E20176194003EC84D /* SettingViewController.swift */; };
@@ -240,6 +246,12 @@
 		8370975A1FDFEC1E004EC266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		837097661FDFEC66004EC266 /* CardControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardControl.swift; sourceTree = "<group>"; };
 		8388560F2049A03200D9BB8D /* Motion-Pop21-1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Motion-Pop21-1.mp3"; sourceTree = "<group>"; };
+		838856112049A4E500D9BB8D /* loading_rainbow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading_rainbow.json; sourceTree = "<group>"; };
+		838856122049A4E600D9BB8D /* waiting.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = waiting.json; sourceTree = "<group>"; };
+		83885615204CEFB000D9BB8D /* square_drop_loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = square_drop_loader.json; sourceTree = "<group>"; };
+		83885616204CEFB000D9BB8D /* confetti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = confetti.json; sourceTree = "<group>"; };
+		83885619204CF4DF00D9BB8D /* stars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stars.json; sourceTree = "<group>"; };
+		8388561B204CF7CB00D9BB8D /* spinner.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spinner.json; sourceTree = "<group>"; };
 		839100C62029759500481ED0 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		83A39C1C20175F08003EC84D /* clearBGM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = clearBGM.mp3; sourceTree = "<group>"; };
 		83A39C1E20176194003EC84D /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -591,6 +603,12 @@
 		83EE5F721FFFCDC5009E3521 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				8388561B204CF7CB00D9BB8D /* spinner.json */,
+				83885619204CF4DF00D9BB8D /* stars.json */,
+				83885616204CEFB000D9BB8D /* confetti.json */,
+				83885615204CEFB000D9BB8D /* square_drop_loader.json */,
+				838856112049A4E500D9BB8D /* loading_rainbow.json */,
+				838856122049A4E600D9BB8D /* waiting.json */,
 				83ECAFB7200DEF6C00317D52 /* like_animation.json */,
 				83ECAFB3200DEC9000317D52 /* airplane.json */,
 				83ECAFB1200DEAB200317D52 /* Whale.json */,
@@ -784,6 +802,7 @@
 				83ACA2EA2031496C000F33EE /* squirrel.mp3 in Resources */,
 				83291FE8201CD43600E74DF7 /* dog.mp3 in Resources */,
 				83EE5F8C20012D2D009E3521 /* hiragana_02_i.png in Resources */,
+				8388561A204CF4DF00D9BB8D /* stars.json in Resources */,
 				83ACA2E12031496C000F33EE /* stapler.mp3 in Resources */,
 				8364F3671FE2C9F400388509 /* bus.mp3 in Resources */,
 				83ECAFAC200DDE7A00317D52 /* famipop3.mp3 in Resources */,
@@ -794,6 +813,7 @@
 				83ACA2F12031496C000F33EE /* volleyball.mp3 in Resources */,
 				83ECAFAE200DE62A00317D52 /* cloud_disconnection.json in Resources */,
 				8364F3691FE2C9F400388509 /* cherry.mp3 in Resources */,
+				83885618204CEFB000D9BB8D /* confetti.json in Resources */,
 				83EE5F741FFFCDEA009E3521 /* x_pop.json in Resources */,
 				83ACA2FC2031496C000F33EE /* baseball.mp3 in Resources */,
 				83291FE9201CD43600E74DF7 /* elephant.mp3 in Resources */,
@@ -816,15 +836,18 @@
 				83ACA2E52031496C000F33EE /* eraser.mp3 in Resources */,
 				83ACA2E92031496C000F33EE /* crocodile.mp3 in Resources */,
 				83ACA2FD2031496C000F33EE /* clock.mp3 in Resources */,
+				838856132049A4E600D9BB8D /* loading_rainbow.json in Resources */,
 				8364F3331FE018F400388509 /* buttonBack.jpg in Resources */,
 				83B6EA6A203BFB0300DA8093 /* start1.mp3 in Resources */,
 				83291FEB201CD43600E74DF7 /* giraffe.mp3 in Resources */,
 				8364F3661FE2C9F400388509 /* lemon.mp3 in Resources */,
 				83ACA2E32031496C000F33EE /* football.mp3 in Resources */,
 				8364F3AC1FE5740100388509 /* クイズ・正解.mp3 in Resources */,
+				83885617204CEFB000D9BB8D /* square_drop_loader.json in Resources */,
 				8364F3AE1FE574B800388509 /* blip03.mp3 in Resources */,
 				83ACA2ED2031496C000F33EE /* fox.mp3 in Resources */,
 				83ACA2F92031496C000F33EE /* potato.mp3 in Resources */,
+				838856142049A4E600D9BB8D /* waiting.json in Resources */,
 				83ACA2E42031496C000F33EE /* blue.mp3 in Resources */,
 				8364F35F1FE2C9F400388509 /* orange.mp3 in Resources */,
 				83ACA3062031496C000F33EE /* green pepper.mp3 in Resources */,
@@ -861,6 +884,7 @@
 				83ACA3032031496C000F33EE /* basketball.mp3 in Resources */,
 				8364F35D1FE2C9F400388509 /* grape.mp3 in Resources */,
 				83ACA2FE2031496C000F33EE /* rice.mp3 in Resources */,
+				8388561C204CF7CB00D9BB8D /* spinner.json in Resources */,
 				83ECAFB4200DEC9000317D52 /* airplane.json in Resources */,
 				83ACA2F62031496C000F33EE /* bowling.mp3 in Resources */,
 				8364F3621FE2C9F400388509 /* apple.mp3 in Resources */,

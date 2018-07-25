@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "ロゴ_背景透明50.png",
+      "filename" : "logo50.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "ロゴ_背景透明100.png",
+      "filename" : "logo100.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "ロゴ_背景透明150.png",
+      "filename" : "logo150.png",
       "scale" : "3x"
     }
   ],

@@ -22,7 +22,12 @@ post_install do | installer |
   require 'fileutils'
 
   FileUtils.cp_r('Pods/Target Support Files/Pods-eigo_awase/Pods-eigo_awase-Acknowledgements.plist', 'eigo_awase/Settings.bundle/Acknowledgements.plist', :remove_destination => true)
+
+installer.pods_project.build_configurations.each do |config|
+    config.build_settings.delete('CODE_SIGNING_ALLOWED')
+    config.build_settings.delete('CODE_SIGNING_REQUIRED')
   end
+end
 
   target 'eigo_awaseTests' do
     inherit! :search_paths

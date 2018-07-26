@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qWr-3x-fF5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qWr-3x-fF5">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -321,7 +321,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="RankingBTN:" destination="Uy6-KF-OfM" eventType="touchUpInside" id="wu4-2a-Miy"/>
-                                    <segue destination="Ntq-E5-tEH" kind="show" action="showDetailViewController:sender:" id="P0K-mR-Ewr"/>
+                                    <segue destination="Ntq-E5-tEH" kind="show" id="P0K-mR-Ewr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73a-C8-umq">
@@ -455,6 +455,22 @@
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nCy-sp-zpM" customClass="AnimatableView" customModule="IBAnimatable">
+                                <rect key="frame" x="54" y="209" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="_maskType" value="Polygon"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="flip"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autoRun" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <constraints>
                             <constraint firstItem="2fD-0h-eZD" firstAttribute="centerX" secondItem="Qkg-Wm-sWY" secondAttribute="centerX" id="0mB-7F-zk3"/>
@@ -1278,9 +1294,9 @@ Cg
         <image name="ロゴ_背景透明50" width="285" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TbD-Q1-Pz4"/>
-        <segue reference="94j-rJ-drk"/>
-        <segue reference="xyk-V5-lp1"/>
+        <segue reference="P0K-mR-Ewr"/>
+        <segue reference="5vj-Mp-wYE"/>
+        <segue reference="f1d-y4-Buu"/>
         <segue reference="SLa-8u-dx5"/>
     </inferredMetricsTieBreakers>
 </document>

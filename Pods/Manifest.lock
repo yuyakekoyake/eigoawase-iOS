@@ -1,7 +1,44 @@
 PODS:
   - Cheers (2.1.0)
+  - Firebase/AdMob (5.4.1):
+    - Firebase/Core
+    - Google-Mobile-Ads-SDK (= 7.31.0)
+  - Firebase/Core (5.4.1):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 5.0.1)
+  - Firebase/CoreOnly (5.4.1):
+    - FirebaseCore (= 5.0.6)
+  - Firebase/Messaging (5.4.1):
+    - Firebase/CoreOnly
+    - FirebaseMessaging (= 3.0.3)
+  - FirebaseAnalytics (5.0.1):
+    - FirebaseCore (~> 5.0)
+    - FirebaseInstanceID (~> 3.0)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - nanopb (~> 0.3)
+  - FirebaseCore (5.0.6):
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+  - FirebaseInstanceID (3.1.1):
+    - FirebaseCore (~> 5.0)
+  - FirebaseMessaging (3.0.3):
+    - FirebaseCore (~> 5.0)
+    - FirebaseInstanceID (~> 3.0)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - Protobuf (~> 3.1)
   - Google-Mobile-Ads-SDK (7.31.0)
+  - GoogleToolboxForMac/Defines (2.1.4)
+  - GoogleToolboxForMac/Logger (2.1.4):
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - IBAnimatable (5.1.0)
   - lottie-ios (2.5.0)
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
+  - Protobuf (3.6.0)
   - RandomKit (5.2.3):
     - ShiftOperations (~> 1.0.2)
     - Threadly (~> 1.0)
@@ -17,7 +54,11 @@ PODS:
 
 DEPENDENCIES:
   - Cheers
+  - Firebase/AdMob
+  - Firebase/Core
+  - Firebase/Messaging
   - Google-Mobile-Ads-SDK
+  - IBAnimatable
   - lottie-ios
   - RandomKit
   - RealmSwift
@@ -27,8 +68,17 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Cheers
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseInstanceID
+    - FirebaseMessaging
     - Google-Mobile-Ads-SDK
+    - GoogleToolboxForMac
+    - IBAnimatable
     - lottie-ios
+    - nanopb
+    - Protobuf
     - RandomKit
     - Realm
     - RealmSwift
@@ -47,8 +97,17 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Cheers: 02d6335ac9ceb1ebf678df78d378bc71242a015e
+  Firebase: 355bd535bfdacaa82a7fe8d9784115edefd6fc03
+  FirebaseAnalytics: b3628aea54c50464c32c393fb2ea032566e7ecc2
+  FirebaseCore: 4c28e3b9708ba48a765e76515f913a71596eb5dd
+  FirebaseInstanceID: f3f0657372592ecdfdfe2cac604a5a75758376a6
+  FirebaseMessaging: f43eb0c0e1da096e659de6f713038e74862a62cd
   Google-Mobile-Ads-SDK: 6e529e748b45507a2ca904e0b5a52669ba3920c4
+  GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
+  IBAnimatable: dd81f8f22e9982b05e8ac50794e4c8988cc300f2
   lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  Protobuf: 0fc0ad8bec688b2a3017a139953e01374fedbd5f
   RandomKit: 380745911c4f7989707489b2ce297194bfcf5031
   Realm: c286caf4dbf346ce24aad49ca76c7ce622d4a082
   RealmSwift: 2a9281e37d6de55f66f76254d49d28aeb1b729e4
@@ -57,6 +116,6 @@ SPEC CHECKSUMS:
   SwiftRater: 394b9e3b75770fa10eaeb0469fd9c5dc655d595b
   Threadly: b772ed7c1ff4a3f03eb4600bbc5ef83b3be5cb29
 
-PODFILE CHECKSUM: 1a44af3f49f25d6f725e348651dc0780e28b11b9
+PODFILE CHECKSUM: 467f85c5316390e4ba5228932ed46df5e4f23506
 
 COCOAPODS: 1.5.3

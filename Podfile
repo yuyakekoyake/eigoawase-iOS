@@ -13,6 +13,10 @@ pod 'RealmSwift'
 pod 'RandomKit'
 pod 'Cheers'
 pod "SwiftRater"
+pod 'Firebase/Core'
+pod 'Firebase/AdMob'
+pod 'Firebase/Messaging'
+pod 'IBAnimatable'
 
 post_install do | installer |
   require 'fileutils'

@@ -137,6 +137,7 @@
 		83D7597020334472006B31C8 /* spring.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83D7596820334471006B31C8 /* spring.mp3 */; };
 		83D7597120334472006B31C8 /* autumn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83D7596920334471006B31C8 /* autumn.mp3 */; };
 		83D7597220334472006B31C8 /* summer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83D7596A20334472006B31C8 /* summer.mp3 */; };
+		83E2F3AD210A0496003099D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83E2F3AC210A0496003099D9 /* GoogleService-Info.plist */; };
 		83ECAFA1200CEF2500317D52 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ECAFA0200CEF2500317D52 /* RankingViewController.swift */; };
 		83ECAFA4200DC27000317D52 /* KTEGAKI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83ECAFA3200DC01400317D52 /* KTEGAKI.ttf */; };
 		83ECAFA6200DC34D00317D52 /* hunwariusagi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83ECAFA5200DC34800317D52 /* hunwariusagi.ttf */; };
@@ -327,6 +328,7 @@
 		83D7596820334471006B31C8 /* spring.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = spring.mp3; sourceTree = "<group>"; };
 		83D7596920334471006B31C8 /* autumn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = autumn.mp3; sourceTree = "<group>"; };
 		83D7596A20334472006B31C8 /* summer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = summer.mp3; sourceTree = "<group>"; };
+		83E2F3AC210A0496003099D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		83ECAFA0200CEF2500317D52 /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
 		83ECAFA3200DC01400317D52 /* KTEGAKI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KTEGAKI.ttf; sourceTree = "<group>"; };
 		83ECAFA5200DC34800317D52 /* hunwariusagi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = hunwariusagi.ttf; sourceTree = "<group>"; };
@@ -562,6 +564,7 @@
 				8370973F1FDFEC1E004EC266 /* Assets.xcassets */,
 				837097411FDFEC1E004EC266 /* LaunchScreen.storyboard */,
 				837097441FDFEC1E004EC266 /* Info.plist */,
+				83E2F3AC210A0496003099D9 /* GoogleService-Info.plist */,
 				83A39C2220177F73003EC84D /* Settings.bundle */,
 				83ECAFA2200DBFF400317D52 /* Font */,
 				83EE5F721FFFCDC5009E3521 /* JSON */,
@@ -662,7 +665,6 @@
 				837097321FDFEC1E004EC266 /* Frameworks */,
 				837097331FDFEC1E004EC266 /* Resources */,
 				65C6D2272456EC1E0FC254D8 /* [CP] Embed Pods Frameworks */,
-				AB3933B3C572FF34E9BF67E0 /* [CP] Copy Pods Resources */,
 				830E0F5A203ADF00004A59C1 /* ShellScript */,
 			);
 			buildRules = (
@@ -682,8 +684,6 @@
 				837097451FDFEC1E004EC266 /* Sources */,
 				837097461FDFEC1E004EC266 /* Frameworks */,
 				837097471FDFEC1E004EC266 /* Resources */,
-				7F904921B157EC35B43D4589 /* [CP] Embed Pods Frameworks */,
-				BFE52BB95A6AFA6565341A90 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -703,8 +703,6 @@
 				837097501FDFEC1E004EC266 /* Sources */,
 				837097511FDFEC1E004EC266 /* Frameworks */,
 				837097521FDFEC1E004EC266 /* Resources */,
-				7BA6004283C2D6912FAF62DB /* [CP] Embed Pods Frameworks */,
-				3A319F6C1FA2B02DB0394AA2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -884,6 +882,7 @@
 				83ACA3032031496C000F33EE /* basketball.mp3 in Resources */,
 				8364F35D1FE2C9F400388509 /* grape.mp3 in Resources */,
 				83ACA2FE2031496C000F33EE /* rice.mp3 in Resources */,
+				83E2F3AD210A0496003099D9 /* GoogleService-Info.plist in Resources */,
 				8388561C204CF7CB00D9BB8D /* spinner.json in Resources */,
 				83ECAFB4200DEC9000317D52 /* airplane.json in Resources */,
 				83ACA2F62031496C000F33EE /* bowling.mp3 in Resources */,
@@ -951,21 +950,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 		};
-		3A319F6C1FA2B02DB0394AA2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eigo_awaseUITests/Pods-eigo_awaseUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		65C6D2272456EC1E0FC254D8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 12;
@@ -998,36 +982,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eigo_awase/Pods-eigo_awase-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7BA6004283C2D6912FAF62DB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eigo_awaseUITests/Pods-eigo_awaseUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7F904921B157EC35B43D4589 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eigo_awaseTests/Pods-eigo_awaseTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		830E0F5A203ADF00004A59C1 /* ShellScript */ = {
@@ -1077,36 +1031,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AB3933B3C572FF34E9BF67E0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eigo_awase/Pods-eigo_awase-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BFE52BB95A6AFA6565341A90 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eigo_awaseTests/Pods-eigo_awaseTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

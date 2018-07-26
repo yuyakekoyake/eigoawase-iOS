@@ -13,11 +13,19 @@
   },
   "requires_arc": true,
   "platforms": {
-    "ios": "8.0"
+    "ios": "8.0",
+    "tvos": "11.0"
   },
   "source_files": "Spring/*.swift",
-  "resources": [
-    "Spring/*.xib",
-    "SpringApp/*.xcassets"
-  ]
+  "ios": {
+    "resources": [
+      "Spring/*.xib",
+      "SpringApp/*.xcassets"
+    ]
+  },
+  "tvos": {
+    "resources": [
+      "SpringApp/*.xcassets"
+    ]
+  }
 }

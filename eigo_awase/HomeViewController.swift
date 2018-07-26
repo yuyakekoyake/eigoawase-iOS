@@ -7,12 +7,12 @@
 //
 
 import UIKit
-import Lottie
-import Spring
 import AVFoundation
 import GoogleMobileAds
 import RandomKit
 import SwiftRater
+import Lottie
+import Spring
 
 class HomeViewController: UIViewController, GADInterstitialDelegate {
     @IBOutlet weak var TitleE: SpringImageView!

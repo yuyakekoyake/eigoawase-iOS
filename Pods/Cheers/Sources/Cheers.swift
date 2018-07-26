@@ -1,18 +1,18 @@
 import UIKit
 
 /// The view to show particles
-public class CheerView: UIView {
-  public var config = Config()
+open class CheerView: UIView {
+  open var config = Config()
   var emitter: CAEmitterLayer?
 
-  public override func didMoveToSuperview() {
+  open override func didMoveToSuperview() {
     super.didMoveToSuperview()
 
     isUserInteractionEnabled = false
   }
 
   /// Start animation
-  public func start() {
+  open func start() {
     stop()
 
     let emitter = CAEmitterLayer()
@@ -63,7 +63,7 @@ public class CheerView: UIView {
   }
 
   /// Stop animation
-  public func stop() {
+  open func stop() {
     emitter?.birthRate = 0
   }
 
@@ -74,11 +74,11 @@ public class CheerView: UIView {
     case .confetti(let allowedShapes):
         return allowedShapes
           .map { generator.confetti(shape: $0) }
-          .flatMap({ $0 })
+          .compactMap({ $0 })
     case .image(let images):
       return images
     case .text(let size, let strings):
-      return strings.flatMap({ generator.generate(size: size, string: $0) })
+      return strings.compactMap({ generator.generate(size: size, string: $0) })
     }
   }
 }

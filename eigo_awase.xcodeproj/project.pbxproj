@@ -138,6 +138,7 @@
 		83D7597120334472006B31C8 /* autumn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83D7596920334471006B31C8 /* autumn.mp3 */; };
 		83D7597220334472006B31C8 /* summer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83D7596A20334472006B31C8 /* summer.mp3 */; };
 		83E2F3AD210A0496003099D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83E2F3AC210A0496003099D9 /* GoogleService-Info.plist */; };
+		83E2F3AF210DAC48003099D9 /* Englishsociety_font-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E2F3AE210DAC47003099D9 /* Englishsociety_font-Regular.ttf */; };
 		83ECAFA1200CEF2500317D52 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ECAFA0200CEF2500317D52 /* RankingViewController.swift */; };
 		83ECAFA4200DC27000317D52 /* KTEGAKI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83ECAFA3200DC01400317D52 /* KTEGAKI.ttf */; };
 		83ECAFA6200DC34D00317D52 /* hunwariusagi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83ECAFA5200DC34800317D52 /* hunwariusagi.ttf */; };
@@ -329,6 +330,7 @@
 		83D7596920334471006B31C8 /* autumn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = autumn.mp3; sourceTree = "<group>"; };
 		83D7596A20334472006B31C8 /* summer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = summer.mp3; sourceTree = "<group>"; };
 		83E2F3AC210A0496003099D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		83E2F3AE210DAC47003099D9 /* Englishsociety_font-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Englishsociety_font-Regular.ttf"; sourceTree = "<group>"; };
 		83ECAFA0200CEF2500317D52 /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
 		83ECAFA3200DC01400317D52 /* KTEGAKI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KTEGAKI.ttf; sourceTree = "<group>"; };
 		83ECAFA5200DC34800317D52 /* hunwariusagi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = hunwariusagi.ttf; sourceTree = "<group>"; };
@@ -595,6 +597,7 @@
 		83ECAFA2200DBFF400317D52 /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				83E2F3AE210DAC47003099D9 /* Englishsociety_font-Regular.ttf */,
 				83ECAFA8200DC43D00317D52 /* KodomoRounded-Light.otf */,
 				83ECAFA7200DC42D00317D52 /* KodomoRounded.otf */,
 				83ECAFA5200DC34800317D52 /* hunwariusagi.ttf */,
@@ -847,6 +850,7 @@
 				83ACA2F92031496C000F33EE /* potato.mp3 in Resources */,
 				838856142049A4E600D9BB8D /* waiting.json in Resources */,
 				83ACA2E42031496C000F33EE /* blue.mp3 in Resources */,
+				83E2F3AF210DAC48003099D9 /* Englishsociety_font-Regular.ttf in Resources */,
 				8364F35F1FE2C9F400388509 /* orange.mp3 in Resources */,
 				83ACA3062031496C000F33EE /* green pepper.mp3 in Resources */,
 				8364F3391FE0201900388509 /* washi2.jpg in Resources */,
@@ -960,6 +964,7 @@
 				"${BUILT_PRODUCTS_DIR}/Cheers/Cheers.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
+				"${BUILT_PRODUCTS_DIR}/LTMorphingLabel/LTMorphingLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/RandomKit/RandomKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
@@ -976,6 +981,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cheers.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LTMorphingLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RandomKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",

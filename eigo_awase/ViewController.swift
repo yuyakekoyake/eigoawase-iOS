@@ -217,13 +217,12 @@ class ViewController: UIViewController, CardControlDelegate {
             let idx = Int(arc4random_uniform(UInt32(numArray.count)))
             let card = CardControl(number: numArray[idx], frame: CGRect(x: 30 + (CardControl.sizeCard + 10) * (i % 4), y: CardTop + (CardControl.sizeCard + 10) * (i / 4), width: CardControl.sizeCard, height: CardControl.sizeCard))
             card.delegate = self
-            view.addSubview(card)
+            self.view.addSubview(card)
             cards.append(card)
             numArray.remove(at: idx)
         }
         //cleaviewFront
         self.view.bringSubview(toFront: ClearView)
-        
     }
     
     override func didReceiveMemoryWarning() {

@@ -12,6 +12,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Englishsociety_font-Regular.ttf">
+            <string>Englishsociety_font-Regular</string>
+        </array>
         <array key="KTEGAKI.ttf">
             <string>KAWAIITEGAKIMOJI</string>
         </array>
@@ -255,22 +258,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ロゴ_背景透明50" translatesAutoresizingMaskIntoConstraints="NO" id="tMZ-dc-jkE" customClass="AnimatableImageView" customModule="IBAnimatable">
+                            <imageView hidden="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ロゴ_背景透明50" translatesAutoresizingMaskIntoConstraints="NO" id="tMZ-dc-jkE" customClass="AnimatableImageView" customModule="IBAnimatable">
                                 <rect key="frame" x="45" y="293.5" width="285" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="285" id="0TP-rA-sMP"/>
                                     <constraint firstAttribute="height" constant="50" id="xDe-1x-qHm"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beA-Cv-HWc" customClass="LTMorphingLabel" customModule="LTMorphingLabel">
+                                <rect key="frame" x="45" y="293.5" width="285" height="50"/>
+                                <fontDescription key="fontDescription" name="Englishsociety_font-Regular" family="Englishsociety_font" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.72984391450881958" green="0.89630275964736938" blue="0.98825222253799438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="beA-Cv-HWc" firstAttribute="centerX" secondItem="tMZ-dc-jkE" secondAttribute="centerX" id="5iL-AU-qkY"/>
+                            <constraint firstItem="beA-Cv-HWc" firstAttribute="centerY" secondItem="tMZ-dc-jkE" secondAttribute="centerY" id="FS9-X2-70o"/>
                             <constraint firstItem="tMZ-dc-jkE" firstAttribute="centerX" secondItem="GyD-QJ-EiS" secondAttribute="centerX" id="FwK-7M-GbV"/>
+                            <constraint firstItem="beA-Cv-HWc" firstAttribute="height" secondItem="tMZ-dc-jkE" secondAttribute="height" id="SxM-Pl-eq7"/>
+                            <constraint firstItem="beA-Cv-HWc" firstAttribute="width" secondItem="tMZ-dc-jkE" secondAttribute="width" id="Tb7-39-Hdv"/>
                             <constraint firstItem="tMZ-dc-jkE" firstAttribute="centerY" secondItem="GyD-QJ-EiS" secondAttribute="centerY" constant="-15" id="v23-wX-KW2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YQX-zK-vx0"/>
                     </view>
                     <connections>
+                        <outlet property="TitleLabel" destination="beA-Cv-HWc" id="I4B-05-20a"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="ToMain" id="hFb-Gw-1Lp"/>
                         <segue destination="Uy6-KF-OfM" kind="presentation" identifier="ToHome" customClass="PresentPortalSegue" customModule="IBAnimatable" id="APl-pb-AzG"/>
                     </connections>
@@ -1298,8 +1312,8 @@ Cg
         <image name="ロゴ_背景透明50" width="285" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="94j-rJ-drk"/>
-        <segue reference="Uyj-BS-X4H"/>
+        <segue reference="5vj-Mp-wYE"/>
+        <segue reference="APl-pb-AzG"/>
         <segue reference="hFb-Gw-1Lp"/>
     </inferredMetricsTieBreakers>
 </document>

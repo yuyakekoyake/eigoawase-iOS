@@ -17,6 +17,7 @@ pod 'Firebase/Core'
 pod 'Firebase/AdMob'
 pod 'Firebase/Messaging'
 pod 'IBAnimatable'
+pod 'LTMorphingLabel'
 
 post_install do | installer |
   require 'fileutils'

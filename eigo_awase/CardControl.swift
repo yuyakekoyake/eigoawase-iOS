@@ -13,7 +13,7 @@ protocol CardControlDelegate: class {
     func OnCardTapped(sender: CardControl)
 }
 
-class CardControl: UIView {
+class CardControl: AnimatableView {
     //mondai
     let Fruit: [String] = ["apple","orange","cherry","banana","grape","lemon","peach","melon"]
     let vehicle: [String] = ["airplane","bicycle","boat","bus","car","rocket","ship","train"]
@@ -173,8 +173,8 @@ class CardControl: UIView {
         buttonCard.titleLabel?.numberOfLines = 1
         buttonCard.titleLabel!.textAlignment = NSTextAlignment.center
         buttonCard.addTarget(self, action: #selector(CardControl.ButtonTapped(sender:)),for: .touchUpInside)
-        
         addSubview(buttonCard)
+    
     }
     
     override open var intrinsicContentSize: CGSize {

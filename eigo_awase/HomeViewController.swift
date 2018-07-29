@@ -139,9 +139,7 @@ class HomeViewController: UIViewController, GADInterstitialDelegate {
         RandomBtn.animate(.zoom(way: .out))
         StartSound()
         Bgm.stop()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-             self.appDelegate.MondaiCategory = "ランダム"
-        }
+        appDelegate.MondaiCategory = "ランダム"
     }
     
     @IBAction func Animal(_ sender: Any) {

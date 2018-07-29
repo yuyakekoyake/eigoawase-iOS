@@ -7,9 +7,12 @@
 
 import UIKit
 import Lottie
+import LTMorphingLabel
+import SpriteKit
 
 class FirstSplashViewController: UIViewController {
 
+    @IBOutlet weak var TitleLabel: LTMorphingLabel!
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
     
@@ -22,11 +25,17 @@ class FirstSplashViewController: UIViewController {
         WatermelonAni.frame = CGRect(x: 0, y: 20, width: view.bounds.width/2, height: view.bounds.height/4)
         WatermelonAni.contentMode = .scaleAspectFit
         self.view.addSubview(WatermelonAni)
+        
+        TitleLabel.morphingEffect = .scale
         // アニメーションを開始
         WatermelonAni.play()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.TitleLabel.text = "English Society"
+        }
         
-
-         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+        
+        
+         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
             
                 self.performSegue(withIdentifier: "ToHome", sender: nil)
     

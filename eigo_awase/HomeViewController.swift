@@ -13,6 +13,7 @@ import RandomKit
 import SwiftRater
 import Lottie
 import Spring
+import IBAnimatable
 
 class HomeViewController: UIViewController, GADInterstitialDelegate {
     @IBOutlet weak var TitleE: SpringImageView!
@@ -22,11 +23,11 @@ class HomeViewController: UIViewController, GADInterstitialDelegate {
     @IBOutlet weak var TitleWa: SpringImageView!
     @IBOutlet weak var TitleSe: SpringImageView!
     
-    @IBOutlet weak var StartBtn: UIButton!
-    @IBOutlet weak var RandomBtn: UIButton!
+    @IBOutlet weak var StartBtn: AnimatableButton!
+    @IBOutlet weak var RandomBtn: AnimatableButton!
     @IBOutlet weak var AnimalBtn: UIButton!
-    @IBOutlet weak var RankingBtn: UIButton!
-    @IBOutlet weak var CreditBtn: UIButton!
+    @IBOutlet weak var RankingBtn: AnimatableButton!
+    @IBOutlet weak var CreditBtn: AnimatableButton!
     
     var colud = LOTAnimationView()
     var sun = LOTAnimationView()
@@ -128,16 +129,19 @@ class HomeViewController: UIViewController, GADInterstitialDelegate {
     }
     
     @IBAction func StartBtn(_ sender: Any) {
-        performSegue(withIdentifier: "ToCategory", sender: nil)
+        StartBtn.animate(.zoom(way: .out))
         StartSound()
         Bgm.stop()
-        
+        self.performSegue(withIdentifier: "ToCategory", sender: nil)
     }
     
     @IBAction func RandomBtn(_ sender: Any) {
-        appDelegate.MondaiCategory = "ランダム"
+        RandomBtn.animate(.zoom(way: .out))
         StartSound()
         Bgm.stop()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+             self.appDelegate.MondaiCategory = "ランダム"
+        }
     }
     
     @IBAction func Animal(_ sender: Any) {
@@ -149,10 +153,12 @@ class HomeViewController: UIViewController, GADInterstitialDelegate {
     @IBAction func CreditBtn(_ sender: Any) {
         StartSound()
         Bgm.stop()
+        CreditBtn.animate(.zoom(way: .out))
     }
     @IBAction func RankingBTN(_ sender: Any) {
         StartSound()
         Bgm.stop()
+        RankingBtn.animate(.zoom(way: .out))
     }
     
     func LottieAnimation (){

@@ -233,6 +233,7 @@ class ViewController: UIViewController, CardControlDelegate {
     
     // MARK: Card Action
     func OnCardTapped(sender: CardControl) {
+        
         if !canOpen {
             print("カードは現在めくれません")
             return
@@ -240,8 +241,7 @@ class ViewController: UIViewController, CardControlDelegate {
         if sender.isOpen {
             print("カードは既に開いています")
             Opensound ()
-        }
-        else {
+        }else{
             let number = sender.OpenCard()!
             var AsrNum = 0
             switch number {

@@ -83,7 +83,7 @@
                                 <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xeJ-7w-coN">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xeJ-7w-coN" customClass="AnimatableView" customModule="IBAnimatable">
                                 <rect key="frame" x="12" y="25" width="351" height="576"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Clear !!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="kYB-DZ-C8a" customClass="SpringLabel" customModule="Spring">
@@ -172,6 +172,18 @@
                                     <constraint firstAttribute="trailing" secondItem="DuZ-bA-Ewe" secondAttribute="trailing" constant="50" id="iUh-Co-3xC"/>
                                     <constraint firstAttribute="trailing" secondItem="XX2-9l-bh9" secondAttribute="trailing" constant="25" id="u27-nd-K3Y"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.47488617820000001" green="0.54882678149999997" blue="0.96080166099999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="_borderType" value="solid"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+2" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KnT-9G-fDb" customClass="SpringLabel" customModule="Spring">
                                 <rect key="frame" x="270" y="466" width="25" height="22"/>
@@ -243,7 +255,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ロゴ_背景透明50" translatesAutoresizingMaskIntoConstraints="NO" id="tMZ-dc-jkE">
+                            <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ロゴ_背景透明50" translatesAutoresizingMaskIntoConstraints="NO" id="tMZ-dc-jkE" customClass="AnimatableImageView" customModule="IBAnimatable">
                                 <rect key="frame" x="45" y="293.5" width="285" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="285" id="0TP-rA-sMP"/>
@@ -260,7 +272,7 @@
                     </view>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="ToMain" id="hFb-Gw-1Lp"/>
-                        <segue destination="Uy6-KF-OfM" kind="presentation" identifier="ToHome" id="APl-pb-AzG"/>
+                        <segue destination="Uy6-KF-OfM" kind="presentation" identifier="ToHome" customClass="PresentPortalSegue" customModule="IBAnimatable" id="APl-pb-AzG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QIT-57-9Za" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -278,7 +290,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SkyBg" translatesAutoresizingMaskIntoConstraints="NO" id="SxI-d6-wQ2">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jS3-Kh-Kxv">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jS3-Kh-Kxv" customClass="AnimatableButton" customModule="IBAnimatable">
                                 <rect key="frame" x="102" y="535" width="170" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="26"/>
@@ -298,10 +310,10 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="CreditBtn:" destination="Uy6-KF-OfM" eventType="touchUpInside" id="ET0-Jc-nyS"/>
-                                    <segue destination="dS2-GV-xiw" kind="presentation" id="TbD-Q1-Pz4"/>
+                                    <segue destination="dS2-GV-xiw" kind="presentation" customClass="PresentTurnSegue" customModule="IBAnimatable" id="TbD-Q1-Pz4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fD-0h-eZD">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fD-0h-eZD" customClass="AnimatableButton" customModule="IBAnimatable">
                                 <rect key="frame" x="102" y="485" width="170" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="27"/>
@@ -324,7 +336,7 @@
                                     <segue destination="Ntq-E5-tEH" kind="show" id="P0K-mR-Ewr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73a-C8-umq">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73a-C8-umq" customClass="AnimatableButton" customModule="IBAnimatable">
                                 <rect key="frame" x="102" y="405" width="170" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="30"/>
@@ -344,7 +356,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="RandomBtn:" destination="Uy6-KF-OfM" eventType="touchUpInside" id="Nby-KC-QsR"/>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="SLa-8u-dx5"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" customClass="PresentExplodeSegue" customModule="IBAnimatable" id="SLa-8u-dx5"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEo-5u-b6p">
@@ -370,7 +382,7 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="5a6-fB-Xxf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fE9-Hf-C1o">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fE9-Hf-C1o" customClass="AnimatableButton" customModule="IBAnimatable">
                                 <rect key="frame" x="102" y="345" width="170" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="KodomoRounded" family="KodomoRounded" pointSize="30"/>
@@ -455,22 +467,6 @@
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nCy-sp-zpM" customClass="AnimatableView" customModule="IBAnimatable">
-                                <rect key="frame" x="54" y="209" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="_maskType" value="Polygon"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
-                                        <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
-                                        <color key="value" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="flip"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autoRun" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                         </subviews>
                         <constraints>
                             <constraint firstItem="2fD-0h-eZD" firstAttribute="centerX" secondItem="Qkg-Wm-sWY" secondAttribute="centerX" id="0mB-7F-zk3"/>
@@ -535,7 +531,7 @@
                         <outlet property="TitleI" destination="ptD-Zt-0c1" id="2ni-ah-gkR"/>
                         <outlet property="TitleSe" destination="kik-5c-pqb" id="Q1l-34-Gg1"/>
                         <outlet property="TitleWa" destination="Y2i-09-ozl" id="eFS-5y-mjf"/>
-                        <segue destination="Kxd-wR-aiX" kind="presentation" identifier="ToCategory" id="5vj-Mp-wYE"/>
+                        <segue destination="Kxd-wR-aiX" kind="presentation" identifier="ToCategory" customClass="PresentTurnSegue" customModule="IBAnimatable" id="5vj-Mp-wYE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u9S-8o-xg1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -614,12 +610,20 @@
                                 <state key="highlighted" backgroundImage="banner02"/>
                                 <connections>
                                     <action selector="BackBtn:" destination="Kxd-wR-aiX" eventType="touchUpInside" id="r40-kh-Dm9"/>
-                                    <segue destination="Uy6-KF-OfM" kind="presentation" id="B3Y-dJ-9bx"/>
+                                    <segue destination="Uy6-KF-OfM" kind="presentation" customClass="PresentTurnWithDismissInteractionSegue" customModule="IBAnimatable" id="B3Y-dJ-9bx"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rzf-1Q-heB">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rzf-1Q-heB" customClass="AnimatableView" customModule="IBAnimatable">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="0.058176927268505096" green="0.075472302734851837" blue="0.18432527780532837" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.16862745100000001" green="0.21176470589999999" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.47488617815130935" green="0.54882678149206021" blue="0.96080166101455688" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -649,7 +653,7 @@
                     <connections>
                         <outlet property="LoadingBackview" destination="Rzf-1Q-heB" id="hbV-aJ-nQa"/>
                         <outlet property="TableView" destination="D2Z-b3-Frd" id="fsu-xB-F6T"/>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="ToChallenge" id="O7c-gC-wiO"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="ToChallenge" customClass="PresentExplodeSegue" customModule="IBAnimatable" id="O7c-gC-wiO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jh0-PI-dSn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -908,7 +912,7 @@
                                 <state key="selected" backgroundImage="banner02"/>
                                 <state key="highlighted" backgroundImage="banner02"/>
                                 <connections>
-                                    <segue destination="Uy6-KF-OfM" kind="presentation" id="f1d-y4-Buu"/>
+                                    <segue destination="Uy6-KF-OfM" kind="presentation" customClass="PresentTurnSegue" customModule="IBAnimatable" id="f1d-y4-Buu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1049,7 +1053,7 @@
                                 <state key="selected" backgroundImage="banner02"/>
                                 <state key="highlighted" backgroundImage="banner02"/>
                                 <connections>
-                                    <segue destination="Uy6-KF-OfM" kind="presentation" id="xyk-V5-lp1"/>
+                                    <segue destination="Uy6-KF-OfM" kind="presentation" customClass="PresentTurnSegue" customModule="IBAnimatable" id="xyk-V5-lp1"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="クレジット" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47r-i8-i7a" customClass="SpringLabel" customModule="Spring">
@@ -1235,7 +1239,7 @@ Cg
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ロゴ_背景透明" translatesAutoresizingMaskIntoConstraints="NO" id="jce-WU-ZlP">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ロゴ_背景透明" translatesAutoresizingMaskIntoConstraints="NO" id="jce-WU-ZlP">
                                 <rect key="frame" x="16" y="404" width="171" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="jce-WU-ZlP" secondAttribute="height" multiplier="57:10" id="dTz-6U-EZe"/>
@@ -1290,13 +1294,12 @@ Cg
         <image name="hiragana_20_go.png" width="207" height="194"/>
         <image name="hiragana_24_se.png" width="207" height="194"/>
         <image name="hiragana_74_wa.png" width="207" height="194"/>
-        <image name="ロゴ_背景透明" width="171" height="30"/>
-        <image name="ロゴ_背景透明50" width="285" height="50"/>
+        <image name="ロゴ_背景透明" width="171" height="30"/>
+        <image name="ロゴ_背景透明50" width="285" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="P0K-mR-Ewr"/>
-        <segue reference="5vj-Mp-wYE"/>
-        <segue reference="f1d-y4-Buu"/>
-        <segue reference="SLa-8u-dx5"/>
+        <segue reference="94j-rJ-drk"/>
+        <segue reference="Uyj-BS-X4H"/>
+        <segue reference="hFb-Gw-1Lp"/>
     </inferredMetricsTieBreakers>
 </document>

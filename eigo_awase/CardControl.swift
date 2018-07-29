@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import IBAnimatable
 
 protocol CardControlDelegate: class {
     func OnCardTapped(sender: CardControl)
@@ -52,7 +52,7 @@ class CardControl: UIView {
     static var sizeCard = 70
     static var CardcornerRadius = 7
     
-    var buttonCard = UIButton()
+    var buttonCard = AnimatableButton()
     
     // MARK: 初期化
     required init?(coder aDecoder: NSCoder) {
@@ -190,6 +190,8 @@ class CardControl: UIView {
     // MARK: ボタンのタッチイベント
     @objc func ButtonTapped(sender: UIButton) {
         delegate?.OnCardTapped(sender: self)
+        //buttonCard.animationType = .spin(repeatCount: 8)
+        buttonCard.animate(.spin(repeatCount: 1))
     }
     
     // MARK: メソッド

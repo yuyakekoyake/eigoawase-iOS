@@ -42,6 +42,7 @@ class HomeViewController: UIViewController, GADInterstitialDelegate {
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
+    
     //interstitial広告用
     // Interstitial AdMob ID を入れてください
     let AdMobID = "ca-app-pub-2571146153853390/9841155648"

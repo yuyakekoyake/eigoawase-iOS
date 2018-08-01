@@ -457,7 +457,7 @@
                                     <constraint firstAttribute="width" secondItem="kik-5c-pqb" secondAttribute="height" multiplier="1:1" id="ggw-gi-Hhp"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vIj-GA-IRj">
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vIj-GA-IRj">
                                 <rect key="frame" x="0.0" y="622" width="370" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -1259,17 +1259,44 @@ Cg
                                     <constraint firstAttribute="width" secondItem="jce-WU-ZlP" secondAttribute="height" multiplier="57:10" id="dTz-6U-EZe"/>
                                 </constraints>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xTV-N4-e2G">
+                                <rect key="frame" x="0.0" y="444" width="187" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="cG8-BI-g9z"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Version">
+                                        <attributes>
+                                            <color key="NSColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HiraginoSans-W6"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="47r-i8-i7a" firstAttribute="centerX" secondItem="nGy-KX-n2n" secondAttribute="centerX" id="0O4-eq-sFd"/>
+                            <constraint firstItem="xTV-N4-e2G" firstAttribute="trailing" secondItem="jce-WU-ZlP" secondAttribute="trailing" id="1cl-Nc-HLA"/>
                             <constraint firstItem="1o1-hD-3Dd" firstAttribute="width" secondItem="nGy-KX-n2n" secondAttribute="width" multiplier="0.5333" id="2K1-Eq-b4m"/>
                             <constraint firstAttribute="bottom" secondItem="Bfs-KH-G2B" secondAttribute="bottom" id="55t-Wl-Nrw"/>
                             <constraint firstAttribute="trailing" secondItem="Bfs-KH-G2B" secondAttribute="trailing" id="6NV-8c-PmU"/>
                             <constraint firstItem="6n8-Be-TwX" firstAttribute="bottom" secondItem="1o1-hD-3Dd" secondAttribute="bottom" constant="80" id="AN8-Me-HoU"/>
                             <constraint firstItem="Bfs-KH-G2B" firstAttribute="leading" secondItem="nGy-KX-n2n" secondAttribute="leading" id="Bit-e5-wIs"/>
+                            <constraint firstItem="xTV-N4-e2G" firstAttribute="leading" secondItem="6n8-Be-TwX" secondAttribute="leading" id="CHR-L5-J9p"/>
                             <constraint firstItem="47r-i8-i7a" firstAttribute="top" secondItem="6n8-Be-TwX" secondAttribute="top" constant="31" id="Fby-uj-Yx0"/>
                             <constraint firstItem="H6A-1c-rit" firstAttribute="leading" secondItem="6n8-Be-TwX" secondAttribute="leading" id="O4V-qy-I82"/>
+                            <constraint firstItem="xTV-N4-e2G" firstAttribute="top" secondItem="jce-WU-ZlP" secondAttribute="bottom" constant="10" id="PQm-Po-3oq"/>
                             <constraint firstItem="jce-WU-ZlP" firstAttribute="leading" secondItem="cAl-D0-pRJ" secondAttribute="leading" constant="16" id="Qct-Dz-6Zw"/>
                             <constraint firstItem="cAl-D0-pRJ" firstAttribute="top" secondItem="47r-i8-i7a" secondAttribute="bottom" constant="10" id="UfV-I1-4WI"/>
                             <constraint firstItem="1o1-hD-3Dd" firstAttribute="height" secondItem="nGy-KX-n2n" secondAttribute="height" multiplier="0.07496" id="XoJ-ER-6cA"/>
@@ -1285,6 +1312,7 @@ Cg
                     </view>
                     <connections>
                         <outlet property="BackBtnBottom" destination="AN8-Me-HoU" id="5R6-ja-GEc"/>
+                        <outlet property="versionLabel" destination="xTV-N4-e2G" id="moq-HG-buy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ej8-vi-5v3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1313,7 +1341,7 @@ Cg
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="5vj-Mp-wYE"/>
-        <segue reference="APl-pb-AzG"/>
-        <segue reference="hFb-Gw-1Lp"/>
+        <segue reference="xyk-V5-lp1"/>
+        <segue reference="5a6-fB-Xxf"/>
     </inferredMetricsTieBreakers>
 </document>

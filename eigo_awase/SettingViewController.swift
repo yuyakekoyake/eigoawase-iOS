@@ -14,7 +14,11 @@ class SettingViewController: UIViewController {
     var BackEffect:AVAudioPlayer!
     var Bgm:AVAudioPlayer!
     
+    @IBOutlet weak var versionLabel: UITextView!
     @IBOutlet weak var BackBtnBottom: NSLayoutConstraint!
+    
+    // appDelegate
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         BgmSound()
@@ -31,6 +35,8 @@ class SettingViewController: UIViewController {
         default:
             break
         }
+        
+        versionLabel.text = " Version   " + appDelegate.productionVersion!
     }
 
     override func didReceiveMemoryWarning() {

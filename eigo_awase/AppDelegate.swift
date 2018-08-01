@@ -14,6 +14,10 @@ import SwiftRater
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    /// version管理
+    var betaVersion = "-debug"
+    var productionVersion: String? = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
 
     //interstitial用
     var InterstitialFlug = false

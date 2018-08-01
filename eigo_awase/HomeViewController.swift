@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import FirebaseAnalytics
 import GoogleMobileAds
 import RandomKit
 import SwiftRater
